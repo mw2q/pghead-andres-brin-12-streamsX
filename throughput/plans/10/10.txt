@@ -1,0 +1,64 @@
+BEGIN;
+BEGIN
+EXPLAIN
+select
+	c_custkey,
+	c_name,
+	sum(l_extendedprice * (1 - l_discount)) as revenue,
+	c_acctbal,
+	n_name,
+	c_address,
+	c_phone,
+	c_comment
+from
+	customer,
+	orders,
+	lineitem,
+	nation
+where
+	c_custkey = o_custkey
+	and l_orderkey = o_orderkey
+	and o_orderdate >= date '1994-10-01'
+	and o_orderdate < cast(date '1994-10-01' + interval '3 month' as date)
+	and l_returnflag = 'R'
+	and c_nationkey = n_nationkey
+group by
+	c_custkey,
+	c_name,
+	c_acctbal,
+	c_phone,
+	n_name,
+	c_address,
+	c_comment
+order by
+	revenue desc
+LIMIT 20;
+                                                                        QUERY PLAN                                                                         
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+ Limit  (cost=2275298.57..2275298.62 rows=20 width=176)
+   ->  Sort  (cost=2275298.57..2276740.71 rows=576858 width=176)
+         Sort Key: (sum((lineitem.l_extendedprice * (1::double precision - lineitem.l_discount))))
+         ->  HashAggregate  (cost=2254180.00..2259948.58 rows=576858 width=176)
+               Group Key: customer.c_custkey, customer.c_name, customer.c_acctbal, customer.c_phone, nation.n_name, customer.c_address, customer.c_comment
+               ->  Hash Join  (cost=344567.99..2239758.55 rows=576858 width=176)
+                     Hash Cond: (customer.c_nationkey = nation.n_nationkey)
+                     ->  Hash Join  (cost=344566.42..2231825.19 rows=576858 width=154)
+                           Hash Cond: (orders.o_custkey = customer.c_custkey)
+                           ->  Hash Join  (cost=275538.42..2154144.32 rows=576858 width=12)
+                                 Hash Cond: (lineitem.l_orderkey = orders.o_orderkey)
+                                 ->  Seq Scan on lineitem  (cost=0.00..1817043.65 rows=14878312 width=12)
+                                       Filter: (l_returnflag = 'R'::bpchar)
+                                 ->  Hash  (cost=268261.46..268261.46 rows=582157 width=8)
+                                       ->  Bitmap Heap Scan on orders  (cost=6007.11..268261.46 rows=582157 width=8)
+                                             Recheck Cond: ((o_orderdate >= '1994-10-01'::date) AND (o_orderdate < '1995-01-01'::date))
+                                             ->  Bitmap Index Scan on orders_o_orderkey_o_orderdate_brin_idx  (cost=0.00..5861.57 rows=582157 width=0)
+                                                   Index Cond: ((o_orderdate >= '1994-10-01'::date) AND (o_orderdate < '1995-01-01'::date))
+                           ->  Hash  (cost=50278.00..50278.00 rows=1500000 width=146)
+                                 ->  Seq Scan on customer  (cost=0.00..50278.00 rows=1500000 width=146)
+                     ->  Hash  (cost=1.25..1.25 rows=25 width=30)
+                           ->  Seq Scan on nation  (cost=0.00..1.25 rows=25 width=30)
+ Planning time: 3.046 ms
+(23 rows)
+
+COMMIT;
+COMMIT

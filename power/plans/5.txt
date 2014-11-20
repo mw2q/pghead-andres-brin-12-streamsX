@@ -1,0 +1,61 @@
+BEGIN;
+BEGIN
+EXPLAIN
+select
+	n_name,
+	sum(l_extendedprice * (1 - l_discount)) as revenue
+from
+	customer,
+	orders,
+	lineitem,
+	supplier,
+	nation,
+	region
+where
+	c_custkey = o_custkey
+	and l_orderkey = o_orderkey
+	and l_suppkey = s_suppkey
+	and c_nationkey = s_nationkey
+	and s_nationkey = n_nationkey
+	and n_regionkey = r_regionkey
+	and r_name = 'MIDDLE EAST'
+	and o_orderdate >= date '1994-01-01'
+	and o_orderdate < date '1994-01-01' + interval '1 year'
+group by
+	n_name
+order by
+	revenue desc;
+                                                                      QUERY PLAN                                                                      
+------------------------------------------------------------------------------------------------------------------------------------------------------
+ Sort  (cost=1996756.23..1996756.29 rows=25 width=34)
+   Sort Key: (sum((lineitem.l_extendedprice * (1::double precision - lineitem.l_discount))))
+   ->  HashAggregate  (cost=1996755.40..1996755.65 rows=25 width=34)
+         Group Key: nation.n_name
+         ->  Hash Join  (cost=43021.20..1996026.46 rows=72894 width=34)
+               Hash Cond: ((lineitem.l_suppkey = supplier.s_suppkey) AND (customer.c_nationkey = supplier.s_nationkey))
+               ->  Nested Loop  (cost=38342.20..1976928.70 rows=1825309 width=46)
+                     ->  Hash Join  (cost=38341.63..529733.06 rows=456432 width=38)
+                           Hash Cond: (orders.o_custkey = customer.c_custkey)
+                           ->  Seq Scan on orders  (cost=0.00..478269.00 rows=2282161 width=8)
+                                 Filter: ((o_orderdate >= '1994-01-01'::date) AND (o_orderdate < '1995-01-01 00:00:00'::timestamp without time zone))
+                           ->  Hash  (cost=34591.63..34591.63 rows=300000 width=38)
+                                 ->  Nested Loop  (cost=765.14..34591.63 rows=300000 width=38)
+                                       ->  Nested Loop  (cost=0.14..13.95 rows=5 width=30)
+                                             Join Filter: (nation.n_regionkey = region.r_regionkey)
+                                             ->  Index Scan using pk_nation on nation  (cost=0.14..12.51 rows=25 width=34)
+                                             ->  Materialize  (cost=0.00..1.07 rows=1 width=4)
+                                                   ->  Seq Scan on region  (cost=0.00..1.06 rows=1 width=4)
+                                                         Filter: (r_name = 'MIDDLE EAST'::bpchar)
+                                       ->  Bitmap Heap Scan on customer  (cost=765.00..6315.54 rows=60000 width=8)
+                                             Recheck Cond: (c_nationkey = nation.n_nationkey)
+                                             ->  Bitmap Index Scan on customer_c_nationkey_c_custkey_brin_idx  (cost=0.00..750.00 rows=60000 width=0)
+                                                   Index Cond: (c_nationkey = nation.n_nationkey)
+                     ->  Index Scan using pk_lineitem on lineitem  (cost=0.56..3.02 rows=15 width=16)
+                           Index Cond: (l_orderkey = orders.o_orderkey)
+               ->  Hash  (cost=3179.00..3179.00 rows=100000 width=8)
+                     ->  Seq Scan on supplier  (cost=0.00..3179.00 rows=100000 width=8)
+ Planning time: 4.537 ms
+(28 rows)
+
+COMMIT;
+COMMIT

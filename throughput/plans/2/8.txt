@@ -1,0 +1,85 @@
+BEGIN;
+BEGIN
+EXPLAIN
+select
+	o_year,
+	sum(case
+		when nation = 'INDONESIA' then volume
+		else 0
+	end) / sum(volume) as mkt_share
+from
+	(
+		select
+			extract(year from o_orderdate) as o_year,
+			l_extendedprice * (1 - l_discount) as volume,
+			n2.n_name as nation
+		from
+			part,
+			supplier,
+			lineitem,
+			orders,
+			customer,
+			nation n1,
+			nation n2,
+			region
+		where
+			p_partkey = l_partkey
+			and s_suppkey = l_suppkey
+			and l_orderkey = o_orderkey
+			and o_custkey = c_custkey
+			and c_nationkey = n1.n_nationkey
+			and n1.n_regionkey = r_regionkey
+			and r_name = 'ASIA'
+			and s_nationkey = n2.n_nationkey
+			and o_orderdate between date '1995-01-01' and date '1996-12-31'
+			and p_type = 'PROMO ANODIZED COPPER'
+	) as all_nations
+group by
+	o_year
+order by
+	o_year;
+                                                                      QUERY PLAN                                                                      
+------------------------------------------------------------------------------------------------------------------------------------------------------
+ Sort  (cost=1721483.84..1721485.67 rows=729 width=38)
+   Sort Key: (date_part('year'::text, (orders.o_orderdate)::timestamp without time zone))
+   ->  HashAggregate  (cost=1721436.42..1721449.18 rows=729 width=38)
+         Group Key: date_part('year'::text, (orders.o_orderdate)::timestamp without time zone)
+         ->  Hash Join  (cost=38748.64..1720953.18 rows=24162 width=38)
+               Hash Cond: (supplier.s_nationkey = n2.n_nationkey)
+               ->  Nested Loop  (cost=38747.08..1720498.58 rows=24162 width=16)
+                     ->  Hash Join  (cost=38746.79..1712689.80 rows=24201 width=16)
+                           Hash Cond: (orders.o_custkey = customer.c_custkey)
+                           ->  Nested Loop  (cost=416.64..1673663.87 rows=121006 width=20)
+                                 ->  Nested Loop  (cost=416.21..1478048.21 rows=399514 width=16)
+                                       ->  Bitmap Heap Scan on part  (cost=411.56..28088.03 rows=13307 width=4)
+                                             Recheck Cond: ((p_type)::text = 'PROMO ANODIZED COPPER'::text)
+                                             ->  Bitmap Index Scan on part_p_type_p_partkey_idx  (cost=0.00..408.23 rows=13307 width=0)
+                                                   Index Cond: ((p_type)::text = 'PROMO ANODIZED COPPER'::text)
+                                       ->  Bitmap Heap Scan on lineitem  (cost=4.65..108.65 rows=31 width=20)
+                                             Recheck Cond: (l_partkey = part.p_partkey)
+                                             ->  Bitmap Index Scan on lineitem_l_partkey_l_quantity_idx  (cost=0.00..4.64 rows=31 width=0)
+                                                   Index Cond: (l_partkey = part.p_partkey)
+                                 ->  Index Scan using pk_orders on orders  (cost=0.43..0.48 rows=1 width=12)
+                                       Index Cond: (o_orderkey = lineitem.l_orderkey)
+                                       Filter: ((o_orderdate >= '1995-01-01'::date) AND (o_orderdate <= '1996-12-31'::date))
+                           ->  Hash  (cost=34580.15..34580.15 rows=300000 width=4)
+                                 ->  Nested Loop  (cost=766.08..34580.15 rows=300000 width=4)
+                                       ->  Hash Join  (cost=1.07..2.47 rows=5 width=4)
+                                             Hash Cond: (n1.n_regionkey = region.r_regionkey)
+                                             ->  Seq Scan on nation n1  (cost=0.00..1.25 rows=25 width=8)
+                                             ->  Hash  (cost=1.06..1.06 rows=1 width=4)
+                                                   ->  Seq Scan on region  (cost=0.00..1.06 rows=1 width=4)
+                                                         Filter: (r_name = 'ASIA'::bpchar)
+                                       ->  Bitmap Heap Scan on customer  (cost=765.00..6315.54 rows=60000 width=8)
+                                             Recheck Cond: (c_nationkey = n1.n_nationkey)
+                                             ->  Bitmap Index Scan on customer_c_nationkey_c_custkey_brin_idx  (cost=0.00..750.00 rows=60000 width=0)
+                                                   Index Cond: (c_nationkey = n1.n_nationkey)
+                     ->  Index Scan using pk_supplier on supplier  (cost=0.29..0.31 rows=1 width=8)
+                           Index Cond: (s_suppkey = lineitem.l_suppkey)
+               ->  Hash  (cost=1.25..1.25 rows=25 width=30)
+                     ->  Seq Scan on nation n2  (cost=0.00..1.25 rows=25 width=30)
+ Planning time: 5.267 ms
+(39 rows)
+
+COMMIT;
+COMMIT

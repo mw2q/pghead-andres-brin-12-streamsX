@@ -1,0 +1,10 @@
+Wed Nov 19 21:33:17 CET 2014: start throughput queriy stream 5 
+Wed Nov 19 21:43:41 CET 2014: end throughput query stream 5
+elapsed time for throughput query stream 5: 624 sec
+Runtime error (func=(main), adr=7): Divide by zero
+Runtime error (func=(main), adr=12): Divide by zero
+Runtime error (func=(main), adr=11): Divide by zero
+Runtime error (func=(main), adr=12): Divide by zero
+Runtime error (func=(main), adr=12): Divide by zero
+Runtime error (func=(main), adr=7): Divide by zero
+Runtime error (func=(main), adr=7): Divide by zero

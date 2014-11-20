@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>Database Test 3 Results</title>
+</head>
+<body>
+<h1>Database Test 3 Results</h1>
+
+<table border="1">
+<tr>
+<th>Software Version</th><th>Hardware Configuration</th><th>Workload Parameters</th>
+</tr>
+<tr>
+<td>Operating System: 3.0.101-0.15-default</td><td>16 CPUs @ 2600.000</td><td>Scale Factor: 10</td>
+</tr>
+<tr>
+<td>Database Server: PostgreSQL 9.5devel</td><td> Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz</td><td>Streams: 12</td>
+</tr>
+<tr>
+<td></td><td>264524424 KB RAM</td><td></td>
+</tr>
+</table>
+
+<h2>Metrics</h2>
+<table border="0">
+
+<tr>
+<th></th>
+<th></th>
+<th>Runtime Parameters</th>
+</tr>
+
+<tr>
+<td align="right">Composite:</td><td align="right">5408</td>
+</tr>
+
+<tr>
+<td align="right">Load Time:</td>
+<td align="right">8.88 Minutes / .14 Hours</td>
+<td><p><a href=load/index.html>Load Test Details</a></p></td>
+<td>-c shared_buffers=8GB -c work_mem=1GB -c maintenance_work_mem=4GB -c checkpoint_segments=300 -c checkpoint_timeout=60min -c effective_cache_size=200GB -c default_statistics_target=1000</td>
+</tr>
+
+<tr>
+<td align="right">Query Processing Power:</td>
+<td align="right">2007</td>
+<td><p><a href=power/index.html>Power Test Details</a></p></td>
+<td>-c shared_buffers=8GB -c work_mem=1GB -c checkpoint_segments=300 -c checkpoint_timeout=60min -c effective_cache_size=200GB -c default_statistics_target=1000</td>
+</tr>
+
+<tr>
+<td align="right">Throughput Numerical Quantity:</td>
+<td align="right">14575.29</td>
+<td><p><a href=throughput/index.html>Throughput Test Details</a></p></td>
+<td>-c shared_buffers=8GB -c work_mem=1GB -c checkpoint_segments=300 -c checkpoint_timeout=60min -c effective_cache_size=200GB -c default_statistics_target=1000</td>
+</tr>
+</table>
+<h2>Query Times</h2>
+<p>
+(Click to view full size.)<br/>
+<a href="q_time.png"><img src="q_time.png" width="50%" /></a><br/>
+<a href="q_time.csv">CSV Version</a>
+</p>
+</body>
+</html>

@@ -1,0 +1,2153 @@
+# Events: 215  cycles
+#
+# Overhead  Samples            Command      Shared Object                          Symbol
+# ........ ..........  ...............  .................  ..............................
+#
+    15.54%         31         postgres  [mmfslinux]        [k] 0x20066         
+                   |
+                   --- 0xffffffffa04c0066
+                      |          
+                      |--86.42%-- 0xffffffffa0553f90
+                      |          0xffffffffa05715f4
+                      |          0xffffffffa04c61ab
+                      |          vfs_read
+                      |          sys_read
+                      |          system_call_fastpath
+                      |          0x7fb873db55d0
+                      |          __GI___read
+                      |          
+                       --13.58%-- 0xffffffffa0554e96
+                                 0xffffffffa056facb
+                                 0xffffffffa04c61ab
+                                 vfs_read
+                                 sys_read
+                                 system_call_fastpath
+                                 0x7fb873db55d0
+                                 __GI___read
+
+                   |
+                   --- 0xffffffffa04aa6dc
+                       0xffffffffa04c01d0
+                      |          
+                      |--66.64%-- 0xffffffffa0553f90
+                      |          0xffffffffa05715f4
+                      |          0xffffffffa04c61ab
+                      |          vfs_read
+                      |          sys_read
+                      |          system_call_fastpath
+                      |          0x7fb873db55d0
+                      |          __GI___read
+                      |          
+                       --33.36%-- 0xffffffffa0554e96
+                                 0xffffffffa056facb
+                                 0xffffffffa04c61ab
+                                 vfs_read
+                                 sys_read
+                                 system_call_fastpath
+                                 0x7fb873db55d0
+                                 __GI___read
+
+                   |
+                   --- 0xffffffffa04bfff1
+                       0xffffffffa0553f90
+                       0xffffffffa05715f4
+                       0xffffffffa04c61ab
+                       vfs_read
+                       sys_read
+                       system_call_fastpath
+                       0x7fb873db55d0
+                       __GI___read
+
+                   |
+                   --- 0xffffffffa04c005e
+                       0xffffffffa0553f90
+                       0xffffffffa05715f4
+                       0xffffffffa04c61ab
+                       vfs_read
+                       sys_read
+                       system_call_fastpath
+                       0x7fb873db55d0
+                       __GI___read
+
+                   |
+                   --- 0xffffffffa04aa676
+                       0xffffffffa04c01d0
+                       0xffffffffa0553f90
+                       0xffffffffa05715f4
+                       0xffffffffa04c61ab
+                       vfs_read
+                       sys_read
+                       system_call_fastpath
+                       0x7fb873db55d0
+                       __GI___read
+
+                   |
+                   --- 0xffffffffa04c5faa
+                       vfs_read
+                       sys_read
+                       system_call_fastpath
+                       0x7fb873db55d0
+                       __GI___read
+
+                   |
+                   --- 0xffffffffa04a0579
+                       0xffffffffa051f536
+                       0xffffffffa053ac4a
+                       0xffffffffa051f34a
+                       0xffffffffa0560b17
+                       0xffffffffa04aeb14
+                       0xffffffffa04c602f
+                       vfs_read
+                       sys_read
+                       system_call_fastpath
+                       0x7fb873db55d0
+                       __GI___read
+
+                   |
+                   --- 0xffffffffa04bfee7
+                       0xffffffffa04c021c
+                       0xffffffffa0554e96
+                       0xffffffffa056facb
+                       0xffffffffa04c61ab
+                       vfs_read
+                       sys_read
+                       system_call_fastpath
+                       0x7fb873db55d0
+                       __GI___read
+
+     9.55%         19         postgres  [mmfs26]           [k] 0x2424f         
+                   |
+                   --- 0xffffffffa05e1d4d
+                       __GI___read
+
+                   |
+                   --- 0xffffffffa053424f
+                       0xffffffffa0551537
+                      |          
+                      |--52.76%-- 0xffffffffa0553de1
+                      |          0xffffffffa05715f4
+                      |          0xffffffffa04c61ab
+                      |          vfs_read
+                      |          sys_read
+                      |          system_call_fastpath
+                      |          0x7fb873db55d0
+                      |          __GI___read
+                      |          
+                       --47.24%-- 0xffffffffa0554cba
+                                 0xffffffffa056facb
+                                 0xffffffffa04c61ab
+                                 vfs_read
+                                 sys_read
+                                 system_call_fastpath
+                                 0x7fb873db55d0
+                                 __GI___read
+
+                   |
+                   --- 0xffffffffa0537287
+                       0xffffffffa05d2fb5
+                       0xffffffffa05d30c2
+                       0xffffffffa05d3c79
+                       0xffffffffa056bddb
+                       0xffffffffa04ac333
+                       0xffffffffa04afb35
+                       sys_lseek
+                       system_call_fastpath
+                       0x7fb873dc30d0
+                       __lseek64
+
+                   |
+                   --- 0xffffffffa0551743
+                       0xffffffffa0553de1
+                       0xffffffffa05715f4
+                       0xffffffffa04c61ab
+                       vfs_read
+                       sys_read
+                       system_call_fastpath
+                       0x7fb873db55d0
+                       __GI___read
+
+                   |
+                   --- 0xffffffffa053ac75
+                       0xffffffffa051f34a
+                       0xffffffffa0560b17
+                       0xffffffffa04aeb14
+                       0xffffffffa04c602f
+                       vfs_read
+                       sys_read
+                       system_call_fastpath
+                       0x7fb873db55d0
+                       __GI___read
+
+                   |
+                   --- 0xffffffffa0513864
+                       0xffffffffa0514a55
+                       0xffffffffa05701ef
+                       0xffffffffa04c61ab
+                       vfs_read
+                       sys_read
+                       system_call_fastpath
+                       0x7fb873db55d0
+                       __GI___read
+
+                   |
+                   --- 0xffffffffa056f40d
+                       0xffffffffa04c61ab
+                       vfs_read
+                       sys_read
+                       system_call_fastpath
+                       0x7fb873db55d0
+                       __GI___read
+
+                   |
+                   --- 0xffffffffa054ba60
+                       0xffffffffa04aea2b
+                       0xffffffffa04c602f
+                       vfs_read
+                       sys_read
+                       system_call_fastpath
+                       0x7fb873db55d0
+                       __GI___read
+
+                   |
+                   --- 0xffffffffa053b0bd
+                       0xffffffffa0541341
+                       0xffffffffa0570c42
+                       0xffffffffa04c61ab
+                       vfs_read
+                       sys_read
+                       system_call_fastpath
+                       0x7fb873db55d0
+                       __GI___read
+
+                   |
+                   --- 0xffffffffa0534220
+                       0xffffffffa0551537
+                       0xffffffffa0553de1
+                       0xffffffffa05715f4
+                       0xffffffffa04c61ab
+                       vfs_read
+                       sys_read
+                       system_call_fastpath
+                       0x7fb873db55d0
+                       __GI___read
+
+                   |
+                   --- 0xffffffffa0551df3
+                       0xffffffffa04c006c
+                       0xffffffffa0553f90
+                       0xffffffffa05715f4
+                       0xffffffffa04c61ab
+                       vfs_read
+                       sys_read
+                       system_call_fastpath
+                       0x7fb873db55d0
+                       __GI___read
+
+                   |
+                   --- 0xffffffffa05470d2
+                       0xffffffffa05540de
+                       0xffffffffa05715f4
+                       0xffffffffa04c61ab
+                       vfs_read
+                       sys_read
+                       system_call_fastpath
+                       0x7fb873db55d0
+                       __GI___read
+
+                   |
+                   --- 0xffffffffa0553b48
+                       0xffffffffa05715f4
+                       0xffffffffa04c61ab
+                       vfs_read
+                       sys_read
+                       system_call_fastpath
+                       0x7fb873db55d0
+                       __GI___read
+
+                   |
+                   --- 0xffffffffa053b5cb
+                       0xffff880163423db0
+                       __GI___read
+
+     6.99%         14         postgres  [kernel.kallsyms]  [k] copy_user_generic_string
+                   |
+                   --- copy_user_generic_string
+                       0xffffffffa04bfedc
+                       0xffffffffa04c021c
+                      |          
+                      |--92.87%-- 0xffffffffa0553f90
+                      |          0xffffffffa05715f4
+                      |          0xffffffffa04c61ab
+                      |          vfs_read
+                      |          sys_read
+                      |          system_call_fastpath
+                      |          0x7fb873db55d0
+                      |          __GI___read
+                      |          
+                       --7.13%-- 0xffffffffa0554e96
+                                 0xffffffffa056facb
+                                 0xffffffffa04c61ab
+                                 vfs_read
+                                 sys_read
+                                 system_call_fastpath
+                                 0x7fb873db55d0
+                                 __GI___read
+
+     5.49%         11         postgres  postgres           [.] CHashBucketScan
+                   |
+                   --- CHashBucketScan
+                      |          
+                      |--63.65%-- CHashSearch
+                      |          BufTableLookup
+                      |          |          
+                      |          |--57.16%-- PrefetchBuffer
+                      |          |          BitmapHeapNext
+                      |          |          ExecScan
+                      |          |          ExecProcNode
+                      |          |          ExecNestLoop
+                      |          |          ExecProcNode
+                      |          |          ExecAgg
+                      |          |          ExecProcNode
+                      |          |          standard_ExecutorRun
+                      |          |          ExplainOnePlan
+                      |          |          ExplainOneQuery
+                      |          |          ExplainQuery
+                      |          |          standard_ProcessUtility
+                      |          |          PortalRunUtility
+                      |          |          FillPortalStore
+                      |          |          PortalRun
+                      |          |          exec_simple_query
+                      |          |          PostgresMain
+                      |          |          ServerLoop
+                      |          |          PostmasterMain
+                      |          |          main
+                      |          |          __libc_start_main
+                      |          |          
+                      |           --42.84%-- ReadBuffer_common
+                      |                     ReadBufferExtended
+                      |                     |          
+                      |                     |--66.65%-- BitmapHeapNext
+                      |                     |          ExecScan
+                      |                     |          ExecProcNode
+                      |                     |          ExecNestLoop
+                      |                     |          ExecProcNode
+                      |                     |          ExecAgg
+                      |                     |          ExecProcNode
+                      |                     |          standard_ExecutorRun
+                      |                     |          ExplainOnePlan
+                      |                     |          ExplainOneQuery
+                      |                     |          ExplainQuery
+                      |                     |          standard_ProcessUtility
+                      |                     |          PortalRunUtility
+                      |                     |          FillPortalStore
+                      |                     |          PortalRun
+                      |                     |          exec_simple_query
+                      |                     |          PostgresMain
+                      |                     |          ServerLoop
+                      |                     |          PostmasterMain
+                      |                     |          main
+                      |                     |          __libc_start_main
+                      |                     |          
+                      |                      --33.35%-- _bt_relandgetbuf
+                      |                                _bt_search
+                      |                                _bt_first
+                      |                                btgetbitmap
+                      |                                FunctionCall2Coll
+                      |                                index_getbitmap
+                      |                                MultiExecBitmapIndexScan
+                      |                                BitmapHeapNext
+                      |                                ExecScan
+                      |                                ExecProcNode
+                      |                                ExecNestLoop
+                      |                                ExecProcNode
+                      |                                ExecAgg
+                      |                                ExecProcNode
+                      |                                standard_ExecutorRun
+                      |                                ExplainOnePlan
+                      |                                ExplainOneQuery
+                      |                                ExplainQuery
+                      |                                standard_ProcessUtility
+                      |                                PortalRunUtility
+                      |                                FillPortalStore
+                      |                                PortalRun
+                      |                                exec_simple_query
+                      |                                PostgresMain
+                      |                                ServerLoop
+                      |                                PostmasterMain
+                      |                                main
+                      |                                __libc_start_main
+                      |          
+                       --36.35%-- CHashDelete
+                                 BufTableDelete
+                                 ReadBuffer_common
+                                 ReadBufferExtended
+                                 BitmapHeapNext
+                                 ExecScan
+                                 ExecProcNode
+                                 ExecNestLoop
+                                 ExecProcNode
+                                 ExecAgg
+                                 ExecProcNode
+                                 standard_ExecutorRun
+                                 ExplainOnePlan
+                                 ExplainOneQuery
+                                 ExplainQuery
+                                 standard_ProcessUtility
+                                 PortalRunUtility
+                                 FillPortalStore
+                                 PortalRun
+                                 exec_simple_query
+                                 PostgresMain
+                                 ServerLoop
+                                 PostmasterMain
+                                 main
+                                 __libc_start_main
+
+     4.50%          2         postgres  [kernel.kallsyms]  [k] page_remove_rmap
+                   |
+                   --- page_remove_rmap
+                       zap_pte_range
+                       unmap_page_range
+                       unmap_vmas
+                       exit_mmap
+                       mmput
+                       exit_mm
+                       do_exit
+                       do_group_exit
+                       sys_exit_group
+                       system_call_fastpath
+                       0x7fb873d90a38
+
+     4.49%          9         postgres  postgres           [.] heap_hot_search_buffer
+                   |
+                   --- heap_hot_search_buffer
+                       BitmapHeapNext
+                       ExecScan
+                       ExecProcNode
+                       ExecNestLoop
+                       ExecProcNode
+                       ExecAgg
+                       ExecProcNode
+                       standard_ExecutorRun
+                       ExplainOnePlan
+                       ExplainOneQuery
+                       ExplainQuery
+                       standard_ProcessUtility
+                       PortalRunUtility
+                       FillPortalStore
+                       PortalRun
+                       exec_simple_query
+                       PostgresMain
+                       ServerLoop
+                       PostmasterMain
+                       main
+                       __libc_start_main
+
+     4.43%          8         postgres  [kernel.kallsyms]  [k] zap_pte_range
+                   |
+                   --- zap_pte_range
+                       unmap_page_range
+                       unmap_vmas
+                       exit_mmap
+                       mmput
+                       exit_mm
+                       do_exit
+                       do_group_exit
+                       sys_exit_group
+                       system_call_fastpath
+                       0x7fb873d90a38
+
+     3.58%          3         postgres  [kernel.kallsyms]  [k] mem_cgroup_update_page_stat
+                   |
+                   --- mem_cgroup_update_page_stat
+                      |          
+                      |--58.18%-- zap_pte_range
+                      |          unmap_page_range
+                      |          unmap_vmas
+                      |          exit_mmap
+                      |          mmput
+                      |          exit_mm
+                      |          do_exit
+                      |          do_group_exit
+                      |          sys_exit_group
+                      |          system_call_fastpath
+                      |          0x7fb873d90a38
+                      |          
+                       --41.82%-- __do_fault
+                                 handle_pte_fault
+                                 do_page_fault
+                                 page_fault
+                                 |          
+                                 |--66.65%-- copy_user_generic_string
+                                 |          0xffffffffa04bfedc
+                                 |          0xffffffffa04c021c
+                                 |          0xffffffffa0553f90
+                                 |          0xffffffffa05715f4
+                                 |          0xffffffffa04c61ab
+                                 |          vfs_read
+                                 |          sys_read
+                                 |          system_call_fastpath
+                                 |          0x7fb873db55d0
+                                 |          __GI___read
+                                 |          
+                                  --33.35%-- 0x49f6c7
+                                            heap_page_prune_opt
+                                            BitmapHeapNext
+                                            ExecScan
+                                            ExecProcNode
+                                            ExecNestLoop
+                                            ExecProcNode
+                                            ExecAgg
+                                            ExecProcNode
+                                            standard_ExecutorRun
+                                            ExplainOnePlan
+                                            ExplainOneQuery
+                                            ExplainQuery
+                                            standard_ProcessUtility
+                                            PortalRunUtility
+                                            FillPortalStore
+                                            PortalRun
+                                            exec_simple_query
+                                            PostgresMain
+                                            ServerLoop
+                                            PostmasterMain
+                                            main
+                                            __libc_start_main
+
+     3.38%          6         postgres  [kernel.kallsyms]  [k] page_fault
+                   |
+                   --- page_fault
+                      |          
+                      |--40.99%-- 0x6777d7
+                      |          StrategyGetBuffer
+                      |          |          
+                      |           --100.00%-- ReadBuffer_common
+                      |                     ReadBufferExtended
+                      |                     _bt_relandgetbuf
+                      |                     _bt_search
+                      |                     _bt_first
+                      |                     btgettuple
+                      |                     FunctionCall2Coll
+                      |                     index_getnext_tid
+                      |                     index_getnext
+                      |                     systable_getnext
+                      |                     SearchCatCacheList
+                      |                     OpernameGetOprid
+                      |                     oper
+                      |                     make_op
+                      |                     transformExprRecurse
+                      |                     transformBoolExpr
+                      |                     transformExprRecurse
+                      |                     transformBoolExpr
+                      |                     transformExprRecurse
+                      |                     transformExpr
+                      |                     transformWhereClause
+                      |                     transformStmt
+                      |                     transformStmt
+                      |                     parse_analyze
+                      |                     pg_analyze_and_rewrite
+                      |                     exec_simple_query
+                      |                     PostgresMain
+                      |                     ServerLoop
+                      |                     PostmasterMain
+                      |                     main
+                      |                     __libc_start_main
+                      |          
+                      |--29.49%-- copy_user_generic_string
+                      |          0xffffffffa04bfedc
+                      |          0xffffffffa04c021c
+                      |          0xffffffffa0553f90
+                      |          0xffffffffa05715f4
+                      |          0xffffffffa04c61ab
+                      |          vfs_read
+                      |          sys_read
+                      |          system_call_fastpath
+                      |          0x7fb873db55d0
+                      |          __GI___read
+                      |          
+                      |--14.77%-- 0x49f6c7
+                      |          heap_page_prune_opt
+                      |          BitmapHeapNext
+                      |          ExecScan
+                      |          ExecProcNode
+                      |          ExecNestLoop
+                      |          ExecProcNode
+                      |          ExecAgg
+                      |          ExecProcNode
+                      |          standard_ExecutorRun
+                      |          ExplainOnePlan
+                      |          ExplainOneQuery
+                      |          ExplainQuery
+                      |          standard_ProcessUtility
+                      |          PortalRunUtility
+                      |          FillPortalStore
+                      |          PortalRun
+                      |          exec_simple_query
+                      |          PostgresMain
+                      |          ServerLoop
+                      |          PostmasterMain
+                      |          main
+                      |          __libc_start_main
+                      |          
+                       --14.75%-- 0x68ef14
+                                 LWLockAttemptLock
+                                 BitmapHeapNext
+                                 ExecScan
+                                 ExecProcNode
+                                 ExecNestLoop
+                                 ExecProcNode
+                                 ExecAgg
+                                 ExecProcNode
+                                 standard_ExecutorRun
+                                 ExplainOnePlan
+                                 ExplainOneQuery
+                                 ExplainQuery
+                                 standard_ProcessUtility
+                                 PortalRunUtility
+                                 FillPortalStore
+                                 PortalRun
+                                 exec_simple_query
+                                 PostgresMain
+                                 ServerLoop
+                                 PostmasterMain
+                                 main
+                                 __libc_start_main
+
+     3.00%          6         postgres  postgres           [.] PinBuffer
+                   |
+                   --- PinBuffer
+                       ReadBuffer_common
+                       ReadBufferExtended
+                       BitmapHeapNext
+                       ExecScan
+                       ExecProcNode
+                       ExecNestLoop
+                       ExecProcNode
+                       ExecAgg
+                       ExecProcNode
+                       standard_ExecutorRun
+                       ExplainOnePlan
+                       ExplainOneQuery
+                       ExplainQuery
+                       standard_ProcessUtility
+                       PortalRunUtility
+                       FillPortalStore
+                       PortalRun
+                       exec_simple_query
+                       PostgresMain
+                       ServerLoop
+                       PostmasterMain
+                       main
+                       __libc_start_main
+
+     2.84%          1          swapper  [kernel.kallsyms]  [k] reschedule_interrupt
+                    |
+                    --- reschedule_interrupt
+                        intel_idle
+                        cpuidle_idle_call
+                        cpu_idle
+
+     2.49%          5         postgres  postgres           [.] StrategyGetBuffer
+                   |
+                   --- StrategyGetBuffer
+                       ReadBuffer_common
+                       ReadBufferExtended
+                      |          
+                      |--79.98%-- BitmapHeapNext
+                      |          ExecScan
+                      |          ExecProcNode
+                      |          ExecNestLoop
+                      |          ExecProcNode
+                      |          ExecAgg
+                      |          ExecProcNode
+                      |          standard_ExecutorRun
+                      |          ExplainOnePlan
+                      |          ExplainOneQuery
+                      |          ExplainQuery
+                      |          standard_ProcessUtility
+                      |          PortalRunUtility
+                      |          FillPortalStore
+                      |          PortalRun
+                      |          exec_simple_query
+                      |          PostgresMain
+                      |          ServerLoop
+                      |          PostmasterMain
+                      |          main
+                      |          __libc_start_main
+                      |          
+                       --20.02%-- _bt_relandgetbuf
+                                 _bt_search
+                                 _bt_first
+                                 btgetbitmap
+                                 FunctionCall2Coll
+                                 index_getbitmap
+                                 MultiExecBitmapIndexScan
+                                 BitmapHeapNext
+                                 ExecScan
+                                 ExecProcNode
+                                 ExecNestLoop
+                                 ExecProcNode
+                                 ExecAgg
+                                 ExecProcNode
+                                 standard_ExecutorRun
+                                 ExplainOnePlan
+                                 ExplainOneQuery
+                                 ExplainQuery
+                                 standard_ProcessUtility
+                                 PortalRunUtility
+                                 FillPortalStore
+                                 PortalRun
+                                 exec_simple_query
+                                 PostgresMain
+                                 ServerLoop
+                                 PostmasterMain
+                                 main
+                                 __libc_start_main
+
+     1.62%          1             perf  [kernel.kallsyms]  [k] system_call
+                       |
+                       --- system_call
+                           __GI___libc_close
+
+     1.50%          3         postgres  [kernel.kallsyms]  [k] __do_fault
+                   |
+                   --- __do_fault
+                       handle_pte_fault
+                       do_page_fault
+                       page_fault
+                      |          
+                      |--66.65%-- copy_user_generic_string
+                      |          0xffffffffa04bfedc
+                      |          0xffffffffa04c021c
+                      |          0xffffffffa0553f90
+                      |          0xffffffffa05715f4
+                      |          0xffffffffa04c61ab
+                      |          vfs_read
+                      |          sys_read
+                      |          system_call_fastpath
+                      |          0x7fb873db55d0
+                      |          __GI___read
+                      |          
+                       --33.35%-- 0x49f6c7
+                                 heap_page_prune_opt
+                                 BitmapHeapNext
+                                 ExecScan
+                                 ExecProcNode
+                                 ExecNestLoop
+                                 ExecProcNode
+                                 ExecAgg
+                                 ExecProcNode
+                                 standard_ExecutorRun
+                                 ExplainOnePlan
+                                 ExplainOneQuery
+                                 ExplainQuery
+                                 standard_ProcessUtility
+                                 PortalRunUtility
+                                 FillPortalStore
+                                 PortalRun
+                                 exec_simple_query
+                                 PostgresMain
+                                 ServerLoop
+                                 PostmasterMain
+                                 main
+                                 __libc_start_main
+
+     1.19%          3         postgres  postgres           [.] SyncOneBuffer
+                   |
+                   --- SyncOneBuffer
+                       BgBufferSync
+                       BackgroundWriterMain
+                       AuxiliaryProcessMain
+                       StartChildProcess
+                       reaper
+                       __restore_rt
+                       PostmasterMain
+                       main
+                       __libc_start_main
+
+     1.17%          1      ksoftirqd/0  [kernel.kallsyms]  [k] __free_pages
+                |
+                --- __free_pages
+                    rb_free
+                    rcu_do_batch
+                    rcu_process_callbacks
+                    __do_softirq
+                    run_ksoftirqd
+                    kthread
+                    kernel_thread_helper
+
+     1.06%          2         postgres  [kernel.kallsyms]  [k] free_pages_and_swap_cache
+                   |
+                   --- free_pages_and_swap_cache
+                       tlb_flush_mmu
+                       zap_pte_range
+                       unmap_page_range
+                       unmap_vmas
+                       exit_mmap
+                       mmput
+                       exit_mm
+                       do_exit
+                       do_group_exit
+                       sys_exit_group
+                       system_call_fastpath
+                       0x7fb873d90a38
+
+     1.03%          1         postgres  [kernel.kallsyms]  [k] lookup_page_cgroup
+                   |
+                   --- lookup_page_cgroup
+                       mem_cgroup_update_page_stat
+                      |          
+                      |--51.61%-- zap_pte_range
+                      |          unmap_page_range
+                      |          unmap_vmas
+                      |          exit_mmap
+                      |          mmput
+                      |          exit_mm
+                      |          do_exit
+                      |          do_group_exit
+                      |          sys_exit_group
+                      |          system_call_fastpath
+                      |          0x7fb873d90a38
+                      |          
+                       --48.39%-- __do_fault
+                                 handle_pte_fault
+                                 do_page_fault
+                                 page_fault
+                                 0x49f6c7
+                                 heap_page_prune_opt
+                                 BitmapHeapNext
+                                 ExecScan
+                                 ExecProcNode
+                                 ExecNestLoop
+                                 ExecProcNode
+                                 ExecAgg
+                                 ExecProcNode
+                                 standard_ExecutorRun
+                                 ExplainOnePlan
+                                 ExplainOneQuery
+                                 ExplainQuery
+                                 standard_ProcessUtility
+                                 PortalRunUtility
+                                 FillPortalStore
+                                 PortalRun
+                                 exec_simple_query
+                                 PostgresMain
+                                 ServerLoop
+                                 PostmasterMain
+                                 main
+                                 __libc_start_main
+
+     1.00%          2         postgres  [kernel.kallsyms]  [k] fget_light
+                   |
+                   --- fget_light
+                       sys_read
+                       system_call_fastpath
+                       0x7fb873db55d0
+                       __GI___read
+
+     1.00%          2         postgres  postgres           [.] bcTruelen
+                   |
+                   --- bcTruelen
+                       bpchareq
+                       ExecEvalScalarArrayOp
+                       ExecQual
+                       ExecScan
+                       ExecProcNode
+                       ExecNestLoop
+                       ExecProcNode
+                       ExecAgg
+                       ExecProcNode
+                       standard_ExecutorRun
+                       ExplainOnePlan
+                       ExplainOneQuery
+                       ExplainQuery
+                       standard_ProcessUtility
+                       PortalRunUtility
+                       FillPortalStore
+                       PortalRun
+                       exec_simple_query
+                       PostgresMain
+                       ServerLoop
+                       PostmasterMain
+                       main
+                       __libc_start_main
+
+     1.00%          2         postgres  postgres           [.] CHashSearch
+                   |
+                   --- CHashSearch
+                      |          
+                      |--50.00%-- BufTableLookup
+                      |          PrefetchBuffer
+                      |          BitmapHeapNext
+                      |          ExecScan
+                      |          ExecProcNode
+                      |          ExecNestLoop
+                      |          ExecProcNode
+                      |          ExecAgg
+                      |          ExecProcNode
+                      |          standard_ExecutorRun
+                      |          ExplainOnePlan
+                      |          ExplainOneQuery
+                      |          ExplainQuery
+                      |          standard_ProcessUtility
+                      |          PortalRunUtility
+                      |          FillPortalStore
+                      |          PortalRun
+                      |          exec_simple_query
+                      |          PostgresMain
+                      |          ServerLoop
+                      |          PostmasterMain
+                      |          main
+                      |          __libc_start_main
+                      |          
+                       --50.00%-- PrefetchBuffer
+                                 BitmapHeapNext
+                                 ExecScan
+                                 ExecProcNode
+                                 ExecNestLoop
+                                 ExecProcNode
+                                 ExecAgg
+                                 ExecProcNode
+                                 standard_ExecutorRun
+                                 ExplainOnePlan
+                                 ExplainOneQuery
+                                 ExplainQuery
+                                 standard_ProcessUtility
+                                 PortalRunUtility
+                                 FillPortalStore
+                                 PortalRun
+                                 exec_simple_query
+                                 PostgresMain
+                                 ServerLoop
+                                 PostmasterMain
+                                 main
+                                 __libc_start_main
+
+     1.00%          2         postgres  postgres           [.] tbm_iterate
+                   |
+                   --- tbm_iterate
+                      |          
+                      |--50.01%-- BitmapHeapNext
+                      |          ExecScan
+                      |          ExecProcNode
+                      |          ExecNestLoop
+                      |          ExecProcNode
+                      |          ExecAgg
+                      |          ExecProcNode
+                      |          standard_ExecutorRun
+                      |          ExplainOnePlan
+                      |          ExplainOneQuery
+                      |          ExplainQuery
+                      |          standard_ProcessUtility
+                      |          PortalRunUtility
+                      |          FillPortalStore
+                      |          PortalRun
+                      |          exec_simple_query
+                      |          PostgresMain
+                      |          ServerLoop
+                      |          PostmasterMain
+                      |          main
+                      |          __libc_start_main
+                      |          
+                       --49.99%-- ExecScan
+                                 ExecProcNode
+                                 ExecNestLoop
+                                 ExecProcNode
+                                 ExecAgg
+                                 ExecProcNode
+                                 standard_ExecutorRun
+                                 ExplainOnePlan
+                                 ExplainOneQuery
+                                 ExplainQuery
+                                 standard_ProcessUtility
+                                 PortalRunUtility
+                                 FillPortalStore
+                                 PortalRun
+                                 exec_simple_query
+                                 PostgresMain
+                                 ServerLoop
+                                 PostmasterMain
+                                 main
+                                 __libc_start_main
+
+     1.00%          2         postgres  postgres           [.] HeapTupleSatisfiesMVCC
+                   |
+                   --- HeapTupleSatisfiesMVCC
+                      |          
+                      |--50.02%-- heap_hot_search_buffer
+                      |          BitmapHeapNext
+                      |          ExecScan
+                      |          ExecProcNode
+                      |          ExecNestLoop
+                      |          ExecProcNode
+                      |          ExecAgg
+                      |          ExecProcNode
+                      |          standard_ExecutorRun
+                      |          ExplainOnePlan
+                      |          ExplainOneQuery
+                      |          ExplainQuery
+                      |          standard_ProcessUtility
+                      |          PortalRunUtility
+                      |          FillPortalStore
+                      |          PortalRun
+                      |          exec_simple_query
+                      |          PostgresMain
+                      |          ServerLoop
+                      |          PostmasterMain
+                      |          main
+                      |          __libc_start_main
+                      |          
+                       --49.98%-- BitmapHeapNext
+                                 ExecScan
+                                 ExecProcNode
+                                 ExecNestLoop
+                                 ExecProcNode
+                                 ExecAgg
+                                 ExecProcNode
+                                 standard_ExecutorRun
+                                 ExplainOnePlan
+                                 ExplainOneQuery
+                                 ExplainQuery
+                                 standard_ProcessUtility
+                                 PortalRunUtility
+                                 FillPortalStore
+                                 PortalRun
+                                 exec_simple_query
+                                 PostgresMain
+                                 ServerLoop
+                                 PostmasterMain
+                                 main
+                                 __libc_start_main
+
+     1.00%          2         postgres  postgres           [.] slot_deform_tuple
+                   |
+                   --- slot_deform_tuple
+                       slot_getattr
+                       ExecEvalFuncArgs
+                       ExecEvalScalarArrayOp
+                       ExecQual
+                       ExecScan
+                       ExecProcNode
+                       ExecNestLoop
+                       ExecProcNode
+                       ExecAgg
+                       ExecProcNode
+                       standard_ExecutorRun
+                       ExplainOnePlan
+                       ExplainOneQuery
+                       ExplainQuery
+                       standard_ProcessUtility
+                       PortalRunUtility
+                       FillPortalStore
+                       PortalRun
+                       exec_simple_query
+                       PostgresMain
+                       ServerLoop
+                       PostmasterMain
+                       main
+                       __libc_start_main
+
+     1.00%          2         postgres  postgres           [.] LWLockAttemptLock
+                   |
+                   --- LWLockAttemptLock
+                       LWLockAcquire
+                       BitmapHeapNext
+                       ExecScan
+                       ExecProcNode
+                       ExecNestLoop
+                       ExecProcNode
+                       ExecAgg
+                       ExecProcNode
+                       standard_ExecutorRun
+                       ExplainOnePlan
+                       ExplainOneQuery
+                       ExplainQuery
+                       standard_ProcessUtility
+                       PortalRunUtility
+                       FillPortalStore
+                       PortalRun
+                       exec_simple_query
+                       PostgresMain
+                       ServerLoop
+                       PostmasterMain
+                       main
+                       __libc_start_main
+
+     1.00%          2         postgres  [kernel.kallsyms]  [k] radix_tree_lookup
+                   |
+                   --- radix_tree_lookup
+                       __do_page_cache_readahead
+                       force_page_cache_readahead
+                       sys_fadvise64_64
+                       system_call_fastpath
+                       0x7fb873db9e5d
+                       posix_fadvise
+
+     0.69%          1         postgres  postgres           [.] bpchareq
+                   |
+                   --- bpchareq
+                       FunctionCall2Coll
+                       _bt_checkkeys
+                       _bt_readpage
+                       _bt_steppage
+                       _bt_next
+                       btgetbitmap
+                       FunctionCall2Coll
+                       index_getbitmap
+                       MultiExecBitmapIndexScan
+                       MultiExecBitmapAnd
+                       MultiExecBitmapOr
+                       BitmapHeapNext
+                       ExecScan
+                       ExecProcNode
+                       ExecNestLoop
+                       ExecProcNode
+                       ExecAgg
+                       ExecProcNode
+                       standard_ExecutorRun
+                       ExplainOnePlan
+                       ExplainOneQuery
+                       ExplainQuery
+                       standard_ProcessUtility
+                       PortalRunUtility
+                       FillPortalStore
+                       PortalRun
+                       exec_simple_query
+                       PostgresMain
+                       ServerLoop
+                       PostmasterMain
+                       main
+                       __libc_start_main
+
+     0.62%          1         postgres  postgres           [.] hash_search_with_hash_value
+                   |
+                   --- hash_search_with_hash_value
+                       tbm_mark_page_lossy
+                       tbm_add_page
+                       bringetbitmap
+                       FunctionCall2Coll
+                       index_getbitmap
+                       MultiExecBitmapIndexScan
+                       MultiExecBitmapAnd
+                       MultiExecBitmapOr
+                       BitmapHeapNext
+                       ExecScan
+                       ExecProcNode
+                       ExecNestLoop
+                       ExecProcNode
+                       ExecAgg
+                       ExecProcNode
+                       standard_ExecutorRun
+                       ExplainOnePlan
+                       ExplainOneQuery
+                       ExplainQuery
+                       standard_ProcessUtility
+                       PortalRunUtility
+                       FillPortalStore
+                       PortalRun
+                       exec_simple_query
+                       PostgresMain
+                       ServerLoop
+                       PostmasterMain
+                       main
+                       __libc_start_main
+
+     0.58%          1         postgres  postgres           [.] tbm_comparator
+                   |
+                   --- tbm_comparator
+                       pg_qsort
+                       tbm_begin_iterate
+                       BitmapHeapNext
+                       ExecScan
+                       ExecProcNode
+                       ExecNestLoop
+                       ExecProcNode
+                       ExecAgg
+                       ExecProcNode
+                       standard_ExecutorRun
+                       ExplainOnePlan
+                       ExplainOneQuery
+                       ExplainQuery
+                       standard_ProcessUtility
+                       PortalRunUtility
+                       FillPortalStore
+                       PortalRun
+                       exec_simple_query
+                       PostgresMain
+                       ServerLoop
+                       PostmasterMain
+                       main
+                       __libc_start_main
+
+     0.50%          1         postgres  [kernel.kallsyms]  [k] release_pages
+                   |
+                   --- release_pages
+                       free_pages_and_swap_cache
+                       tlb_flush_mmu
+                       zap_pte_range
+                       unmap_page_range
+                       unmap_vmas
+                       exit_mmap
+                       mmput
+                       exit_mm
+                       do_exit
+                       do_group_exit
+                       sys_exit_group
+                       system_call_fastpath
+                       0x7fb873d90a38
+
+     0.50%          1         postgres  postgres           [.] ExecNestLoop
+                   |
+                   --- ExecNestLoop
+                       ExecProcNode
+                       ExecAgg
+                       ExecProcNode
+                       standard_ExecutorRun
+                       ExplainOnePlan
+                       ExplainOneQuery
+                       ExplainQuery
+                       standard_ProcessUtility
+                       PortalRunUtility
+                       FillPortalStore
+                       PortalRun
+                       exec_simple_query
+                       PostgresMain
+                       ServerLoop
+                       PostmasterMain
+                       main
+                       __libc_start_main
+
+     0.50%          1         postgres  postgres           [.] XidInMVCCSnapshot
+                   |
+                   --- XidInMVCCSnapshot
+                       HeapTupleSatisfiesMVCC
+                       heap_hot_search_buffer
+                       BitmapHeapNext
+                       ExecScan
+                       ExecProcNode
+                       ExecNestLoop
+                       ExecProcNode
+                       ExecAgg
+                       ExecProcNode
+                       standard_ExecutorRun
+                       ExplainOnePlan
+                       ExplainOneQuery
+                       ExplainQuery
+                       standard_ProcessUtility
+                       PortalRunUtility
+                       FillPortalStore
+                       PortalRun
+                       exec_simple_query
+                       PostgresMain
+                       ServerLoop
+                       PostmasterMain
+                       main
+                       __libc_start_main
+
+     0.50%          1         postgres  [ipt_REJECT]       [.] 0x5ef30183      
+                   |
+                   --- 0xffffffffff600183
+                       0x7fffe8fff8dd
+                       __gettimeofday_internal
+                       ExecProcNode
+                       ExecNestLoop
+                       ExecProcNode
+                       ExecAgg
+                       ExecProcNode
+                       standard_ExecutorRun
+                       ExplainOnePlan
+                       ExplainOneQuery
+                       ExplainQuery
+                       standard_ProcessUtility
+                       PortalRunUtility
+                       FillPortalStore
+                       PortalRun
+                       exec_simple_query
+                       PostgresMain
+                       ServerLoop
+                       PostmasterMain
+                       main
+                       __libc_start_main
+
+     0.50%          1         postgres  [kernel.kallsyms]  [k] apparmor_file_permission
+                   |
+                   --- apparmor_file_permission
+                       security_file_permission
+                       rw_verify_area
+                       vfs_read
+                       sys_read
+                       system_call_fastpath
+                       0x7fb873db55d0
+                       __GI___read
+
+     0.50%          1         postgres  postgres           [.] _bt_getroot
+                   |
+                   --- _bt_getroot
+                       _bt_search
+                       _bt_first
+                       btgetbitmap
+                       FunctionCall2Coll
+                       index_getbitmap
+                       MultiExecBitmapIndexScan
+                       BitmapHeapNext
+                       ExecScan
+                       ExecProcNode
+                       ExecNestLoop
+                       ExecProcNode
+                       ExecAgg
+                       ExecProcNode
+                       standard_ExecutorRun
+                       ExplainOnePlan
+                       ExplainOneQuery
+                       ExplainQuery
+                       standard_ProcessUtility
+                       PortalRunUtility
+                       FillPortalStore
+                       PortalRun
+                       exec_simple_query
+                       PostgresMain
+                       ServerLoop
+                       PostmasterMain
+                       main
+                       __libc_start_main
+
+     0.50%          1         postgres  [kernel.kallsyms]  [k] shmem_getpage_gfp
+                   |
+                   --- shmem_getpage_gfp
+                       shmem_fault
+                       __do_fault
+                       handle_pte_fault
+                       do_page_fault
+                       page_fault
+                       0x68ef14
+                       LWLockAttemptLock
+                       LWLockAcquire
+                       BitmapHeapNext
+                       ExecScan
+                       ExecProcNode
+                       ExecNestLoop
+                       ExecProcNode
+                       ExecAgg
+                       ExecProcNode
+                       standard_ExecutorRun
+                       ExplainOnePlan
+                       ExplainOneQuery
+                       ExplainQuery
+                       standard_ProcessUtility
+                       PortalRunUtility
+                       FillPortalStore
+                       PortalRun
+                       exec_simple_query
+                       PostgresMain
+                       ServerLoop
+                       PostmasterMain
+                       main
+                       __libc_start_main
+
+     0.50%          1         postgres  postgres           [.] GetCurrentTransactionNestLevel
+                   |
+                   --- GetCurrentTransactionNestLevel
+                       tbm_begin_iterate
+                       BitmapHeapNext
+                       ExecScan
+                       ExecProcNode
+                       ExecNestLoop
+                       ExecProcNode
+                       ExecAgg
+                       ExecProcNode
+                       standard_ExecutorRun
+                       ExplainOnePlan
+                       ExplainOneQuery
+                       ExplainQuery
+                       standard_ProcessUtility
+                       PortalRunUtility
+                       FillPortalStore
+                       PortalRun
+                       exec_simple_query
+                       PostgresMain
+                       ServerLoop
+                       PostmasterMain
+                       main
+                       __libc_start_main
+
+     0.50%          1         postgres  postgres           [.] BufferGetBlockNumber
+                   |
+                   --- BufferGetBlockNumber
+                       BitmapHeapNext
+                       ExecScan
+                       ExecProcNode
+                       ExecNestLoop
+                       ExecProcNode
+                       ExecAgg
+                       ExecProcNode
+                       standard_ExecutorRun
+                       ExplainOnePlan
+                       ExplainOneQuery
+                       ExplainQuery
+                       standard_ProcessUtility
+                       PortalRunUtility
+                       FillPortalStore
+                       PortalRun
+                       exec_simple_query
+                       PostgresMain
+                       ServerLoop
+                       PostmasterMain
+                       main
+                       __libc_start_main
+
+     0.50%          1         postgres  [kernel.kallsyms]  [k] unlock_page
+                   |
+                   --- unlock_page
+                       __do_fault
+                       handle_pte_fault
+                       do_page_fault
+                       page_fault
+                       copy_user_generic_string
+                       0xffffffffa04bfedc
+                       0xffffffffa04c021c
+                       0xffffffffa0553f90
+                       0xffffffffa05715f4
+                       0xffffffffa04c61ab
+                       vfs_read
+                       sys_read
+                       system_call_fastpath
+                       0x7fb873db55d0
+                       __GI___read
+
+     0.50%          1         postgres  postgres           [.] DataChecksumsEnabled
+                   |
+                   --- DataChecksumsEnabled
+                       ReadBuffer_common
+                       ReadBufferExtended
+                       BitmapHeapNext
+                       ExecScan
+                       ExecProcNode
+                       ExecNestLoop
+                       ExecProcNode
+                       ExecAgg
+                       ExecProcNode
+                       standard_ExecutorRun
+                       ExplainOnePlan
+                       ExplainOneQuery
+                       ExplainQuery
+                       standard_ProcessUtility
+                       PortalRunUtility
+                       FillPortalStore
+                       PortalRun
+                       exec_simple_query
+                       PostgresMain
+                       ServerLoop
+                       PostmasterMain
+                       main
+                       __libc_start_main
+
+     0.50%          1         postgres  postgres           [.] ExecQual
+                   |
+                   --- ExecQual
+                       ExecScan
+                       ExecProcNode
+                       ExecNestLoop
+                       ExecProcNode
+                       ExecAgg
+                       ExecProcNode
+                       standard_ExecutorRun
+                       ExplainOnePlan
+                       ExplainOneQuery
+                       ExplainQuery
+                       standard_ProcessUtility
+                       PortalRunUtility
+                       FillPortalStore
+                       PortalRun
+                       exec_simple_query
+                       PostgresMain
+                       ServerLoop
+                       PostmasterMain
+                       main
+                       __libc_start_main
+
+     0.50%          1         postgres  postgres           [.] ExecEvalScalarArrayOp
+                   |
+                   --- ExecEvalScalarArrayOp
+                       ExecScan
+                       ExecProcNode
+                       ExecNestLoop
+                       ExecProcNode
+                       ExecAgg
+                       ExecProcNode
+                       standard_ExecutorRun
+                       ExplainOnePlan
+                       ExplainOneQuery
+                       ExplainQuery
+                       standard_ProcessUtility
+                       PortalRunUtility
+                       FillPortalStore
+                       PortalRun
+                       exec_simple_query
+                       PostgresMain
+                       ServerLoop
+                       PostmasterMain
+                       main
+                       __libc_start_main
+
+     0.50%          1         postgres  postgres           [.] heap_page_prune_opt
+                   |
+                   --- heap_page_prune_opt
+                       BitmapHeapNext
+                       ExecScan
+                       ExecProcNode
+                       ExecNestLoop
+                       ExecProcNode
+                       ExecAgg
+                       ExecProcNode
+                       standard_ExecutorRun
+                       ExplainOnePlan
+                       ExplainOneQuery
+                       ExplainQuery
+                       standard_ProcessUtility
+                       PortalRunUtility
+                       FillPortalStore
+                       PortalRun
+                       exec_simple_query
+                       PostgresMain
+                       ServerLoop
+                       PostmasterMain
+                       main
+                       __libc_start_main
+
+     0.50%          1         postgres  postgres           [.] pg_qsort
+                   |
+                   --- pg_qsort
+                       pg_qsort
+                       tbm_begin_iterate
+                       BitmapHeapNext
+                       ExecScan
+                       ExecProcNode
+                       ExecNestLoop
+                       ExecProcNode
+                       ExecAgg
+                       ExecProcNode
+                       standard_ExecutorRun
+                       ExplainOnePlan
+                       ExplainOneQuery
+                       ExplainQuery
+                       standard_ProcessUtility
+                       PortalRunUtility
+                       FillPortalStore
+                       PortalRun
+                       exec_simple_query
+                       PostgresMain
+                       ServerLoop
+                       PostmasterMain
+                       main
+                       __libc_start_main
+
+     0.50%          1         postgres  libc-2.11.3.so     [.] __GI___read
+                   |
+                   --- __GI___read
+                       mdread
+                       ReadBuffer_common
+                       ReadBufferExtended
+                       BitmapHeapNext
+                       ExecScan
+                       ExecProcNode
+                       ExecNestLoop
+                       ExecProcNode
+                       ExecAgg
+                       ExecProcNode
+                       standard_ExecutorRun
+                       ExplainOnePlan
+                       ExplainOneQuery
+                       ExplainQuery
+                       standard_ProcessUtility
+                       PortalRunUtility
+                       FillPortalStore
+                       PortalRun
+                       exec_simple_query
+                       PostgresMain
+                       ServerLoop
+                       PostmasterMain
+                       main
+                       __libc_start_main
+
+     0.50%          1         postgres  [kernel.kallsyms]  [k] _raw_spin_lock_irqsave
+                   |
+                   --- _raw_spin_lock_irqsave
+                       up
+                       0xffffffffa053ac7c
+                       0xffffffffa051f34a
+                       0xffffffffa0560b17
+                       0xffffffffa04aeb14
+                       0xffffffffa04c602f
+                       vfs_read
+                       sys_read
+                       system_call_fastpath
+                       0x7fb873db55d0
+                       __GI___read
+
+     0.50%          1         postgres  [kernel.kallsyms]  [k] radix_tree_lookup_slot
+                   |
+                   --- radix_tree_lookup_slot
+                       find_get_page
+                       find_lock_page
+                       shmem_getpage_gfp
+                       shmem_fault
+                       __do_fault
+                       handle_pte_fault
+                       do_page_fault
+                       page_fault
+                       copy_user_generic_string
+                       0xffffffffa04bfedc
+                       0xffffffffa04c021c
+                       0xffffffffa0553f90
+                       0xffffffffa05715f4
+                       0xffffffffa04c61ab
+                       vfs_read
+                       sys_read
+                       system_call_fastpath
+                       0x7fb873db55d0
+                       __GI___read
+
+     0.50%          1         postgres  postgres           [.] _bt_fix_scankey_strategy
+                   |
+                   --- _bt_fix_scankey_strategy
+                       _bt_preprocess_keys
+                       _bt_first
+                       btgetbitmap
+                       FunctionCall2Coll
+                       index_getbitmap
+                       MultiExecBitmapIndexScan
+                       BitmapHeapNext
+                       ExecScan
+                       ExecProcNode
+                       ExecNestLoop
+                       ExecProcNode
+                       ExecAgg
+                       ExecProcNode
+                       standard_ExecutorRun
+                       ExplainOnePlan
+                       ExplainOneQuery
+                       ExplainQuery
+                       standard_ProcessUtility
+                       PortalRunUtility
+                       FillPortalStore
+                       PortalRun
+                       exec_simple_query
+                       PostgresMain
+                       ServerLoop
+                       PostmasterMain
+                       main
+                       __libc_start_main
+
+     0.50%          1         postgres  [kernel.kallsyms]  [k] do_page_fault
+                   |
+                   --- do_page_fault
+                       page_fault
+                       copy_user_generic_string
+                       0xffffffffa04bfedc
+                       0xffffffffa04c021c
+                       0xffffffffa0553f90
+                       0xffffffffa05715f4
+                       0xffffffffa04c61ab
+                       vfs_read
+                       sys_read
+                       system_call_fastpath
+                       0x7fb873db55d0
+                       __GI___read
+
+     0.50%          1         postgres  postgres           [.] slot_getattr
+                   |
+                   --- slot_getattr
+                       ExecMakeFunctionResultNoSets
+                       ExecEvalAnd
+                       ExecEvalOr
+                       ExecQual
+                       ExecScan
+                       ExecProcNode
+                       ExecNestLoop
+                       ExecProcNode
+                       ExecAgg
+                       ExecProcNode
+                       standard_ExecutorRun
+                       ExplainOnePlan
+                       ExplainOneQuery
+                       ExplainQuery
+                       standard_ProcessUtility
+                       PortalRunUtility
+                       FillPortalStore
+                       PortalRun
+                       exec_simple_query
+                       PostgresMain
+                       ServerLoop
+                       PostmasterMain
+                       main
+                       __libc_start_main
+
+     0.50%          1         postgres  [kernel.kallsyms]  [k] ns_capable
+                   |
+                   --- ns_capable
+                       0xffffffffa04aeafb
+                       0xffffffffa04c602f
+                       vfs_read
+                       sys_read
+                       system_call_fastpath
+                       0x7fb873db55d0
+                       __GI___read
+
+     0.50%          1         postgres  postgres           [.] hash_any
+                   |
+                   --- hash_any
+                       CHashSearch
+                       BufTableLookup
+                       ReadBuffer_common
+                       ReadBufferExtended
+                       BitmapHeapNext
+                       ExecScan
+                       ExecProcNode
+                       ExecNestLoop
+                       ExecProcNode
+                       ExecAgg
+                       ExecProcNode
+                       standard_ExecutorRun
+                       ExplainOnePlan
+                       ExplainOneQuery
+                       ExplainQuery
+                       standard_ProcessUtility
+                       PortalRunUtility
+                       FillPortalStore
+                       PortalRun
+                       exec_simple_query
+                       PostgresMain
+                       ServerLoop
+                       PostmasterMain
+                       main
+                       __libc_start_main
+
+     0.50%          1         postgres  postgres           [.] ReleaseBuffer
+                   |
+                   --- ReleaseBuffer
+                       _bt_steppage
+                       _bt_next
+                       btgetbitmap
+                       FunctionCall2Coll
+                       index_getbitmap
+                       MultiExecBitmapIndexScan
+                       BitmapHeapNext
+                       ExecScan
+                       ExecProcNode
+                       ExecNestLoop
+                       ExecProcNode
+                       ExecAgg
+                       ExecProcNode
+                       standard_ExecutorRun
+                       ExplainOnePlan
+                       ExplainOneQuery
+                       ExplainQuery
+                       standard_ProcessUtility
+                       PortalRunUtility
+                       FillPortalStore
+                       PortalRun
+                       exec_simple_query
+                       PostgresMain
+                       ServerLoop
+                       PostmasterMain
+                       main
+                       __libc_start_main
+
+     0.50%          1         postgres  postgres           [.] mdprefetch
+                   |
+                   --- mdprefetch
+                       BitmapHeapNext
+                       ExecScan
+                       ExecProcNode
+                       ExecNestLoop
+                       ExecProcNode
+                       ExecAgg
+                       ExecProcNode
+                       standard_ExecutorRun
+                       ExplainOnePlan
+                       ExplainOneQuery
+                       ExplainQuery
+                       standard_ProcessUtility
+                       PortalRunUtility
+                       FillPortalStore
+                       PortalRun
+                       exec_simple_query
+                       PostgresMain
+                       ServerLoop
+                       PostmasterMain
+                       main
+                       __libc_start_main
+
+     0.50%          1         postgres  postgres           [.] ExecReScanBitmapIndexScan
+                   |
+                   --- ExecReScanBitmapIndexScan
+                       ExecReScan
+                       MultiExecProcNode
+                       BitmapHeapNext
+                       ExecScan
+                       ExecProcNode
+                       ExecNestLoop
+                       ExecProcNode
+                       ExecAgg
+                       ExecProcNode
+                       standard_ExecutorRun
+                       ExplainOnePlan
+                       ExplainOneQuery
+                       ExplainQuery
+                       standard_ProcessUtility
+                       PortalRunUtility
+                       FillPortalStore
+                       PortalRun
+                       exec_simple_query
+                       PostgresMain
+                       ServerLoop
+                       PostmasterMain
+                       main
+                       __libc_start_main
+
+     0.50%          1         postgres  postgres           [.] BitmapHeapNext
+                   |
+                   --- BitmapHeapNext
+                       ExecScan
+                       ExecProcNode
+                       ExecNestLoop
+                       ExecProcNode
+                       ExecAgg
+                       ExecProcNode
+                       standard_ExecutorRun
+                       ExplainOnePlan
+                       ExplainOneQuery
+                       ExplainQuery
+                       standard_ProcessUtility
+                       PortalRunUtility
+                       FillPortalStore
+                       PortalRun
+                       exec_simple_query
+                       PostgresMain
+                       ServerLoop
+                       PostmasterMain
+                       main
+                       __libc_start_main
+
+     0.50%          1         postgres  [kernel.kallsyms]  [k] find_get_page
+                   |
+                   --- find_get_page
+                       find_lock_page
+                       shmem_getpage_gfp
+                       shmem_fault
+                       __do_fault
+                       handle_pte_fault
+                       do_page_fault
+                       page_fault
+                       0x49d348
+                       heap_hot_search_buffer
+                       BitmapHeapNext
+                       ExecScan
+                       ExecProcNode
+                       ExecNestLoop
+                       ExecProcNode
+                       ExecAgg
+                       ExecProcNode
+                       standard_ExecutorRun
+                       ExplainOnePlan
+                       ExplainOneQuery
+                       ExplainQuery
+                       standard_ProcessUtility
+                       PortalRunUtility
+                       FillPortalStore
+                       PortalRun
+                       exec_simple_query
+                       PostgresMain
+                       ServerLoop
+                       PostmasterMain
+                       main
+                       __libc_start_main
+
+     0.50%          1         postgres  postgres           [.] _bt_binsrch
+                   |
+                   --- _bt_binsrch
+                       _bt_first
+                       btgetbitmap
+                       FunctionCall2Coll
+                       index_getbitmap
+                       MultiExecBitmapIndexScan
+                       BitmapHeapNext
+                       ExecScan
+                       ExecProcNode
+                       ExecNestLoop
+                       ExecProcNode
+                       ExecAgg
+                       ExecProcNode
+                       standard_ExecutorRun
+                       ExplainOnePlan
+                       ExplainOneQuery
+                       ExplainQuery
+                       standard_ProcessUtility
+                       PortalRunUtility
+                       FillPortalStore
+                       PortalRun
+                       exec_simple_query
+                       PostgresMain
+                       ServerLoop
+                       PostmasterMain
+                       main
+                       __libc_start_main
+
+     0.33%          6          swapper  [kernel.kallsyms]  [k] intel_idle
+                    |
+                    --- intel_idle
+                        cpuidle_idle_call
+                        cpu_idle
+
+     0.33%          1          swapper  [kernel.kallsyms]  [k] rb_next
+                    |
+                    --- rb_next
+                        timerqueue_del
+                        __remove_hrtimer
+                        __run_hrtimer
+                        hrtimer_interrupt
+                        smp_apic_timer_interrupt
+                        apic_timer_interrupt
+                        intel_idle
+                        cpuidle_idle_call
+                        cpu_idle
+
+     0.22%          1          swapper  [kernel.kallsyms]  [k] find_busiest_group
+                    |
+                    --- find_busiest_group
+                        load_balance
+                        rebalance_domains
+                        run_rebalance_domains
+                        __do_softirq
+                        call_softirq
+                        do_softirq
+                        irq_exit
+                        smp_apic_timer_interrupt
+                        apic_timer_interrupt
+                        intel_idle
+                        cpuidle_idle_call
+                        cpu_idle
+
+     0.18%          3          swapper  [kernel.kallsyms]  [k] __schedule
+                    |
+                    --- __schedule
+                        cpu_idle
+
+     0.16%          1          swapper  [kernel.kallsyms]  [k] smp_apic_timer_interrupt
+                    |
+                    --- smp_apic_timer_interrupt
+                        apic_timer_interrupt
+                        intel_idle
+                        cpuidle_idle_call
+                        cpu_idle
+
+     0.15%          1          swapper  [kernel.kallsyms]  [k] 0xffffffff812bd181
+                    |
+                    --- intel_idle
+                        cpuidle_idle_call
+                        cpu_idle
+
+     0.14%          1     kworker/12:1  [kernel.kallsyms]  [k] __cpufreq_driver_getavg
+               |
+               --- __cpufreq_driver_getavg
+                   dbs_check_cpu
+                   do_dbs_timer
+                   process_one_work
+                   worker_thread
+                   kthread
+                   kernel_thread_helper
+
+     0.11%          4            mmfsd  [unknown]          [.] 0x7ffb7c0e539b  
+                      |
+                      --- 0x5d4347
+
+                      |
+                      --- 0x7ffb7c0e539b
+
+                      |
+                      --- 0x5d4334
+
+     0.08%          4  fail2ban-server  [unknown]          [.] 0x7f4657a90a12  
+            |
+            --- 0x7f4657d5bed6
+                0x7f46581c9600
+
+            |
+            --- 0x7f4657a90a12
+                (nil)
+
+            |
+            --- 0x7f4657d80df9
+                0x602010
+                0x602010
+
+            |
+            --- 0x7f4657d6a4d0
+                0x7f4657ff0980
+
+     0.06%          1          haveged  [kernel.kallsyms]  [k] load_balance
+                    |
+                    --- load_balance
+                        idle_balance
+                        thread_return
+                        schedule_hrtimeout_range_clock
+                        poll_schedule_timeout
+                        do_select
+                        core_sys_select
+                        sys_select
+                        system_call_fastpath
+                        0x7fbf388b4373
+                        0x7fbf388b4373
+
+     0.01%          1          swapper  [kernel.kallsyms]  [k] try_to_wake_up
+                    |
+                    --- try_to_wake_up
+                        __queue_work
+                        call_timer_fn
+                        run_timer_softirq
+                        __do_softirq
+                        call_softirq
+                        do_softirq
+                        irq_exit
+                        smp_apic_timer_interrupt
+                        apic_timer_interrupt
+                        intel_idle
+                        cpuidle_idle_call
+                        cpu_idle
+                        start_kernel
+                        x86_64_start_kernel
+
+     0.01%          1  fail2ban-server  [kernel.kallsyms]  [k] _raw_spin_lock
+            |
+            --- _raw_spin_lock
+                futex_wake
+                do_futex
+                sys_futex
+                system_call_fastpath
+                0x7f4657a90cbd
+                0x7f4657a90cbd
+                (nil)
+
+     0.00%          1          swapper  [kernel.kallsyms]  [k] rcu_report_qs_rnp
+                    |
+                    --- rcu_report_qs_rnp
+                        force_qs_rnp
+                        force_quiescent_state
+                        __rcu_process_callbacks
+                        rcu_process_callbacks
+                        __do_softirq
+                        call_softirq
+                        do_softirq
+                        irq_exit
+                        smp_apic_timer_interrupt
+                        apic_timer_interrupt
+                        intel_idle
+                        cpuidle_idle_call
+                        cpu_idle
+
+     0.00%          1      kworker/2:1  [igb]              [k] igb_update_stats
+                |
+                --- igb_update_stats
+                    igb_watchdog_task
+                    process_one_work
+                    worker_thread
+                    kthread
+                    kernel_thread_helper
+
+     0.00%          1          swapper  [kernel.kallsyms]  [k] rcu_needs_cpu
+                    |
+                    --- rcu_needs_cpu
+                        tick_nohz_stop_sched_tick
+                        cpu_idle
+                        start_kernel
+                        x86_64_start_kernel
+
+     0.00%          1          swapper  [kernel.kallsyms]  [k] check_cpu_stall
+                    |
+                    --- check_cpu_stall
+                        __rcu_pending
+                        rcu_check_callbacks
+                        update_process_times
+                        tick_sched_timer
+                        __run_hrtimer
+                        hrtimer_interrupt
+                        smp_apic_timer_interrupt
+                        apic_timer_interrupt
+                        intel_idle
+                        cpuidle_idle_call
+                        cpu_idle
+
+     0.00%          1          swapper  [kernel.kallsyms]  [k] tick_nohz_stop_sched_tick
+                    |
+                    --- tick_nohz_stop_sched_tick
+                        irq_exit
+                        smp_apic_timer_interrupt
+                        apic_timer_interrupt
+                        intel_idle
+                        cpuidle_idle_call
+                        cpu_idle
+
+     0.00%          1          swapper  [kernel.kallsyms]  [k] idle_cpu
+                    |
+                    --- idle_cpu
+                        irq_enter
+                        smp_apic_timer_interrupt
+                        apic_timer_interrupt
+                        intel_idle
+                        cpuidle_idle_call
+                        cpu_idle
+
+     0.00%          1         postgres  [kernel.kallsyms]  [k] lock_sock_fast
+                   |
+                   --- lock_sock_fast
+                       skb_free_datagram_locked
+                       udp_recvmsg
+                       inet_recvmsg
+                       sock_recvmsg
+                       sys_recvfrom
+                       system_call_fastpath
+                       0x7fb873dc3eb5
+                       __libc_recv
+
+     0.00%          1         postgres  [kernel.kallsyms]  [k] system_call
+                   |
+                   --- system_call
+                       __libc_poll
+
+     0.00%          1          swapper  [kernel.kallsyms]  [k] save_args
+                    |
+                    --- save_args
+                        intel_idle
+                        cpuidle_idle_call
+                        cpu_idle
+
+     0.00%          1         postgres  postgres           [.] BgBufferSync
+                   |
+                   --- BgBufferSync
+                       BackgroundWriterMain
+                       AuxiliaryProcessMain
+                       StartChildProcess
+                       reaper
+                       __restore_rt
+                       PostmasterMain
+                       main
+                       __libc_start_main
+
+     0.00%          1          swapper  [kernel.kallsyms]  [k] scheduler_tick
+                    |
+                    --- scheduler_tick
+                        update_process_times
+                        tick_sched_timer
+                        __run_hrtimer
+                        hrtimer_interrupt
+                        smp_apic_timer_interrupt
+                        apic_timer_interrupt
+                        intel_idle
+                        cpuidle_idle_call
+                        cpu_idle
+
+
+
+#
+# (For a higher level overview, try: perf report --sort comm,dso)
+#

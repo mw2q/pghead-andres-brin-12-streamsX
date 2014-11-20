@@ -1,0 +1,2789 @@
+
+Sorted summary for file 
+----------------------------------------------
+
+ Nothing higher than 0.5%
+ Percent |	Source code & Disassembly of 
+------------------------------------------------
+
+Sorted summary for file 
+----------------------------------------------
+
+ Nothing higher than 0.5%
+ Percent |	Source code & Disassembly of 
+------------------------------------------------
+
+Sorted summary for file 
+----------------------------------------------
+
+ Nothing higher than 0.5%
+ Percent |	Source code & Disassembly of 
+------------------------------------------------
+
+Sorted summary for file 
+----------------------------------------------
+
+ Nothing higher than 0.5%
+ Percent |	Source code & Disassembly of 
+------------------------------------------------
+
+Sorted summary for file 
+----------------------------------------------
+
+ Nothing higher than 0.5%
+ Percent |	Source code & Disassembly of 
+------------------------------------------------
+
+Sorted summary for file 
+----------------------------------------------
+
+ Nothing higher than 0.5%
+ Percent |	Source code & Disassembly of 
+------------------------------------------------
+
+Sorted summary for file 
+----------------------------------------------
+
+ Nothing higher than 0.5%
+ Percent |	Source code & Disassembly of 
+------------------------------------------------
+
+Sorted summary for file 
+----------------------------------------------
+
+ Nothing higher than 0.5%
+ Percent |	Source code & Disassembly of 
+------------------------------------------------
+
+Sorted summary for file 
+----------------------------------------------
+
+ Nothing higher than 0.5%
+ Percent |	Source code & Disassembly of 
+------------------------------------------------
+
+Sorted summary for file 
+----------------------------------------------
+
+ Nothing higher than 0.5%
+ Percent |	Source code & Disassembly of 
+------------------------------------------------
+
+Sorted summary for file /lib64/ld-2.11.3.so
+----------------------------------------------
+
+  100.00 ??:0
+ Percent |	Source code & Disassembly of /lib64/ld-2.11.3.so
+------------------------------------------------
+         :
+         :
+         :
+         :	Disassembly of section .text:
+         :
+         :	000000000000b070 <_dl_relocate_object>:
+    0.00 :	    b070:       55                      push   %rbp
+    0.00 :	    b071:       48 89 e5                mov    %rsp,%rbp
+    0.00 :	    b074:       41 57                   push   %r15
+    0.00 :	    b076:       41 56                   push   %r14
+    0.00 :	    b078:       49 89 fe                mov    %rdi,%r14
+    0.00 :	    b07b:       41 55                   push   %r13
+    0.00 :	    b07d:       41 54                   push   %r12
+    0.00 :	    b07f:       41 89 d4                mov    %edx,%r12d
+    0.00 :	    b082:       41 83 e4 01             and    $0x1,%r12d
+    0.00 :	    b086:       53                      push   %rbx
+    0.00 :	    b087:       48 81 ec b8 00 00 00    sub    $0xb8,%rsp
+    0.00 :	    b08e:       81 e2 00 00 00 08       and    $0x8000000,%edx
+    0.00 :	    b094:       48 89 b5 58 ff ff ff    mov    %rsi,-0xa8(%rbp)
+    0.00 :	    b09b:       89 8d 54 ff ff ff       mov    %ecx,-0xac(%rbp)
+    0.00 :	    b0a1:       75 15                   jne    b0b8 <_dl_relocate_object+0x48>
+    0.00 :	    b0a3:       31 c0                   xor    %eax,%eax
+    0.00 :	    b0a5:       48 83 3d 83 3c 21 00    cmpq   $0x0,0x213c83(%rip)        # 21ed30 <_rtld_global_ro+0x110>
+    0.00 :	    b0ac:       00 
+    0.00 :	    b0ad:       0f 95 c0                setne  %al
+    0.00 :	    b0b0:       09 c1                   or     %eax,%ecx
+    0.00 :	    b0b2:       89 8d 54 ff ff ff       mov    %ecx,-0xac(%rbp)
+    0.00 :	    b0b8:       41 f6 86 14 03 00 00    testb  $0x4,0x314(%r14)
+    0.00 :	    b0bf:       04 
+    0.00 :	    b0c0:       0f 85 1a 02 00 00       jne    b2e0 <_dl_relocate_object+0x270>
+    0.00 :	    b0c6:       44 8b 8d 54 ff ff ff    mov    -0xac(%rbp),%r9d
+    0.00 :	    b0cd:       45 85 c9                test   %r9d,%r9d
+    0.00 :	    b0d0:       0f 84 52 0a 00 00       je     bb28 <_dl_relocate_object+0xab8>
+    0.00 :	    b0d6:       f6 05 43 3b 21 00 20    testb  $0x20,0x213b43(%rip)        # 21ec20 <_rtld_global_ro>
+    0.00 :	    b0dd:       0f 85 cf 0f 00 00       jne    c0b2 <_dl_relocate_object+0x1042>
+    0.00 :	    b0e3:       49 83 be f0 00 00 00    cmpq   $0x0,0xf0(%r14)
+    0.00 :	    b0ea:       00 
+    0.00 :	    b0eb:       0f 85 ba 0e 00 00       jne    bfab <_dl_relocate_object+0xf3b>
+    0.00 :	    b0f1:       48 c7 85 68 ff ff ff    movq   $0x0,-0x98(%rbp)
+    0.00 :	    b0f8:       00 00 00 00 
+    0.00 :	    b0fc:       49 8b 46 68             mov    0x68(%r14),%rax
+    0.00 :	    b100:       45 85 e4                test   %r12d,%r12d
+    0.00 :	    b103:       0f 95 c3                setne  %bl
+    0.00 :	    b106:       49 83 be f8 00 00 00    cmpq   $0x0,0xf8(%r14)
+    0.00 :	    b10d:       00 
+    0.00 :	    b10e:       48 8b 40 08             mov    0x8(%rax),%rax
+    0.00 :	    b112:       48 89 85 60 ff ff ff    mov    %rax,-0xa0(%rbp)
+    0.00 :	    b119:       0f 85 19 07 00 00       jne    b838 <_dl_relocate_object+0x7c8>
+    0.00 :	    b11f:       84 db                   test   %bl,%bl
+    0.00 :	    b121:       49 8b 86 88 02 00 00    mov    0x288(%r14),%rax
+    0.00 :	    b128:       74 17                   je     b141 <_dl_relocate_object+0xd1>
+    0.00 :	    b12a:       48 85 c0                test   %rax,%rax
+    0.00 :	    b12d:       74 12                   je     b141 <_dl_relocate_object+0xd1>
+    0.00 :	    b12f:       49 8b 16                mov    (%r14),%rdx
+    0.00 :	    b132:       48 8b 40 08             mov    0x8(%rax),%rax
+    0.00 :	    b136:       48 8d 0d 53 aa 00 00    lea    0xaa53(%rip),%rcx        # 15b90 <_dl_tlsdesc_resolve_rela>
+    0.00 :	    b13d:       48 89 0c 02             mov    %rcx,(%rdx,%rax,1)
+    0.00 :	    b141:       49 8b 46 78             mov    0x78(%r14),%rax
+    0.00 :	    b145:       c7 45 a0 00 00 00 00    movl   $0x0,-0x60(%rbp)
+    0.00 :	    b14c:       48 c7 45 b0 00 00 00    movq   $0x0,-0x50(%rbp)
+    0.00 :	    b153:       00 
+    0.00 :	    b154:       48 c7 45 98 00 00 00    movq   $0x0,-0x68(%rbp)
+    0.00 :	    b15b:       00 
+    0.00 :	    b15c:       48 c7 45 90 00 00 00    movq   $0x0,-0x70(%rbp)
+    0.00 :	    b163:       00 
+    0.00 :	    b164:       48 85 c0                test   %rax,%rax
+    0.00 :	    b167:       74 17                   je     b180 <_dl_relocate_object+0x110>
+    0.00 :	    b169:       48 8b 40 08             mov    0x8(%rax),%rax
+    0.00 :	    b16d:       48 89 45 90             mov    %rax,-0x70(%rbp)
+    0.00 :	    b171:       49 8b 86 80 00 00 00    mov    0x80(%r14),%rax
+    0.00 :	    b178:       48 8b 40 08             mov    0x8(%rax),%rax
+    0.00 :	    b17c:       48 89 45 98             mov    %rax,-0x68(%rbp)
+    0.00 :	    b180:       49 83 be e0 00 00 00    cmpq   $0x0,0xe0(%r14)
+    0.00 :	    b187:       00 
+    0.00 :	    b188:       74 37                   je     b1c1 <_dl_relocate_object+0x151>
+    0.00 :	    b18a:       49 8b 86 f8 00 00 00    mov    0xf8(%r14),%rax
+    0.00 :	    b191:       84 db                   test   %bl,%bl
+    0.00 :	    b193:       48 8b 48 08             mov    0x8(%rax),%rcx
+    0.00 :	    b197:       75 14                   jne    b1ad <_dl_relocate_object+0x13d>
+    0.00 :	    b199:       48 8b 55 98             mov    -0x68(%rbp),%rdx
+    0.00 :	    b19d:       48 89 d0                mov    %rdx,%rax
+    0.00 :	    b1a0:       48 03 45 90             add    -0x70(%rbp),%rax
+    0.00 :	    b1a4:       48 39 c8                cmp    %rcx,%rax
+    0.00 :	    b1a7:       0f 84 b1 0a 00 00       je     bc5e <_dl_relocate_object+0xbee>
+    0.00 :	    b1ad:       49 8b 46 50             mov    0x50(%r14),%rax
+    0.00 :	    b1b1:       48 89 4d a8             mov    %rcx,-0x58(%rbp)
+    0.00 :	    b1b5:       48 8b 40 08             mov    0x8(%rax),%rax
+    0.00 :	    b1b9:       44 89 65 b8             mov    %r12d,-0x48(%rbp)
+    0.00 :	    b1bd:       48 89 45 b0             mov    %rax,-0x50(%rbp)
+    0.00 :	    b1c1:       48 8d 75 90             lea    -0x70(%rbp),%rsi
+    0.00 :	    b1c5:       48 8d 45 c8             lea    -0x38(%rbp),%rax
+    0.00 :	    b1c9:       48 89 b5 48 ff ff ff    mov    %rsi,-0xb8(%rbp)
+    0.00 :	    b1d0:       48 89 75 88             mov    %rsi,-0x78(%rbp)
+    0.00 :	    b1d4:       48 89 85 40 ff ff ff    mov    %rax,-0xc0(%rbp)
+    0.00 :	    b1db:       48 8b 55 88             mov    -0x78(%rbp),%rdx
+    0.00 :	    b1df:       4d 8b 1e                mov    (%r14),%r11
+    0.00 :	    b1e2:       48 8b 4a 08             mov    0x8(%rdx),%rcx
+    0.00 :	    b1e6:       48 8b 1a                mov    (%rdx),%rbx
+    0.00 :	    b1e9:       48 8d 34 0b             lea    (%rbx,%rcx,1),%rsi
+    0.00 :	    b1ed:       48 89 b5 78 ff ff ff    mov    %rsi,-0x88(%rbp)
+    0.00 :	    b1f4:       8b 7a 10                mov    0x10(%rdx),%edi
+    0.00 :	    b1f7:       85 ff                   test   %edi,%edi
+    0.00 :	    b1f9:       0f 84 31 01 00 00       je     b330 <_dl_relocate_object+0x2c0>
+    0.00 :	    b1ff:       48 39 f3                cmp    %rsi,%rbx
+    0.00 :	    b202:       72 52                   jb     b256 <_dl_relocate_object+0x1e6>
+    0.00 :	    b204:       e9 87 00 00 00          jmpq   b290 <_dl_relocate_object+0x220>
+    0.00 :	    b209:       0f 1f 80 00 00 00 00    nopl   0x0(%rax)
+    0.00 :	    b210:       48 83 f8 24             cmp    $0x24,%rax
+    0.00 :	    b214:       0f 1f 40 00             nopl   0x0(%rax)
+    0.00 :	    b218:       0f 84 d2 00 00 00       je     b2f0 <_dl_relocate_object+0x280>
+    0.00 :	    b21e:       48 83 f8 25             cmp    $0x25,%rax
+    0.00 :	    b222:       66 0f 1f 44 00 00       nopw   0x0(%rax,%rax,1)
+    0.00 :	    b228:       0f 85 53 0c 00 00       jne    be81 <_dl_relocate_object+0xe11>
+    0.00 :	    b22e:       48 8b 43 10             mov    0x10(%rbx),%rax
+    0.00 :	    b232:       49 03 06                add    (%r14),%rax
+    0.00 :	    b235:       4c 89 9d 30 ff ff ff    mov    %r11,-0xd0(%rbp)
+    0.00 :	    b23c:       ff d0                   callq  *%rax
+    0.00 :	    b23e:       49 89 04 24             mov    %rax,(%r12)
+    0.00 :	    b242:       4c 8b 9d 30 ff ff ff    mov    -0xd0(%rbp),%r11
+    0.00 :	    b249:       48 83 c3 18             add    $0x18,%rbx
+    0.00 :	    b24d:       48 39 9d 78 ff ff ff    cmp    %rbx,-0x88(%rbp)
+    0.00 :	    b254:       76 3a                   jbe    b290 <_dl_relocate_object+0x220>
+    0.00 :	    b256:       8b 43 08                mov    0x8(%rbx),%eax
+    0.00 :	    b259:       4d 89 dc                mov    %r11,%r12
+    0.00 :	    b25c:       4c 03 23                add    (%rbx),%r12
+    0.00 :	    b25f:       48 83 f8 07             cmp    $0x7,%rax
+    0.00 :	    b263:       75 ab                   jne    b210 <_dl_relocate_object+0x1a0>
+    0.00 :	    b265:       49 8b 96 e8 03 00 00    mov    0x3e8(%r14),%rdx
+    0.00 :	    b26c:       48 85 d2                test   %rdx,%rdx
+    0.00 :	    b26f:       0f 85 9b 00 00 00       jne    b310 <_dl_relocate_object+0x2a0>
+    0.00 :	    b275:       4d 01 1c 24             add    %r11,(%r12)
+    0.00 :	    b279:       48 83 c3 18             add    $0x18,%rbx
+    0.00 :	    b27d:       48 39 9d 78 ff ff ff    cmp    %rbx,-0x88(%rbp)
+    0.00 :	    b284:       77 d0                   ja     b256 <_dl_relocate_object+0x1e6>
+    0.00 :	    b286:       66 2e 0f 1f 84 00 00    nopw   %cs:0x0(%rax,%rax,1)
+    0.00 :	    b28d:       00 00 00 
+    0.00 :	    b290:       48 8b 85 48 ff ff ff    mov    -0xb8(%rbp),%rax
+    0.00 :	    b297:       48 83 45 88 18          addq   $0x18,-0x78(%rbp)
+    0.00 :	    b29c:       48 83 c0 30             add    $0x30,%rax
+    0.00 :	    b2a0:       48 39 45 88             cmp    %rax,-0x78(%rbp)
+    0.00 :	    b2a4:       0f 85 31 ff ff ff       jne    b1db <_dl_relocate_object+0x16b>
+    0.00 :	    b2aa:       8b 85 54 ff ff ff       mov    -0xac(%rbp),%eax
+    0.00 :	    b2b0:       85 c0                   test   %eax,%eax
+    0.00 :	    b2b2:       0f 85 84 0e 00 00       jne    c13c <_dl_relocate_object+0x10cc>
+    0.00 :	    b2b8:       41 80 8e 14 03 00 00    orb    $0x4,0x314(%r14)
+    0.00 :	    b2bf:       04 
+    0.00 :	    b2c0:       48 83 bd 68 ff ff ff    cmpq   $0x0,-0x98(%rbp)
+    0.00 :	    b2c7:       00 
+    0.00 :	    b2c8:       0f 85 37 0e 00 00       jne    c105 <_dl_relocate_object+0x1095>
+    0.00 :	    b2ce:       49 83 be 60 04 00 00    cmpq   $0x0,0x460(%r14)
+    0.00 :	    b2d5:       00 
+    0.00 :	    b2d6:       74 08                   je     b2e0 <_dl_relocate_object+0x270>
+    0.00 :	    b2d8:       4c 89 f7                mov    %r14,%rdi
+    0.00 :	    b2db:       e8 90 fb ff ff          callq  ae70 <_dl_protect_relro>
+    0.00 :	    b2e0:       48 8d 65 d8             lea    -0x28(%rbp),%rsp
+    0.00 :	    b2e4:       5b                      pop    %rbx
+    0.00 :	    b2e5:       41 5c                   pop    %r12
+    0.00 :	    b2e7:       41 5d                   pop    %r13
+    0.00 :	    b2e9:       41 5e                   pop    %r14
+    0.00 :	    b2eb:       41 5f                   pop    %r15
+    0.00 :	    b2ed:       c9                      leaveq 
+    0.00 :	    b2ee:       c3                      retq   
+    0.00 :	    b2ef:       90                      nop
+    0.00 :	    b2f0:       49 89 5c 24 08          mov    %rbx,0x8(%r12)
+    0.00 :	    b2f5:       49 8b 96 90 02 00 00    mov    0x290(%r14),%rdx
+    0.00 :	    b2fc:       49 8b 06                mov    (%r14),%rax
+    0.00 :	    b2ff:       48 03 42 08             add    0x8(%rdx),%rax
+    0.00 :	    b303:       49 89 04 24             mov    %rax,(%r12)
+    0.00 :	    b307:       e9 3d ff ff ff          jmpq   b249 <_dl_relocate_object+0x1d9>
+    0.00 :	    b30c:       0f 1f 40 00             nopl   0x0(%rax)
+    0.00 :	    b310:       4c 89 e0                mov    %r12,%rax
+    0.00 :	    b313:       49 2b 86 f0 03 00 00    sub    0x3f0(%r14),%rax
+    0.00 :	    b31a:       48 8d 04 42             lea    (%rdx,%rax,2),%rax
+    0.00 :	    b31e:       49 89 04 24             mov    %rax,(%r12)
+    0.00 :	    b322:       e9 22 ff ff ff          jmpq   b249 <_dl_relocate_object+0x1d9>
+    0.00 :	    b327:       66 0f 1f 84 00 00 00    nopw   0x0(%rax,%rax,1)
+    0.00 :	    b32e:       00 00 
+    0.00 :	    b330:       49 8b 46 70             mov    0x70(%r14),%rax
+    0.00 :	    b334:       49 8b 96 80 01 00 00    mov    0x180(%r14),%rdx
+    0.00 :	    b33b:       48 8b 40 08             mov    0x8(%rax),%rax
+    0.00 :	    b33f:       48 89 45 80             mov    %rax,-0x80(%rbp)
+    0.00 :	    b343:       31 c0                   xor    %eax,%eax
+    0.00 :	    b345:       48 85 d2                test   %rdx,%rdx
+    0.00 :	    b348:       74 2a                   je     b374 <_dl_relocate_object+0x304>
+    0.00 :	    b34a:       8b 72 08                mov    0x8(%rdx),%esi
+    0.00 :	    b34d:       48 89 c8                mov    %rcx,%rax
+    0.00 :	    b350:       48 ba ab aa aa aa aa    movabs $0xaaaaaaaaaaaaaaab,%rdx
+    0.00 :	    b357:       aa aa aa 
+    0.00 :	    b35a:       48 f7 e2                mul    %rdx
+    0.00 :	    b35d:       48 c1 ea 04             shr    $0x4,%rdx
+    0.00 :	    b361:       48 39 d6                cmp    %rdx,%rsi
+    0.00 :	    b364:       48 0f 46 d6             cmovbe %rsi,%rdx
+    0.00 :	    b368:       48 8d 14 52             lea    (%rdx,%rdx,2),%rdx
+    0.00 :	    b36c:       48 8d 04 d5 00 00 00    lea    0x0(,%rdx,8),%rax
+    0.00 :	    b373:       00 
+    0.00 :	    b374:       4c 8d 24 03             lea    (%rbx,%rax,1),%r12
+    0.00 :	    b378:       48 8d 05 51 46 21 00    lea    0x214651(%rip),%rax        # 21f9d0 <_rtld_global+0x970>
+    0.00 :	    b37f:       49 39 c6                cmp    %rax,%r14
+    0.00 :	    b382:       74 39                   je     b3bd <_dl_relocate_object+0x34d>
+    0.00 :	    b384:       4d 85 db                test   %r11,%r11
+    0.00 :	    b387:       0f 84 93 04 00 00       je     b820 <_dl_relocate_object+0x7b0>
+    0.00 :	    b38d:       4c 39 e3                cmp    %r12,%rbx
+    0.00 :	    b390:       73 2b                   jae    b3bd <_dl_relocate_object+0x34d>
+    0.00 :	    b392:       66 0f 1f 44 00 00       nopw   0x0(%rax,%rax,1)
+    0.00 :	    b398:       83 7b 08 08             cmpl   $0x8,0x8(%rbx)
+    0.00 :	    b39c:       48 8b 03                mov    (%rbx),%rax
+    0.00 :	    b39f:       90                      nop
+    0.00 :	    b3a0:       0f 85 ea 0a 00 00       jne    be90 <_dl_relocate_object+0xe20>
+    0.00 :	    b3a6:       4a 8d 14 18             lea    (%rax,%r11,1),%rdx
+    0.00 :	    b3aa:       4c 89 d8                mov    %r11,%rax
+    0.00 :	    b3ad:       48 03 43 10             add    0x10(%rbx),%rax
+    0.00 :	    b3b1:       48 83 c3 18             add    $0x18,%rbx
+    0.00 :	    b3b5:       49 39 dc                cmp    %rbx,%r12
+    0.00 :	    b3b8:       48 89 02                mov    %rax,(%rdx)
+    0.00 :	    b3bb:       77 db                   ja     b398 <_dl_relocate_object+0x328>
+    0.00 :	    b3bd:       49 8b 86 c8 01 00 00    mov    0x1c8(%r14),%rax
+    0.00 :	    b3c4:       48 85 c0                test   %rax,%rax
+    0.00 :	    b3c7:       0f 84 cf 01 00 00       je     b59c <_dl_relocate_object+0x52c>
+    0.00 :	    b3cd:       4c 39 a5 78 ff ff ff    cmp    %r12,-0x88(%rbp)
+    0.00 :	    b3d4:       48 8b 40 08             mov    0x8(%rax),%rax
+    0.00 :	    b3d8:       48 89 85 70 ff ff ff    mov    %rax,-0x90(%rbp)
+    0.00 :	    b3df:       0f 86 ab fe ff ff       jbe    b290 <_dl_relocate_object+0x220>
+    0.00 :	    b3e5:       0f 1f 00                nopl   (%rax)
+    0.00 :	    b3e8:       41 8b 44 24 0c          mov    0xc(%r12),%eax
+    0.00 :	    b3ed:       48 8b 95 70 ff ff ff    mov    -0x90(%rbp),%rdx
+    0.00 :	    b3f4:       4d 89 da                mov    %r11,%r10
+    0.00 :	    b3f7:       48 8b 4d 80             mov    -0x80(%rbp),%rcx
+    0.00 :	    b3fb:       4d 03 14 24             add    (%r12),%r10
+    0.00 :	    b3ff:       4d 8b 86 e0 02 00 00    mov    0x2e0(%r14),%r8
+    0.00 :	    b406:       0f b7 3c 42             movzwl (%rdx,%rax,2),%edi
+    0.00 :	    b40a:       48 8d 04 40             lea    (%rax,%rax,2),%rax
+    0.00 :	    b40e:       4c 8d 2c c1             lea    (%rcx,%rax,8),%r13
+    0.00 :	    b412:       4c 89 6d c8             mov    %r13,-0x38(%rbp)
+    0.00 :	    b416:       41 8b 5c 24 08          mov    0x8(%r12),%ebx
+    0.00 :	    b41b:       48 83 fb 08             cmp    $0x8,%rbx
+    0.00 :	    b41f:       0f 84 4b 03 00 00       je     b770 <_dl_relocate_object+0x700>
+    0.00 :	    b425:       48 85 db                test   %rbx,%rbx
+    0.00 :	    b428:       0f 84 2a 03 00 00       je     b758 <_dl_relocate_object+0x6e8>
+    0.00 :	    b42e:       41 0f b6 45 04          movzbl 0x4(%r13),%eax
+ ??:0
+  100.00 :	    b433:       4d 89 f7                mov    %r14,%r15
+    0.00 :	    b436:       4c 89 ea                mov    %r13,%rdx
+    0.00 :	    b439:       c0 e8 04                shr    $0x4,%al
+    0.00 :	    b43c:       84 c0                   test   %al,%al
+    0.00 :	    b43e:       0f 84 d5 00 00 00       je     b519 <_dl_relocate_object+0x4a9>
+    0.00 :	    b444:       4d 3b ae 00 04 00 00    cmp    0x400(%r14),%r13
+    0.00 :	    b44b:       0f 84 7f 06 00 00       je     bad0 <_dl_relocate_object+0xa60>
+    0.00 :	    b451:       48 83 fb 07             cmp    $0x7,%rbx
+    0.00 :	    b455:       40 0f 94 c6             sete   %sil
+    0.00 :	    b459:       48 83 fb 10             cmp    $0x10,%rbx
+    0.00 :	    b45d:       0f 94 c2                sete   %dl
+    0.00 :	    b460:       84 d2                   test   %dl,%dl
+    0.00 :	    b462:       75 09                   jne    b46d <_dl_relocate_object+0x3fd>
+    0.00 :	    b464:       40 84 f6                test   %sil,%sil
+    0.00 :	    b467:       0f 84 db 01 00 00       je     b648 <_dl_relocate_object+0x5d8>
+    0.00 :	    b46d:       b9 01 00 00 00          mov    $0x1,%ecx
+    0.00 :	    b472:       89 c8                   mov    %ecx,%eax
+    0.00 :	    b474:       83 c8 02                or     $0x2,%eax
+    0.00 :	    b477:       48 83 fb 05             cmp    $0x5,%rbx
+    0.00 :	    b47b:       0f 44 c8                cmove  %eax,%ecx
+    0.00 :	    b47e:       48 89 f8                mov    %rdi,%rax
+    0.00 :	    b481:       48 8b 55 c8             mov    -0x38(%rbp),%rdx
+    0.00 :	    b485:       41 89 8e 08 04 00 00    mov    %ecx,0x408(%r14)
+    0.00 :	    b48c:       25 ff 7f 00 00          and    $0x7fff,%eax
+    0.00 :	    b491:       48 8d 04 40             lea    (%rax,%rax,2),%rax
+    0.00 :	    b495:       49 89 96 00 04 00 00    mov    %rdx,0x400(%r14)
+    0.00 :	    b49c:       49 8d 04 c0             lea    (%r8,%rax,8),%rax
+    0.00 :	    b4a0:       48 85 c0                test   %rax,%rax
+    0.00 :	    b4a3:       74 0e                   je     b4b3 <_dl_relocate_object+0x443>
+    0.00 :	    b4a5:       8b 70 08                mov    0x8(%rax),%esi
+    0.00 :	    b4a8:       85 f6                   test   %esi,%esi
+    0.00 :	    b4aa:       be 00 00 00 00          mov    $0x0,%esi
+    0.00 :	    b4af:       48 0f 44 c6             cmove  %rsi,%rax
+    0.00 :	    b4b3:       8b 3a                   mov    (%rdx),%edi
+    0.00 :	    b4b5:       41 89 c9                mov    %ecx,%r9d
+    0.00 :	    b4b8:       48 8b 95 40 ff ff ff    mov    -0xc0(%rbp),%rdx
+    0.00 :	    b4bf:       48 03 bd 60 ff ff ff    add    -0xa0(%rbp),%rdi
+    0.00 :	    b4c6:       48 8b 8d 58 ff ff ff    mov    -0xa8(%rbp),%rcx
+    0.00 :	    b4cd:       49 89 c0                mov    %rax,%r8
+    0.00 :	    b4d0:       4c 89 f6                mov    %r14,%rsi
+    0.00 :	    b4d3:       4c 89 95 38 ff ff ff    mov    %r10,-0xc8(%rbp)
+    0.00 :	    b4da:       4c 89 9d 30 ff ff ff    mov    %r11,-0xd0(%rbp)
+    0.00 :	    b4e1:       48 c7 44 24 08 00 00    movq   $0x0,0x8(%rsp)
+    0.00 :	    b4e8:       00 00 
+    0.00 :	    b4ea:       c7 04 24 01 00 00 00    movl   $0x1,(%rsp)
+    0.00 :	    b4f1:       e8 7a e6 ff ff          callq  9b70 <_dl_lookup_symbol_x>
+    0.00 :	    b4f6:       48 8b 55 c8             mov    -0x38(%rbp),%rdx
+    0.00 :	    b4fa:       4c 8b 9d 30 ff ff ff    mov    -0xd0(%rbp),%r11
+    0.00 :	    b501:       49 89 c7                mov    %rax,%r15
+    0.00 :	    b504:       4c 8b 95 38 ff ff ff    mov    -0xc8(%rbp),%r10
+    0.00 :	    b50b:       49 89 86 10 04 00 00    mov    %rax,0x410(%r14)
+    0.00 :	    b512:       49 89 96 18 04 00 00    mov    %rdx,0x418(%r14)
+    0.00 :	    b519:       31 c9                   xor    %ecx,%ecx
+    0.00 :	    b51b:       48 85 d2                test   %rdx,%rdx
+    0.00 :	    b51e:       74 17                   je     b537 <_dl_relocate_object+0x4c7>
+    0.00 :	    b520:       0f b6 42 04             movzbl 0x4(%rdx),%eax
+    0.00 :	    b524:       48 8b 4a 08             mov    0x8(%rdx),%rcx
+    0.00 :	    b528:       49 03 0f                add    (%r15),%rcx
+    0.00 :	    b52b:       83 e0 0f                and    $0xf,%eax
+    0.00 :	    b52e:       83 f8 0a                cmp    $0xa,%eax
+    0.00 :	    b531:       0f 84 99 02 00 00       je     b7d0 <_dl_relocate_object+0x760>
+    0.00 :	    b537:       48 83 fb 25             cmp    $0x25,%rbx
+    0.00 :	    b53b:       0f 86 57 02 00 00       jbe    b798 <_dl_relocate_object+0x728>
+    0.00 :	    b541:       31 d2                   xor    %edx,%edx
+    0.00 :	    b543:       89 de                   mov    %ebx,%esi
+    0.00 :	    b545:       4c 89 f7                mov    %r14,%rdi
+    0.00 :	    b548:       e8 43 f8 ff ff          callq  ad90 <_dl_reloc_bad_type>
+    0.00 :	    b54d:       48 83 7d c8 00          cmpq   $0x0,-0x38(%rbp)
+    0.00 :	    b552:       0f 84 57 09 00 00       je     beaf <_dl_relocate_object+0xe3f>
+    0.00 :	    b558:       49 8b 87 48 04 00 00    mov    0x448(%r15),%rax
+    0.00 :	    b55f:       48 83 f8 01             cmp    $0x1,%rax
+    0.00 :	    b563:       0f 84 d5 09 00 00       je     bf3e <_dl_relocate_object+0xece>
+    0.00 :	    b569:       48 85 c0                test   %rax,%rax
+    0.00 :	    b56c:       0f 84 a0 09 00 00       je     bf12 <_dl_relocate_object+0xea2>
+    0.00 :	    b572:       48 8b 55 c8             mov    -0x38(%rbp),%rdx
+    0.00 :	    b576:       49 8b 44 24 10          mov    0x10(%r12),%rax
+    0.00 :	    b57b:       48 8d 0d 4e a5 00 00    lea    0xa54e(%rip),%rcx        # 15ad0 <_dl_tlsdesc_return>
+    0.00 :	    b582:       48 03 42 08             add    0x8(%rdx),%rax
+    0.00 :	    b586:       49 2b 87 48 04 00 00    sub    0x448(%r15),%rax
+    0.00 :	    b58d:       49 89 42 08             mov    %rax,0x8(%r10)
+    0.00 :	    b591:       49 89 0a                mov    %rcx,(%r10)
+    0.00 :	    b594:       0f 1f 40 00             nopl   0x0(%rax)
+    0.00 :	    b598:       49 83 c4 18             add    $0x18,%r12
+    0.00 :	    b59c:       4c 39 a5 78 ff ff ff    cmp    %r12,-0x88(%rbp)
+    0.00 :	    b5a3:       0f 86 e7 fc ff ff       jbe    b290 <_dl_relocate_object+0x220>
+    0.00 :	    b5a9:       41 8b 44 24 0c          mov    0xc(%r12),%eax
+    0.00 :	    b5ae:       48 8b 55 80             mov    -0x80(%rbp),%rdx
+    0.00 :	    b5b2:       4d 89 da                mov    %r11,%r10
+    0.00 :	    b5b5:       4d 03 14 24             add    (%r12),%r10
+    0.00 :	    b5b9:       48 8d 04 40             lea    (%rax,%rax,2),%rax
+    0.00 :	    b5bd:       4c 8d 2c c2             lea    (%rdx,%rax,8),%r13
+    0.00 :	    b5c1:       4c 89 6d c8             mov    %r13,-0x38(%rbp)
+    0.00 :	    b5c5:       41 8b 5c 24 08          mov    0x8(%r12),%ebx
+    0.00 :	    b5ca:       48 83 fb 08             cmp    $0x8,%rbx
+    0.00 :	    b5ce:       0f 84 34 02 00 00       je     b808 <_dl_relocate_object+0x798>
+    0.00 :	    b5d4:       48 85 db                test   %rbx,%rbx
+    0.00 :	    b5d7:       74 bf                   je     b598 <_dl_relocate_object+0x528>
+    0.00 :	    b5d9:       41 0f b6 45 04          movzbl 0x4(%r13),%eax
+    0.00 :	    b5de:       4d 89 f7                mov    %r14,%r15
+    0.00 :	    b5e1:       4c 89 ea                mov    %r13,%rdx
+    0.00 :	    b5e4:       c0 e8 04                shr    $0x4,%al
+    0.00 :	    b5e7:       84 c0                   test   %al,%al
+    0.00 :	    b5e9:       0f 84 01 01 00 00       je     b6f0 <_dl_relocate_object+0x680>
+    0.00 :	    b5ef:       4d 3b ae 00 04 00 00    cmp    0x400(%r14),%r13
+    0.00 :	    b5f6:       74 7d                   je     b675 <_dl_relocate_object+0x605>
+    0.00 :	    b5f8:       48 83 fb 07             cmp    $0x7,%rbx
+    0.00 :	    b5fc:       40 0f 94 c6             sete   %sil
+    0.00 :	    b600:       48 83 fb 10             cmp    $0x10,%rbx
+    0.00 :	    b604:       0f 94 c2                sete   %dl
+    0.00 :	    b607:       84 d2                   test   %dl,%dl
+    0.00 :	    b609:       0f 85 81 05 00 00       jne    bb90 <_dl_relocate_object+0xb20>
+    0.00 :	    b60f:       40 84 f6                test   %sil,%sil
+    0.00 :	    b612:       0f 85 78 05 00 00       jne    bb90 <_dl_relocate_object+0xb20>
+    0.00 :	    b618:       48 83 fb 11             cmp    $0x11,%rbx
+    0.00 :	    b61c:       0f 84 6e 05 00 00       je     bb90 <_dl_relocate_object+0xb20>
+    0.00 :	    b622:       48 83 fb 12             cmp    $0x12,%rbx
+    0.00 :	    b626:       0f 84 64 05 00 00       je     bb90 <_dl_relocate_object+0xb20>
+    0.00 :	    b62c:       48 83 fb 24             cmp    $0x24,%rbx
+    0.00 :	    b630:       ba 01 00 00 00          mov    $0x1,%edx
+    0.00 :	    b635:       0f 84 66 05 00 00       je     bba1 <_dl_relocate_object+0xb31>
+    0.00 :	    b63b:       30 d2                   xor    %dl,%dl
+    0.00 :	    b63d:       0f 1f 00                nopl   (%rax)
+    0.00 :	    b640:       e9 50 05 00 00          jmpq   bb95 <_dl_relocate_object+0xb25>
+    0.00 :	    b645:       0f 1f 00                nopl   (%rax)
+    0.00 :	    b648:       48 83 fb 11             cmp    $0x11,%rbx
+    0.00 :	    b64c:       0f 84 1b fe ff ff       je     b46d <_dl_relocate_object+0x3fd>
+    0.00 :	    b652:       48 83 fb 12             cmp    $0x12,%rbx
+    0.00 :	    b656:       0f 84 11 fe ff ff       je     b46d <_dl_relocate_object+0x3fd>
+    0.00 :	    b65c:       48 83 fb 24             cmp    $0x24,%rbx
+    0.00 :	    b660:       b9 01 00 00 00          mov    $0x1,%ecx
+    0.00 :	    b665:       0f 84 13 fe ff ff       je     b47e <_dl_relocate_object+0x40e>
+    0.00 :	    b66b:       30 c9                   xor    %cl,%cl
+    0.00 :	    b66d:       0f 1f 00                nopl   (%rax)
+    0.00 :	    b670:       e9 fd fd ff ff          jmpq   b472 <_dl_relocate_object+0x402>
+    0.00 :	    b675:       48 83 fb 07             cmp    $0x7,%rbx
+    0.00 :	    b679:       40 0f 94 c6             sete   %sil
+    0.00 :	    b67d:       48 83 fb 10             cmp    $0x10,%rbx
+    0.00 :	    b681:       0f 94 c2                sete   %dl
+    0.00 :	    b684:       40 84 f6                test   %sil,%sil
+    0.00 :	    b687:       0f 85 7b 08 00 00       jne    bf08 <_dl_relocate_object+0xe98>
+    0.00 :	    b68d:       84 d2                   test   %dl,%dl
+    0.00 :	    b68f:       0f 85 73 08 00 00       jne    bf08 <_dl_relocate_object+0xe98>
+    0.00 :	    b695:       48 83 fb 11             cmp    $0x11,%rbx
+    0.00 :	    b699:       0f 84 69 08 00 00       je     bf08 <_dl_relocate_object+0xe98>
+    0.00 :	    b69f:       48 83 fb 12             cmp    $0x12,%rbx
+    0.00 :	    b6a3:       0f 84 5f 08 00 00       je     bf08 <_dl_relocate_object+0xe98>
+    0.00 :	    b6a9:       48 83 fb 24             cmp    $0x24,%rbx
+    0.00 :	    b6ad:       b9 01 00 00 00          mov    $0x1,%ecx
+    0.00 :	    b6b2:       74 0e                   je     b6c2 <_dl_relocate_object+0x652>
+    0.00 :	    b6b4:       30 c9                   xor    %cl,%cl
+    0.00 :	    b6b6:       89 c8                   mov    %ecx,%eax
+    0.00 :	    b6b8:       83 c8 02                or     $0x2,%eax
+    0.00 :	    b6bb:       48 83 fb 05             cmp    $0x5,%rbx
+    0.00 :	    b6bf:       0f 44 c8                cmove  %eax,%ecx
+    0.00 :	    b6c2:       41 39 8e 08 04 00 00    cmp    %ecx,0x408(%r14)
+    0.00 :	    b6c9:       0f 85 38 ff ff ff       jne    b607 <_dl_relocate_object+0x597>
+    0.00 :	    b6cf:       48 83 05 e1 42 21 00    addq   $0x1,0x2142e1(%rip)        # 21f9b8 <_rtld_global+0x958>
+    0.00 :	    b6d6:       01 
+    0.00 :	    b6d7:       49 8b 86 18 04 00 00    mov    0x418(%r14),%rax
+    0.00 :	    b6de:       4d 8b be 10 04 00 00    mov    0x410(%r14),%r15
+    0.00 :	    b6e5:       48 89 45 c8             mov    %rax,-0x38(%rbp)
+    0.00 :	    b6e9:       48 89 c2                mov    %rax,%rdx
+    0.00 :	    b6ec:       0f 1f 40 00             nopl   0x0(%rax)
+    0.00 :	    b6f0:       31 c9                   xor    %ecx,%ecx
+    0.00 :	    b6f2:       48 85 d2                test   %rdx,%rdx
+    0.00 :	    b6f5:       74 17                   je     b70e <_dl_relocate_object+0x69e>
+    0.00 :	    b6f7:       0f b6 42 04             movzbl 0x4(%rdx),%eax
+    0.00 :	    b6fb:       48 8b 4a 08             mov    0x8(%rdx),%rcx
+    0.00 :	    b6ff:       49 03 0f                add    (%r15),%rcx
+    0.00 :	    b702:       83 e0 0f                and    $0xf,%eax
+    0.00 :	    b705:       83 f8 0a                cmp    $0xa,%eax
+    0.00 :	    b708:       0f 84 2f 04 00 00       je     bb3d <_dl_relocate_object+0xacd>
+    0.00 :	    b70e:       48 83 fb 25             cmp    $0x25,%rbx
+    0.00 :	    b712:       0f 87 29 fe ff ff       ja     b541 <_dl_relocate_object+0x4d1>
+    0.00 :	    b718:       48 8d 35 21 d3 00 00    lea    0xd321(%rip),%rsi        # 18a40 <expected2.12835+0x17>
+    0.00 :	    b71f:       48 63 04 9e             movslq (%rsi,%rbx,4),%rax
+    0.00 :	    b723:       48 01 f0                add    %rsi,%rax
+    0.00 :	    b726:       ff e0                   jmpq   *%rax
+    0.00 :	    b728:       48 83 7d c8 00          cmpq   $0x0,-0x38(%rbp)
+    0.00 :	    b72d:       74 29                   je     b758 <_dl_relocate_object+0x6e8>
+    0.00 :	    b72f:       49 83 bf 48 04 00 00    cmpq   $0x1,0x448(%r15)
+    0.00 :	    b736:       01 
+    0.00 :	    b737:       0f 86 a2 07 00 00       jbe    bedf <_dl_relocate_object+0xe6f>
+    0.00 :	    b73d:       48 8b 55 c8             mov    -0x38(%rbp),%rdx
+    0.00 :	    b741:       49 8b 44 24 10          mov    0x10(%r12),%rax
+    0.00 :	    b746:       48 03 42 08             add    0x8(%rdx),%rax
+    0.00 :	    b74a:       49 2b 87 48 04 00 00    sub    0x448(%r15),%rax
+    0.00 :	    b751:       49 89 02                mov    %rax,(%r10)
+    0.00 :	    b754:       0f 1f 40 00             nopl   0x0(%rax)
+    0.00 :	    b758:       49 83 c4 18             add    $0x18,%r12
+    0.00 :	    b75c:       4c 39 a5 78 ff ff ff    cmp    %r12,-0x88(%rbp)
+    0.00 :	    b763:       0f 87 7f fc ff ff       ja     b3e8 <_dl_relocate_object+0x378>
+    0.00 :	    b769:       e9 22 fb ff ff          jmpq   b290 <_dl_relocate_object+0x220>
+    0.00 :	    b76e:       66 90                   xchg   %ax,%ax
+    0.00 :	    b770:       49 8b 44 24 10          mov    0x10(%r12),%rax
+    0.00 :	    b775:       49 03 06                add    (%r14),%rax
+    0.00 :	    b778:       49 83 c4 18             add    $0x18,%r12
+    0.00 :	    b77c:       49 89 02                mov    %rax,(%r10)
+    0.00 :	    b77f:       4c 39 a5 78 ff ff ff    cmp    %r12,-0x88(%rbp)
+    0.00 :	    b786:       0f 87 5c fc ff ff       ja     b3e8 <_dl_relocate_object+0x378>
+    0.00 :	    b78c:       e9 ff fa ff ff          jmpq   b290 <_dl_relocate_object+0x220>
+    0.00 :	    b791:       0f 1f 80 00 00 00 00    nopl   0x0(%rax)
+    0.00 :	    b798:       48 8d 15 39 d3 00 00    lea    0xd339(%rip),%rdx        # 18ad8 <expected2.12835+0xaf>
+    0.00 :	    b79f:       48 63 04 9a             movslq (%rdx,%rbx,4),%rax
+    0.00 :	    b7a3:       48 01 d0                add    %rdx,%rax
+    0.00 :	    b7a6:       ff e0                   jmpq   *%rax
+    0.00 :	    b7a8:       0f 1f 84 00 00 00 00    nopl   0x0(%rax,%rax,1)
+    0.00 :	    b7af:       00 
+    0.00 :	    b7b0:       49 03 4c 24 10          add    0x10(%r12),%rcx
+    0.00 :	    b7b5:       49 83 c4 18             add    $0x18,%r12
+    0.00 :	    b7b9:       49 89 0a                mov    %rcx,(%r10)
+    0.00 :	    b7bc:       4c 39 a5 78 ff ff ff    cmp    %r12,-0x88(%rbp)
+    0.00 :	    b7c3:       0f 87 1f fc ff ff       ja     b3e8 <_dl_relocate_object+0x378>
+    0.00 :	    b7c9:       e9 c2 fa ff ff          jmpq   b290 <_dl_relocate_object+0x220>
+    0.00 :	    b7ce:       66 90                   xchg   %ax,%ax
+    0.00 :	    b7d0:       66 83 7a 06 00          cmpw   $0x0,0x6(%rdx)
+    0.00 :	    b7d5:       0f 84 5c fd ff ff       je     b537 <_dl_relocate_object+0x4c7>
+    0.00 :	    b7db:       4c 89 95 38 ff ff ff    mov    %r10,-0xc8(%rbp)
+    0.00 :	    b7e2:       4c 89 9d 30 ff ff ff    mov    %r11,-0xd0(%rbp)
+    0.00 :	    b7e9:       ff d1                   callq  *%rcx
+    0.00 :	    b7eb:       4c 8b 9d 30 ff ff ff    mov    -0xd0(%rbp),%r11
+    0.00 :	    b7f2:       48 89 c1                mov    %rax,%rcx
+    0.00 :	    b7f5:       4c 8b 95 38 ff ff ff    mov    -0xc8(%rbp),%r10
+    0.00 :	    b7fc:       e9 36 fd ff ff          jmpq   b537 <_dl_relocate_object+0x4c7>
+    0.00 :	    b801:       0f 1f 80 00 00 00 00    nopl   0x0(%rax)
+    0.00 :	    b808:       49 8b 44 24 10          mov    0x10(%r12),%rax
+    0.00 :	    b80d:       49 03 06                add    (%r14),%rax
+    0.00 :	    b810:       49 83 c4 18             add    $0x18,%r12
+    0.00 :	    b814:       49 89 02                mov    %rax,(%r10)
+    0.00 :	    b817:       e9 80 fd ff ff          jmpq   b59c <_dl_relocate_object+0x52c>
+    0.00 :	    b81c:       0f 1f 40 00             nopl   0x0(%rax)
+    0.00 :	    b820:       49 83 be 38 02 00 00    cmpq   $0x0,0x238(%r14)
+    0.00 :	    b827:       00 
+    0.00 :	    b828:       0f 85 8f fb ff ff       jne    b3bd <_dl_relocate_object+0x34d>
+    0.00 :	    b82e:       e9 5a fb ff ff          jmpq   b38d <_dl_relocate_object+0x31d>
+    0.00 :	    b833:       0f 1f 44 00 00          nopl   0x0(%rax,%rax,1)
+    0.00 :	    b838:       84 db                   test   %bl,%bl
+    0.00 :	    b83a:       0f 84 df f8 ff ff       je     b11f <_dl_relocate_object+0xaf>
+    0.00 :	    b840:       49 8b 46 58             mov    0x58(%r14),%rax
+    0.00 :	    b844:       48 8b 50 08             mov    0x8(%rax),%rdx
+    0.00 :	    b848:       48 8b 42 08             mov    0x8(%rdx),%rax
+    0.00 :	    b84c:       48 85 c0                test   %rax,%rax
+    0.00 :	    b84f:       74 15                   je     b866 <_dl_relocate_object+0x7f6>
+    0.00 :	    b851:       49 03 06                add    (%r14),%rax
+    0.00 :	    b854:       49 89 86 e8 03 00 00    mov    %rax,0x3e8(%r14)
+    0.00 :	    b85b:       48 8d 42 18             lea    0x18(%rdx),%rax
+    0.00 :	    b85f:       49 89 86 f0 03 00 00    mov    %rax,0x3f0(%r14)
+    0.00 :	    b866:       4c 89 72 08             mov    %r14,0x8(%rdx)
+    0.00 :	    b86a:       44 8b 85 54 ff ff ff    mov    -0xac(%rbp),%r8d
+    0.00 :	    b871:       45 85 c0                test   %r8d,%r8d
+    0.00 :	    b874:       0f 84 f4 02 00 00       je     bb6e <_dl_relocate_object+0xafe>
+    0.00 :	    b87a:       48 8d 0d 7f 84 00 00    lea    0x847f(%rip),%rcx        # 13d00 <_dl_runtime_profile>
+    0.00 :	    b881:       48 89 4a 10             mov    %rcx,0x10(%rdx)
+    0.00 :	    b885:       48 8b 3d 14 34 21 00    mov    0x213414(%rip),%rdi        # 21eca0 <_rtld_global_ro+0x80>
+    0.00 :	    b88c:       48 85 ff                test   %rdi,%rdi
+    0.00 :	    b88f:       0f 84 8a f8 ff ff       je     b11f <_dl_relocate_object+0xaf>
+    0.00 :	    b895:       4c 89 f6                mov    %r14,%rsi
+    0.00 :	    b898:       e8 e3 32 00 00          callq  eb80 <_dl_name_match_p>
+    0.00 :	    b89d:       85 c0                   test   %eax,%eax
+    0.00 :	    b89f:       0f 84 7a f8 ff ff       je     b11f <_dl_relocate_object+0xaf>
+    0.00 :	    b8a5:       4c 89 35 fc 40 21 00    mov    %r14,0x2140fc(%rip)        # 21f9a8 <_rtld_global+0x948>
+    0.00 :	    b8ac:       e9 6e f8 ff ff          jmpq   b11f <_dl_relocate_object+0xaf>
+    0.00 :	    b8b1:       49 8b 44 24 10          mov    0x10(%r12),%rax
+    0.00 :	    b8b6:       49 03 06                add    (%r14),%rax
+    0.00 :	    b8b9:       49 83 c4 18             add    $0x18,%r12
+    0.00 :	    b8bd:       4c 89 95 38 ff ff ff    mov    %r10,-0xc8(%rbp)
+    0.00 :	    b8c4:       4c 89 9d 30 ff ff ff    mov    %r11,-0xd0(%rbp)
+    0.00 :	    b8cb:       ff d0                   callq  *%rax
+    0.00 :	    b8cd:       4c 8b 95 38 ff ff ff    mov    -0xc8(%rbp),%r10
+    0.00 :	    b8d4:       49 89 02                mov    %rax,(%r10)
+    0.00 :	    b8d7:       4c 39 a5 78 ff ff ff    cmp    %r12,-0x88(%rbp)
+    0.00 :	    b8de:       4c 8b 9d 30 ff ff ff    mov    -0xd0(%rbp),%r11
+    0.00 :	    b8e5:       0f 87 fd fa ff ff       ja     b3e8 <_dl_relocate_object+0x378>
+    0.00 :	    b8eb:       e9 a0 f9 ff ff          jmpq   b290 <_dl_relocate_object+0x220>
+    0.00 :	    b8f0:       48 89 c8                mov    %rcx,%rax
+    0.00 :	    b8f3:       49 03 44 24 10          add    0x10(%r12),%rax
+    0.00 :	    b8f8:       ba ff ff ff ff          mov    $0xffffffff,%edx
+    0.00 :	    b8fd:       48 39 d0                cmp    %rdx,%rax
+    0.00 :	    b900:       41 89 02                mov    %eax,(%r10)
+    0.00 :	    b903:       0f 86 4f fe ff ff       jbe    b758 <_dl_relocate_object+0x6e8>
+    0.00 :	    b909:       48 8d 3d e8 01 01 00    lea    0x101e8(%rip),%rdi        # 1baf8 <__PRETTY_FUNCTION__.3644+0x1787>
+    0.00 :	    b910:       48 8b 05 f1 32 21 00    mov    0x2132f1(%rip),%rax        # 21ec08 <_dl_argv>
+    0.00 :	    b917:       49 8b 76 68             mov    0x68(%r14),%rsi
+    0.00 :	    b91b:       48 8d 0d 88 dc 00 00    lea    0xdc88(%rip),%rcx        # 195aa <intel_02_known+0x2ca>
+    0.00 :	    b922:       48 8b 10                mov    (%rax),%rdx
+    0.00 :	    b925:       48 85 d2                test   %rdx,%rdx
+    0.00 :	    b928:       48 0f 44 d1             cmove  %rcx,%rdx
+    0.00 :	    b92c:       41 8b 4d 00             mov    0x0(%r13),%ecx
+    0.00 :	    b930:       31 c0                   xor    %eax,%eax
+    0.00 :	    b932:       48 03 4e 08             add    0x8(%rsi),%rcx
+    0.00 :	    b936:       48 89 fe                mov    %rdi,%rsi
+    0.00 :	    b939:       bf 02 00 00 00          mov    $0x2,%edi
+    0.00 :	    b93e:       4c 89 9d 30 ff ff ff    mov    %r11,-0xd0(%rbp)
+    0.00 :	    b945:       49 83 c4 18             add    $0x18,%r12
+    0.00 :	    b949:       e8 b2 38 00 00          callq  f200 <_dl_dprintf>
+    0.00 :	    b94e:       4c 39 a5 78 ff ff ff    cmp    %r12,-0x88(%rbp)
+    0.00 :	    b955:       4c 8b 9d 30 ff ff ff    mov    -0xd0(%rbp),%r11
+    0.00 :	    b95c:       0f 87 86 fa ff ff       ja     b3e8 <_dl_relocate_object+0x378>
+    0.00 :	    b962:       e9 29 f9 ff ff          jmpq   b290 <_dl_relocate_object+0x220>
+    0.00 :	    b967:       66 0f 1f 84 00 00 00    nopw   0x0(%rax,%rax,1)
+    0.00 :	    b96e:       00 00 
+    0.00 :	    b970:       48 8b 45 c8             mov    -0x38(%rbp),%rax
+    0.00 :	    b974:       48 85 c0                test   %rax,%rax
+    0.00 :	    b977:       0f 84 db fd ff ff       je     b758 <_dl_relocate_object+0x6e8>
+    0.00 :	    b97d:       49 8b 55 10             mov    0x10(%r13),%rdx
+    0.00 :	    b981:       48 39 50 10             cmp    %rdx,0x10(%rax)
+    0.00 :	    b985:       48 89 ce                mov    %rcx,%rsi
+    0.00 :	    b988:       48 0f 46 50 10          cmovbe 0x10(%rax),%rdx
+    0.00 :	    b98d:       4c 89 d7                mov    %r10,%rdi
+    0.00 :	    b990:       4c 89 9d 30 ff ff ff    mov    %r11,-0xd0(%rbp)
+    0.00 :	    b997:       e8 54 b9 00 00          callq  172f0 <memcpy>
+    0.00 :	    b99c:       48 8b 45 c8             mov    -0x38(%rbp),%rax
+    0.00 :	    b9a0:       49 8b 75 10             mov    0x10(%r13),%rsi
+    0.00 :	    b9a4:       48 8d 3d cd 01 01 00    lea    0x101cd(%rip),%rdi        # 1bb78 <__PRETTY_FUNCTION__.3644+0x1807>
+    0.00 :	    b9ab:       4c 8b 9d 30 ff ff ff    mov    -0xd0(%rbp),%r11
+    0.00 :	    b9b2:       48 39 70 10             cmp    %rsi,0x10(%rax)
+    0.00 :	    b9b6:       0f 87 54 ff ff ff       ja     b910 <_dl_relocate_object+0x8a0>
+    0.00 :	    b9bc:       0f 83 96 fd ff ff       jae    b758 <_dl_relocate_object+0x6e8>
+    0.00 :	    b9c2:       8b 0d 8c 32 21 00       mov    0x21328c(%rip),%ecx        # 21ec54 <_rtld_global_ro+0x34>
+    0.00 :	    b9c8:       48 8d 3d a9 01 01 00    lea    0x101a9(%rip),%rdi        # 1bb78 <__PRETTY_FUNCTION__.3644+0x1807>
+    0.00 :	    b9cf:       85 c9                   test   %ecx,%ecx
+    0.00 :	    b9d1:       0f 85 39 ff ff ff       jne    b910 <_dl_relocate_object+0x8a0>
+    0.00 :	    b9d7:       e9 7c fd ff ff          jmpq   b758 <_dl_relocate_object+0x6e8>
+    0.00 :	    b9dc:       0f 1f 40 00             nopl   0x0(%rax)
+    0.00 :	    b9e0:       48 89 c8                mov    %rcx,%rax
+    0.00 :	    b9e3:       48 8d 3d 4e 01 01 00    lea    0x1014e(%rip),%rdi        # 1bb38 <__PRETTY_FUNCTION__.3644+0x17c7>
+    0.00 :	    b9ea:       4c 29 d0                sub    %r10,%rax
+    0.00 :	    b9ed:       49 03 44 24 10          add    0x10(%r12),%rax
+    0.00 :	    b9f2:       48 63 d0                movslq %eax,%rdx
+    0.00 :	    b9f5:       41 89 02                mov    %eax,(%r10)
+    0.00 :	    b9f8:       48 39 d0                cmp    %rdx,%rax
+    0.00 :	    b9fb:       0f 85 0f ff ff ff       jne    b910 <_dl_relocate_object+0x8a0>
+    0.00 :	    ba01:       e9 52 fd ff ff          jmpq   b758 <_dl_relocate_object+0x6e8>
+    0.00 :	    ba06:       48 83 7d c8 00          cmpq   $0x0,-0x38(%rbp)
+    0.00 :	    ba0b:       0f 84 b6 04 00 00       je     bec7 <_dl_relocate_object+0xe57>
+    0.00 :	    ba11:       49 8b 87 48 04 00 00    mov    0x448(%r15),%rax
+    0.00 :	    ba18:       48 83 f8 01             cmp    $0x1,%rax
+    0.00 :	    ba1c:       0f 84 79 02 00 00       je     bc9b <_dl_relocate_object+0xc2b>
+    0.00 :	    ba22:       48 85 c0                test   %rax,%rax
+    0.00 :	    ba25:       0f 84 44 02 00 00       je     bc6f <_dl_relocate_object+0xbff>
+    0.00 :	    ba2b:       48 8b 55 c8             mov    -0x38(%rbp),%rdx
+    0.00 :	    ba2f:       49 8b 44 24 10          mov    0x10(%r12),%rax
+    0.00 :	    ba34:       49 83 c4 18             add    $0x18,%r12
+    0.00 :	    ba38:       48 03 42 08             add    0x8(%rdx),%rax
+    0.00 :	    ba3c:       49 2b 87 48 04 00 00    sub    0x448(%r15),%rax
+    0.00 :	    ba43:       49 89 42 08             mov    %rax,0x8(%r10)
+    0.00 :	    ba47:       48 8d 05 82 a0 00 00    lea    0xa082(%rip),%rax        # 15ad0 <_dl_tlsdesc_return>
+    0.00 :	    ba4e:       49 89 02                mov    %rax,(%r10)
+    0.00 :	    ba51:       4c 39 a5 78 ff ff ff    cmp    %r12,-0x88(%rbp)
+    0.00 :	    ba58:       0f 87 8a f9 ff ff       ja     b3e8 <_dl_relocate_object+0x378>
+    0.00 :	    ba5e:       e9 2d f8 ff ff          jmpq   b290 <_dl_relocate_object+0x220>
+    0.00 :	    ba63:       0f 1f 44 00 00          nopl   0x0(%rax,%rax,1)
+    0.00 :	    ba68:       48 8b 55 c8             mov    -0x38(%rbp),%rdx
+    0.00 :	    ba6c:       48 85 d2                test   %rdx,%rdx
+    0.00 :	    ba6f:       0f 84 e3 fc ff ff       je     b758 <_dl_relocate_object+0x6e8>
+    0.00 :	    ba75:       49 8b 44 24 10          mov    0x10(%r12),%rax
+    0.00 :	    ba7a:       48 03 42 08             add    0x8(%rdx),%rax
+    0.00 :	    ba7e:       49 83 c4 18             add    $0x18,%r12
+    0.00 :	    ba82:       49 89 02                mov    %rax,(%r10)
+    0.00 :	    ba85:       4c 39 a5 78 ff ff ff    cmp    %r12,-0x88(%rbp)
+    0.00 :	    ba8c:       0f 87 56 f9 ff ff       ja     b3e8 <_dl_relocate_object+0x378>
+    0.00 :	    ba92:       e9 f9 f7 ff ff          jmpq   b290 <_dl_relocate_object+0x220>
+    0.00 :	    ba97:       66 0f 1f 84 00 00 00    nopw   0x0(%rax,%rax,1)
+    0.00 :	    ba9e:       00 00 
+    0.00 :	    baa0:       4d 85 ff                test   %r15,%r15
+    0.00 :	    baa3:       0f 84 af fc ff ff       je     b758 <_dl_relocate_object+0x6e8>
+    0.00 :	    baa9:       49 8b 87 50 04 00 00    mov    0x450(%r15),%rax
+    0.00 :	    bab0:       49 83 c4 18             add    $0x18,%r12
+    0.00 :	    bab4:       49 89 02                mov    %rax,(%r10)
+    0.00 :	    bab7:       4c 39 a5 78 ff ff ff    cmp    %r12,-0x88(%rbp)
+    0.00 :	    babe:       0f 87 24 f9 ff ff       ja     b3e8 <_dl_relocate_object+0x378>
+    0.00 :	    bac4:       e9 c7 f7 ff ff          jmpq   b290 <_dl_relocate_object+0x220>
+    0.00 :	    bac9:       0f 1f 80 00 00 00 00    nopl   0x0(%rax)
+    0.00 :	    bad0:       48 83 fb 07             cmp    $0x7,%rbx
+    0.00 :	    bad4:       40 0f 94 c6             sete   %sil
+    0.00 :	    bad8:       48 83 fb 10             cmp    $0x10,%rbx
+    0.00 :	    badc:       0f 94 c2                sete   %dl
+    0.00 :	    badf:       40 84 f6                test   %sil,%sil
+    0.00 :	    bae2:       0f 84 41 01 00 00       je     bc29 <_dl_relocate_object+0xbb9>
+    0.00 :	    bae8:       b9 01 00 00 00          mov    $0x1,%ecx
+    0.00 :	    baed:       89 c8                   mov    %ecx,%eax
+    0.00 :	    baef:       83 c8 02                or     $0x2,%eax
+    0.00 :	    baf2:       48 83 fb 05             cmp    $0x5,%rbx
+    0.00 :	    baf6:       0f 44 c8                cmove  %eax,%ecx
+    0.00 :	    baf9:       41 39 8e 08 04 00 00    cmp    %ecx,0x408(%r14)
+    0.00 :	    bb00:       0f 85 5a f9 ff ff       jne    b460 <_dl_relocate_object+0x3f0>
+    0.00 :	    bb06:       48 83 05 aa 3e 21 00    addq   $0x1,0x213eaa(%rip)        # 21f9b8 <_rtld_global+0x958>
+    0.00 :	    bb0d:       01 
+    0.00 :	    bb0e:       49 8b 86 18 04 00 00    mov    0x418(%r14),%rax
+    0.00 :	    bb15:       4d 8b be 10 04 00 00    mov    0x410(%r14),%r15
+    0.00 :	    bb1c:       48 89 45 c8             mov    %rax,-0x38(%rbp)
+    0.00 :	    bb20:       48 89 c2                mov    %rax,%rdx
+    0.00 :	    bb23:       e9 f1 f9 ff ff          jmpq   b519 <_dl_relocate_object+0x4a9>
+    0.00 :	    bb28:       49 83 be 00 01 00 00    cmpq   $0x0,0x100(%r14)
+    0.00 :	    bb2f:       00 
+    0.00 :	    bb30:       44 0f 45 a5 54 ff ff    cmovne -0xac(%rbp),%r12d
+    0.00 :	    bb37:       ff 
+    0.00 :	    bb38:       e9 99 f5 ff ff          jmpq   b0d6 <_dl_relocate_object+0x66>
+    0.00 :	    bb3d:       66 83 7a 06 00          cmpw   $0x0,0x6(%rdx)
+    0.00 :	    bb42:       0f 84 c6 fb ff ff       je     b70e <_dl_relocate_object+0x69e>
+    0.00 :	    bb48:       4c 89 95 38 ff ff ff    mov    %r10,-0xc8(%rbp)
+    0.00 :	    bb4f:       4c 89 9d 30 ff ff ff    mov    %r11,-0xd0(%rbp)
+    0.00 :	    bb56:       ff d1                   callq  *%rcx
+    0.00 :	    bb58:       4c 8b 9d 30 ff ff ff    mov    -0xd0(%rbp),%r11
+    0.00 :	    bb5f:       48 89 c1                mov    %rax,%rcx
+    0.00 :	    bb62:       4c 8b 95 38 ff ff ff    mov    -0xc8(%rbp),%r10
+    0.00 :	    bb69:       e9 a0 fb ff ff          jmpq   b70e <_dl_relocate_object+0x69e>
+    0.00 :	    bb6e:       48 8d 35 1b 81 00 00    lea    0x811b(%rip),%rsi        # 13c90 <_dl_runtime_resolve>
+    0.00 :	    bb75:       84 db                   test   %bl,%bl
+    0.00 :	    bb77:       48 89 72 10             mov    %rsi,0x10(%rdx)
+    0.00 :	    bb7b:       49 8b 86 88 02 00 00    mov    0x288(%r14),%rax
+    0.00 :	    bb82:       0f 84 b9 f5 ff ff       je     b141 <_dl_relocate_object+0xd1>
+    0.00 :	    bb88:       e9 9d f5 ff ff          jmpq   b12a <_dl_relocate_object+0xba>
+    0.00 :	    bb8d:       0f 1f 00                nopl   (%rax)
+    0.00 :	    bb90:       ba 01 00 00 00          mov    $0x1,%edx
+    0.00 :	    bb95:       89 d0                   mov    %edx,%eax
+    0.00 :	    bb97:       83 c8 02                or     $0x2,%eax
+    0.00 :	    bb9a:       48 83 fb 05             cmp    $0x5,%rbx
+    0.00 :	    bb9e:       0f 44 d0                cmove  %eax,%edx
+    0.00 :	    bba1:       48 8b 45 c8             mov    -0x38(%rbp),%rax
+    0.00 :	    bba5:       41 89 96 08 04 00 00    mov    %edx,0x408(%r14)
+    0.00 :	    bbac:       41 89 d1                mov    %edx,%r9d
+    0.00 :	    bbaf:       48 8b 8d 58 ff ff ff    mov    -0xa8(%rbp),%rcx
+    0.00 :	    bbb6:       48 8b 95 40 ff ff ff    mov    -0xc0(%rbp),%rdx
+    0.00 :	    bbbd:       45 31 c0                xor    %r8d,%r8d
+    0.00 :	    bbc0:       4c 89 f6                mov    %r14,%rsi
+    0.00 :	    bbc3:       49 89 86 00 04 00 00    mov    %rax,0x400(%r14)
+    0.00 :	    bbca:       8b 38                   mov    (%rax),%edi
+    0.00 :	    bbcc:       48 03 bd 60 ff ff ff    add    -0xa0(%rbp),%rdi
+    0.00 :	    bbd3:       4c 89 95 38 ff ff ff    mov    %r10,-0xc8(%rbp)
+    0.00 :	    bbda:       4c 89 9d 30 ff ff ff    mov    %r11,-0xd0(%rbp)
+    0.00 :	    bbe1:       48 c7 44 24 08 00 00    movq   $0x0,0x8(%rsp)
+    0.00 :	    bbe8:       00 00 
+    0.00 :	    bbea:       c7 04 24 01 00 00 00    movl   $0x1,(%rsp)
+    0.00 :	    bbf1:       e8 7a df ff ff          callq  9b70 <_dl_lookup_symbol_x>
+    0.00 :	    bbf6:       48 8b 55 c8             mov    -0x38(%rbp),%rdx
+    0.00 :	    bbfa:       31 c9                   xor    %ecx,%ecx
+    0.00 :	    bbfc:       49 89 c7                mov    %rax,%r15
+    0.00 :	    bbff:       49 89 86 10 04 00 00    mov    %rax,0x410(%r14)
+    0.00 :	    bc06:       4c 8b 9d 30 ff ff ff    mov    -0xd0(%rbp),%r11
+    0.00 :	    bc0d:       4c 8b 95 38 ff ff ff    mov    -0xc8(%rbp),%r10
+    0.00 :	    bc14:       48 85 d2                test   %rdx,%rdx
+    0.00 :	    bc17:       49 89 96 18 04 00 00    mov    %rdx,0x418(%r14)
+    0.00 :	    bc1e:       0f 85 d3 fa ff ff       jne    b6f7 <_dl_relocate_object+0x687>
+    0.00 :	    bc24:       e9 e5 fa ff ff          jmpq   b70e <_dl_relocate_object+0x69e>
+    0.00 :	    bc29:       84 d2                   test   %dl,%dl
+    0.00 :	    bc2b:       0f 85 b7 fe ff ff       jne    bae8 <_dl_relocate_object+0xa78>
+    0.00 :	    bc31:       48 83 fb 11             cmp    $0x11,%rbx
+    0.00 :	    bc35:       0f 1f 00                nopl   (%rax)
+    0.00 :	    bc38:       0f 84 aa fe ff ff       je     bae8 <_dl_relocate_object+0xa78>
+    0.00 :	    bc3e:       48 83 fb 12             cmp    $0x12,%rbx
+    0.00 :	    bc42:       0f 84 a0 fe ff ff       je     bae8 <_dl_relocate_object+0xa78>
+    0.00 :	    bc48:       48 83 fb 24             cmp    $0x24,%rbx
+    0.00 :	    bc4c:       b9 01 00 00 00          mov    $0x1,%ecx
+    0.00 :	    bc51:       0f 84 a2 fe ff ff       je     baf9 <_dl_relocate_object+0xa89>
+    0.00 :	    bc57:       30 c9                   xor    %cl,%cl
+    0.00 :	    bc59:       e9 8f fe ff ff          jmpq   baed <_dl_relocate_object+0xa7d>
+    0.00 :	    bc5e:       49 8b 46 50             mov    0x50(%r14),%rax
+    0.00 :	    bc62:       48 03 50 08             add    0x8(%rax),%rdx
+    0.00 :	    bc66:       48 89 55 98             mov    %rdx,-0x68(%rbp)
+    0.00 :	    bc6a:       e9 52 f5 ff ff          jmpq   b1c1 <_dl_relocate_object+0x151>
+    0.00 :	    bc6f:       4c 89 ff                mov    %r15,%rdi
+    0.00 :	    bc72:       4c 89 95 38 ff ff ff    mov    %r10,-0xc8(%rbp)
+    0.00 :	    bc79:       4c 89 9d 30 ff ff ff    mov    %r11,-0xd0(%rbp)
+    0.00 :	    bc80:       e8 db f2 ff ff          callq  af60 <_dl_try_allocate_static_tls>
+    0.00 :	    bc85:       85 c0                   test   %eax,%eax
+    0.00 :	    bc87:       4c 8b 95 38 ff ff ff    mov    -0xc8(%rbp),%r10
+    0.00 :	    bc8e:       4c 8b 9d 30 ff ff ff    mov    -0xd0(%rbp),%r11
+    0.00 :	    bc95:       0f 84 90 fd ff ff       je     ba2b <_dl_relocate_object+0x9bb>
+    0.00 :	    bc9b:       48 8b 45 c8             mov    -0x38(%rbp),%rax
+    0.00 :	    bc9f:       49 8b 74 24 10          mov    0x10(%r12),%rsi
+    0.00 :	    bca4:       4c 89 ff                mov    %r15,%rdi
+    0.00 :	    bca7:       48 03 70 08             add    0x8(%rax),%rsi
+    0.00 :	    bcab:       4c 89 95 38 ff ff ff    mov    %r10,-0xc8(%rbp)
+    0.00 :	    bcb2:       4c 89 9d 30 ff ff ff    mov    %r11,-0xd0(%rbp)
+    0.00 :	    bcb9:       e8 42 99 00 00          callq  15600 <_dl_make_tlsdesc_dynamic>
+    0.00 :	    bcbe:       4c 8b 95 38 ff ff ff    mov    -0xc8(%rbp),%r10
+    0.00 :	    bcc5:       48 8d 35 24 9e 00 00    lea    0x9e24(%rip),%rsi        # 15af0 <_dl_tlsdesc_dynamic>
+    0.00 :	    bccc:       49 89 42 08             mov    %rax,0x8(%r10)
+    0.00 :	    bcd0:       49 89 32                mov    %rsi,(%r10)
+    0.00 :	    bcd3:       4c 8b 9d 30 ff ff ff    mov    -0xd0(%rbp),%r11
+    0.00 :	    bcda:       e9 79 fa ff ff          jmpq   b758 <_dl_relocate_object+0x6e8>
+    0.00 :	    bcdf:       49 03 4c 24 10          add    0x10(%r12),%rcx
+    0.00 :	    bce4:       49 83 c4 18             add    $0x18,%r12
+    0.00 :	    bce8:       49 89 0a                mov    %rcx,(%r10)
+    0.00 :	    bceb:       e9 ac f8 ff ff          jmpq   b59c <_dl_relocate_object+0x52c>
+    0.00 :	    bcf0:       4d 85 ff                test   %r15,%r15
+    0.00 :	    bcf3:       0f 84 9f f8 ff ff       je     b598 <_dl_relocate_object+0x528>
+    0.00 :	    bcf9:       49 8b 87 50 04 00 00    mov    0x450(%r15),%rax
+    0.00 :	    bd00:       49 89 02                mov    %rax,(%r10)
+    0.00 :	    bd03:       e9 90 f8 ff ff          jmpq   b598 <_dl_relocate_object+0x528>
+    0.00 :	    bd08:       48 89 c8                mov    %rcx,%rax
+    0.00 :	    bd0b:       49 03 44 24 10          add    0x10(%r12),%rax
+    0.00 :	    bd10:       be ff ff ff ff          mov    $0xffffffff,%esi
+    0.00 :	    bd15:       48 39 f0                cmp    %rsi,%rax
+    0.00 :	    bd18:       41 89 02                mov    %eax,(%r10)
+    0.00 :	    bd1b:       0f 86 77 f8 ff ff       jbe    b598 <_dl_relocate_object+0x528>
+    0.00 :	    bd21:       48 8d 3d d0 fd 00 00    lea    0xfdd0(%rip),%rdi        # 1baf8 <__PRETTY_FUNCTION__.3644+0x1787>
+    0.00 :	    bd28:       48 8b 05 d9 2e 21 00    mov    0x212ed9(%rip),%rax        # 21ec08 <_dl_argv>
+    0.00 :	    bd2f:       49 8b 76 68             mov    0x68(%r14),%rsi
+    0.00 :	    bd33:       41 8b 4d 00             mov    0x0(%r13),%ecx
+    0.00 :	    bd37:       48 8b 10                mov    (%rax),%rdx
+    0.00 :	    bd3a:       48 8d 05 69 d8 00 00    lea    0xd869(%rip),%rax        # 195aa <intel_02_known+0x2ca>
+    0.00 :	    bd41:       48 85 d2                test   %rdx,%rdx
+    0.00 :	    bd44:       48 0f 44 d0             cmove  %rax,%rdx
+    0.00 :	    bd48:       48 03 4e 08             add    0x8(%rsi),%rcx
+    0.00 :	    bd4c:       31 c0                   xor    %eax,%eax
+    0.00 :	    bd4e:       48 89 fe                mov    %rdi,%rsi
+    0.00 :	    bd51:       bf 02 00 00 00          mov    $0x2,%edi
+    0.00 :	    bd56:       4c 89 9d 30 ff ff ff    mov    %r11,-0xd0(%rbp)
+    0.00 :	    bd5d:       e8 9e 34 00 00          callq  f200 <_dl_dprintf>
+    0.00 :	    bd62:       4c 8b 9d 30 ff ff ff    mov    -0xd0(%rbp),%r11
+    0.00 :	    bd69:       e9 2a f8 ff ff          jmpq   b598 <_dl_relocate_object+0x528>
+    0.00 :	    bd6e:       48 8b 45 c8             mov    -0x38(%rbp),%rax
+    0.00 :	    bd72:       48 85 c0                test   %rax,%rax
+    0.00 :	    bd75:       0f 84 1d f8 ff ff       je     b598 <_dl_relocate_object+0x528>
+    0.00 :	    bd7b:       49 8b 55 10             mov    0x10(%r13),%rdx
+    0.00 :	    bd7f:       48 39 50 10             cmp    %rdx,0x10(%rax)
+    0.00 :	    bd83:       4c 89 d7                mov    %r10,%rdi
+    0.00 :	    bd86:       48 0f 46 50 10          cmovbe 0x10(%rax),%rdx
+    0.00 :	    bd8b:       48 89 ce                mov    %rcx,%rsi
+    0.00 :	    bd8e:       4c 89 9d 30 ff ff ff    mov    %r11,-0xd0(%rbp)
+    0.00 :	    bd95:       e8 56 b5 00 00          callq  172f0 <memcpy>
+    0.00 :	    bd9a:       48 8b 45 c8             mov    -0x38(%rbp),%rax
+    0.00 :	    bd9e:       49 8b 55 10             mov    0x10(%r13),%rdx
+    0.00 :	    bda2:       48 8d 3d cf fd 00 00    lea    0xfdcf(%rip),%rdi        # 1bb78 <__PRETTY_FUNCTION__.3644+0x1807>
+    0.00 :	    bda9:       4c 8b 9d 30 ff ff ff    mov    -0xd0(%rbp),%r11
+    0.00 :	    bdb0:       48 39 50 10             cmp    %rdx,0x10(%rax)
+    0.00 :	    bdb4:       0f 87 6e ff ff ff       ja     bd28 <_dl_relocate_object+0xcb8>
+    0.00 :	    bdba:       0f 83 d8 f7 ff ff       jae    b598 <_dl_relocate_object+0x528>
+    0.00 :	    bdc0:       8b 15 8e 2e 21 00       mov    0x212e8e(%rip),%edx        # 21ec54 <_rtld_global_ro+0x34>
+    0.00 :	    bdc6:       48 8d 3d ab fd 00 00    lea    0xfdab(%rip),%rdi        # 1bb78 <__PRETTY_FUNCTION__.3644+0x1807>
+    0.00 :	    bdcd:       85 d2                   test   %edx,%edx
+    0.00 :	    bdcf:       0f 85 53 ff ff ff       jne    bd28 <_dl_relocate_object+0xcb8>
+    0.00 :	    bdd5:       e9 be f7 ff ff          jmpq   b598 <_dl_relocate_object+0x528>
+    0.00 :	    bdda:       48 89 c8                mov    %rcx,%rax
+    0.00 :	    bddd:       48 8d 3d 54 fd 00 00    lea    0xfd54(%rip),%rdi        # 1bb38 <__PRETTY_FUNCTION__.3644+0x17c7>
+    0.00 :	    bde4:       4c 29 d0                sub    %r10,%rax
+    0.00 :	    bde7:       49 03 44 24 10          add    0x10(%r12),%rax
+    0.00 :	    bdec:       48 63 d0                movslq %eax,%rdx
+    0.00 :	    bdef:       41 89 02                mov    %eax,(%r10)
+    0.00 :	    bdf2:       48 39 d0                cmp    %rdx,%rax
+    0.00 :	    bdf5:       0f 85 2d ff ff ff       jne    bd28 <_dl_relocate_object+0xcb8>
+    0.00 :	    bdfb:       e9 98 f7 ff ff          jmpq   b598 <_dl_relocate_object+0x528>
+    0.00 :	    be00:       49 8b 44 24 10          mov    0x10(%r12),%rax
+    0.00 :	    be05:       49 03 06                add    (%r14),%rax
+    0.00 :	    be08:       4c 89 95 38 ff ff ff    mov    %r10,-0xc8(%rbp)
+    0.00 :	    be0f:       4c 89 9d 30 ff ff ff    mov    %r11,-0xd0(%rbp)
+    0.00 :	    be16:       ff d0                   callq  *%rax
+    0.00 :	    be18:       4c 8b 95 38 ff ff ff    mov    -0xc8(%rbp),%r10
+    0.00 :	    be1f:       49 89 02                mov    %rax,(%r10)
+    0.00 :	    be22:       4c 8b 9d 30 ff ff ff    mov    -0xd0(%rbp),%r11
+    0.00 :	    be29:       e9 6a f7 ff ff          jmpq   b598 <_dl_relocate_object+0x528>
+    0.00 :	    be2e:       48 83 7d c8 00          cmpq   $0x0,-0x38(%rbp)
+    0.00 :	    be33:       0f 84 5f f7 ff ff       je     b598 <_dl_relocate_object+0x528>
+    0.00 :	    be39:       49 83 bf 48 04 00 00    cmpq   $0x1,0x448(%r15)
+    0.00 :	    be40:       01 
+    0.00 :	    be41:       0f 86 3b 01 00 00       jbe    bf82 <_dl_relocate_object+0xf12>
+    0.00 :	    be47:       48 8b 55 c8             mov    -0x38(%rbp),%rdx
+    0.00 :	    be4b:       49 8b 44 24 10          mov    0x10(%r12),%rax
+    0.00 :	    be50:       48 03 42 08             add    0x8(%rdx),%rax
+    0.00 :	    be54:       49 2b 87 48 04 00 00    sub    0x448(%r15),%rax
+    0.00 :	    be5b:       49 89 02                mov    %rax,(%r10)
+    0.00 :	    be5e:       e9 35 f7 ff ff          jmpq   b598 <_dl_relocate_object+0x528>
+    0.00 :	    be63:       48 8b 55 c8             mov    -0x38(%rbp),%rdx
+    0.00 :	    be67:       48 85 d2                test   %rdx,%rdx
+    0.00 :	    be6a:       0f 84 28 f7 ff ff       je     b598 <_dl_relocate_object+0x528>
+    0.00 :	    be70:       49 8b 44 24 10          mov    0x10(%r12),%rax
+    0.00 :	    be75:       48 03 42 08             add    0x8(%rdx),%rax
+    0.00 :	    be79:       49 89 02                mov    %rax,(%r10)
+    0.00 :	    be7c:       e9 17 f7 ff ff          jmpq   b598 <_dl_relocate_object+0x528>
+    0.00 :	    be81:       ba 01 00 00 00          mov    $0x1,%edx
+    0.00 :	    be86:       89 c6                   mov    %eax,%esi
+    0.00 :	    be88:       4c 89 f7                mov    %r14,%rdi
+    0.00 :	    be8b:       e8 00 ef ff ff          callq  ad90 <_dl_reloc_bad_type>
+    0.00 :	    be90:       48 8d 0d 19 08 01 00    lea    0x10819(%rip),%rcx        # 1c6b0 <__PRETTY_FUNCTION__.11640>
+    0.00 :	    be97:       48 8d 35 4a e7 00 00    lea    0xe74a(%rip),%rsi        # 1a5e8 <__PRETTY_FUNCTION__.3644+0x277>
+    0.00 :	    be9e:       48 8d 3d 63 e7 00 00    lea    0xe763(%rip),%rdi        # 1a608 <__PRETTY_FUNCTION__.3644+0x297>
+    0.00 :	    bea5:       ba d2 01 00 00          mov    $0x1d2,%edx
+    0.00 :	    beaa:       e8 c1 8e 00 00          callq  14d70 <__GI___assert_fail>
+    0.00 :	    beaf:       49 8b 44 24 10          mov    0x10(%r12),%rax
+    0.00 :	    beb4:       49 89 42 08             mov    %rax,0x8(%r10)
+    0.00 :	    beb8:       48 8d 05 21 9c 00 00    lea    0x9c21(%rip),%rax        # 15ae0 <_dl_tlsdesc_undefweak>
+    0.00 :	    bebf:       49 89 02                mov    %rax,(%r10)
+    0.00 :	    bec2:       e9 d1 f6 ff ff          jmpq   b598 <_dl_relocate_object+0x528>
+    0.00 :	    bec7:       49 8b 44 24 10          mov    0x10(%r12),%rax
+    0.00 :	    becc:       48 8d 0d 0d 9c 00 00    lea    0x9c0d(%rip),%rcx        # 15ae0 <_dl_tlsdesc_undefweak>
+    0.00 :	    bed3:       49 89 42 08             mov    %rax,0x8(%r10)
+    0.00 :	    bed7:       49 89 0a                mov    %rcx,(%r10)
+    0.00 :	    beda:       e9 79 f8 ff ff          jmpq   b758 <_dl_relocate_object+0x6e8>
+    0.00 :	    bedf:       4c 89 ff                mov    %r15,%rdi
+    0.00 :	    bee2:       4c 89 95 38 ff ff ff    mov    %r10,-0xc8(%rbp)
+    0.00 :	    bee9:       4c 89 9d 30 ff ff ff    mov    %r11,-0xd0(%rbp)
+    0.00 :	    bef0:       e8 3b f1 ff ff          callq  b030 <_dl_allocate_static_tls>
+    0.00 :	    bef5:       4c 8b 9d 30 ff ff ff    mov    -0xd0(%rbp),%r11
+    0.00 :	    befc:       4c 8b 95 38 ff ff ff    mov    -0xc8(%rbp),%r10
+    0.00 :	    bf03:       e9 35 f8 ff ff          jmpq   b73d <_dl_relocate_object+0x6cd>
+    0.00 :	    bf08:       b9 01 00 00 00          mov    $0x1,%ecx
+    0.00 :	    bf0d:       e9 a4 f7 ff ff          jmpq   b6b6 <_dl_relocate_object+0x646>
+    0.00 :	    bf12:       4c 89 ff                mov    %r15,%rdi
+    0.00 :	    bf15:       4c 89 95 38 ff ff ff    mov    %r10,-0xc8(%rbp)
+    0.00 :	    bf1c:       4c 89 9d 30 ff ff ff    mov    %r11,-0xd0(%rbp)
+    0.00 :	    bf23:       e8 38 f0 ff ff          callq  af60 <_dl_try_allocate_static_tls>
+    0.00 :	    bf28:       85 c0                   test   %eax,%eax
+    0.00 :	    bf2a:       4c 8b 95 38 ff ff ff    mov    -0xc8(%rbp),%r10
+    0.00 :	    bf31:       4c 8b 9d 30 ff ff ff    mov    -0xd0(%rbp),%r11
+    0.00 :	    bf38:       0f 84 34 f6 ff ff       je     b572 <_dl_relocate_object+0x502>
+    0.00 :	    bf3e:       48 8b 45 c8             mov    -0x38(%rbp),%rax
+    0.00 :	    bf42:       49 8b 74 24 10          mov    0x10(%r12),%rsi
+    0.00 :	    bf47:       4c 89 ff                mov    %r15,%rdi
+    0.00 :	    bf4a:       48 03 70 08             add    0x8(%rax),%rsi
+    0.00 :	    bf4e:       4c 89 95 38 ff ff ff    mov    %r10,-0xc8(%rbp)
+    0.00 :	    bf55:       4c 89 9d 30 ff ff ff    mov    %r11,-0xd0(%rbp)
+    0.00 :	    bf5c:       e8 9f 96 00 00          callq  15600 <_dl_make_tlsdesc_dynamic>
+    0.00 :	    bf61:       4c 8b 95 38 ff ff ff    mov    -0xc8(%rbp),%r10
+    0.00 :	    bf68:       48 8d 15 81 9b 00 00    lea    0x9b81(%rip),%rdx        # 15af0 <_dl_tlsdesc_dynamic>
+    0.00 :	    bf6f:       49 89 42 08             mov    %rax,0x8(%r10)
+    0.00 :	    bf73:       49 89 12                mov    %rdx,(%r10)
+    0.00 :	    bf76:       4c 8b 9d 30 ff ff ff    mov    -0xd0(%rbp),%r11
+    0.00 :	    bf7d:       e9 16 f6 ff ff          jmpq   b598 <_dl_relocate_object+0x528>
+    0.00 :	    bf82:       4c 89 ff                mov    %r15,%rdi
+    0.00 :	    bf85:       4c 89 95 38 ff ff ff    mov    %r10,-0xc8(%rbp)
+    0.00 :	    bf8c:       4c 89 9d 30 ff ff ff    mov    %r11,-0xd0(%rbp)
+    0.00 :	    bf93:       e8 98 f0 ff ff          callq  b030 <_dl_allocate_static_tls>
+    0.00 :	    bf98:       4c 8b 9d 30 ff ff ff    mov    -0xd0(%rbp),%r11
+    0.00 :	    bf9f:       4c 8b 95 38 ff ff ff    mov    -0xc8(%rbp),%r10
+    0.00 :	    bfa6:       e9 9c fe ff ff          jmpq   be47 <_dl_relocate_object+0xdd7>
+    0.00 :	    bfab:       41 0f b7 8e b0 02 00    movzwl 0x2b0(%r14),%ecx
+    0.00 :	    bfb2:       00 
+    0.00 :	    bfb3:       49 8b 9e a0 02 00 00    mov    0x2a0(%r14),%rbx
+    0.00 :	    bfba:       48 8d 14 cd 00 00 00    lea    0x0(,%rcx,8),%rdx
+    0.00 :	    bfc1:       00 
+    0.00 :	    bfc2:       48 89 c8                mov    %rcx,%rax
+    0.00 :	    bfc5:       48 c1 e0 06             shl    $0x6,%rax
+    0.00 :	    bfc9:       48 29 d0                sub    %rdx,%rax
+    0.00 :	    bfcc:       48 8d 04 03             lea    (%rbx,%rax,1),%rax
+    0.00 :	    bfd0:       48 39 c3                cmp    %rax,%rbx
+    0.00 :	    bfd3:       0f 83 18 f1 ff ff       jae    b0f1 <_dl_relocate_object+0x81>
+    0.00 :	    bfd9:       48 c7 85 68 ff ff ff    movq   $0x0,-0x98(%rbp)
+    0.00 :	    bfe0:       00 00 00 00 
+    0.00 :	    bfe4:       49 bf ff ff ff ff 02    movabs $0x2ffffffff,%r15
+    0.00 :	    bfeb:       00 00 00 
+    0.00 :	    bfee:       eb 26                   jmp    c016 <_dl_relocate_object+0xfa6>
+    0.00 :	    bff0:       48 8d 14 cd 00 00 00    lea    0x0(,%rcx,8),%rdx
+    0.00 :	    bff7:       00 
+    0.00 :	    bff8:       48 89 c8                mov    %rcx,%rax
+    0.00 :	    bffb:       48 83 c3 38             add    $0x38,%rbx
+    0.00 :	    bfff:       48 c1 e0 06             shl    $0x6,%rax
+    0.00 :	    c003:       48 29 d0                sub    %rdx,%rax
+    0.00 :	    c006:       49 03 86 a0 02 00 00    add    0x2a0(%r14),%rax
+    0.00 :	    c00d:       48 39 c3                cmp    %rax,%rbx
+    0.00 :	    c010:       0f 83 e6 f0 ff ff       jae    b0fc <_dl_relocate_object+0x8c>
+    0.00 :	    c016:       4c 89 f8                mov    %r15,%rax
+    0.00 :	    c019:       48 23 03                and    (%rbx),%rax
+    0.00 :	    c01c:       48 83 e8 01             sub    $0x1,%rax
+    0.00 :	    c020:       75 ce                   jne    bff0 <_dl_relocate_object+0xf80>
+    0.00 :	    c022:       48 8b 4b 10             mov    0x10(%rbx),%rcx
+    0.00 :	    c026:       48 8b 35 0b 2c 21 00    mov    0x212c0b(%rip),%rsi        # 21ec38 <_rtld_global_ro+0x18>
+    0.00 :	    c02d:       48 83 ec 30             sub    $0x30,%rsp
+    0.00 :	    c031:       4c 8d 6c 24 1f          lea    0x1f(%rsp),%r13
+    0.00 :	    c036:       48 89 ca                mov    %rcx,%rdx
+    0.00 :	    c039:       48 03 53 28             add    0x28(%rbx),%rdx
+    0.00 :	    c03d:       48 89 f0                mov    %rsi,%rax
+    0.00 :	    c040:       48 f7 d8                neg    %rax
+    0.00 :	    c043:       49 83 e5 f0             and    $0xfffffffffffffff0,%r13
+    0.00 :	    c047:       48 8d 74 16 ff          lea    -0x1(%rsi,%rdx,1),%rsi
+    0.00 :	    c04c:       ba 03 00 00 00          mov    $0x3,%edx
+    0.00 :	    c051:       48 21 c6                and    %rax,%rsi
+    0.00 :	    c054:       48 21 c8                and    %rcx,%rax
+    0.00 :	    c057:       48 29 c6                sub    %rax,%rsi
+    0.00 :	    c05a:       49 89 75 08             mov    %rsi,0x8(%r13)
+    0.00 :	    c05e:       48 8b 3d d3 2b 21 00    mov    0x212bd3(%rip),%rdi        # 21ec38 <_rtld_global_ro+0x18>
+    0.00 :	    c065:       48 f7 df                neg    %rdi
+    0.00 :	    c068:       48 23 7b 10             and    0x10(%rbx),%rdi
+    0.00 :	    c06c:       49 03 3e                add    (%r14),%rdi
+    0.00 :	    c06f:       49 89 7d 00             mov    %rdi,0x0(%r13)
+    0.00 :	    c073:       e8 b8 a1 00 00          callq  16230 <__mprotect>
+    0.00 :	    c078:       85 c0                   test   %eax,%eax
+    0.00 :	    c07a:       78 71                   js     c0ed <_dl_relocate_object+0x107d>
+    0.00 :	    c07c:       8b 4b 04                mov    0x4(%rbx),%ecx
+    0.00 :	    c07f:       b8 40 62 51 73          mov    $0x73516240,%eax
+    0.00 :	    c084:       83 e1 07                and    $0x7,%ecx
+    0.00 :	    c087:       c1 e1 02                shl    $0x2,%ecx
+    0.00 :	    c08a:       d3 f8                   sar    %cl,%eax
+    0.00 :	    c08c:       83 e0 0f                and    $0xf,%eax
+    0.00 :	    c08f:       41 89 45 10             mov    %eax,0x10(%r13)
+    0.00 :	    c093:       48 8b 85 68 ff ff ff    mov    -0x98(%rbp),%rax
+    0.00 :	    c09a:       49 89 45 18             mov    %rax,0x18(%r13)
+    0.00 :	    c09e:       4c 89 ad 68 ff ff ff    mov    %r13,-0x98(%rbp)
+    0.00 :	    c0a5:       41 0f b7 8e b0 02 00    movzwl 0x2b0(%r14),%ecx
+    0.00 :	    c0ac:       00 
+    0.00 :	    c0ad:       e9 3e ff ff ff          jmpq   bff0 <_dl_relocate_object+0xf80>
+    0.00 :	    c0b2:       49 8b 76 08             mov    0x8(%r14),%rsi
+    0.00 :	    c0b6:       48 8d 15 20 d7 00 00    lea    0xd720(%rip),%rdx        # 197dd <intel_02_known+0x4fd>
+    0.00 :	    c0bd:       48 8d 05 35 dc 00 00    lea    0xdc35(%rip),%rax        # 19cf9 <__PRETTY_FUNCTION__.12494+0x1a>
+    0.00 :	    c0c4:       45 85 e4                test   %r12d,%r12d
+    0.00 :	    c0c7:       48 0f 45 d0             cmovne %rax,%rdx
+    0.00 :	    c0cb:       80 3e 00                cmpb   $0x0,(%rsi)
+    0.00 :	    c0ce:       75 0a                   jne    c0da <_dl_relocate_object+0x106a>
+    0.00 :	    c0d0:       48 8b 05 31 2b 21 00    mov    0x212b31(%rip),%rax        # 21ec08 <_dl_argv>
+    0.00 :	    c0d7:       48 8b 30                mov    (%rax),%rsi
+    0.00 :	    c0da:       48 8d 3d 20 dc 00 00    lea    0xdc20(%rip),%rdi        # 19d01 <__PRETTY_FUNCTION__.12494+0x22>
+    0.00 :	    c0e1:       31 c0                   xor    %eax,%eax
+    0.00 :	    c0e3:       e8 68 32 00 00          callq  f350 <_dl_debug_printf>
+    0.00 :	    c0e8:       e9 f6 ef ff ff          jmpq   b0e3 <_dl_relocate_object+0x73>
+    0.00 :	    c0ed:       48 8d 0d d4 f9 00 00    lea    0xf9d4(%rip),%rcx        # 1bac8 <__PRETTY_FUNCTION__.3644+0x1757>
+    0.00 :	    c0f4:       49 8b 76 08             mov    0x8(%r14),%rsi
+    0.00 :	    c0f8:       8b 3d 86 40 21 00       mov    0x214086(%rip),%edi        # 220184 <rtld_errno>
+    0.00 :	    c0fe:       31 d2                   xor    %edx,%edx
+    0.00 :	    c100:       e8 fb 1d 00 00          callq  df00 <_dl_signal_error>
+    0.00 :	    c105:       48 8b 8d 68 ff ff ff    mov    -0x98(%rbp),%rcx
+    0.00 :	    c10c:       8b 51 10                mov    0x10(%rcx),%edx
+    0.00 :	    c10f:       48 8b 71 08             mov    0x8(%rcx),%rsi
+    0.00 :	    c113:       48 8b 39                mov    (%rcx),%rdi
+    0.00 :	    c116:       e8 15 a1 00 00          callq  16230 <__mprotect>
+    0.00 :	    c11b:       85 c0                   test   %eax,%eax
+    0.00 :	    c11d:       78 7d                   js     c19c <_dl_relocate_object+0x112c>
+    0.00 :	    c11f:       48 8b b5 68 ff ff ff    mov    -0x98(%rbp),%rsi
+    0.00 :	    c126:       48 8b 76 18             mov    0x18(%rsi),%rsi
+    0.00 :	    c12a:       48 85 f6                test   %rsi,%rsi
+    0.00 :	    c12d:       48 89 b5 68 ff ff ff    mov    %rsi,-0x98(%rbp)
+    0.00 :	    c134:       0f 84 94 f1 ff ff       je     b2ce <_dl_relocate_object+0x25e>
+    0.00 :	    c13a:       eb c9                   jmp    c105 <_dl_relocate_object+0x1095>
+    0.00 :	    c13c:       49 8b 46 50             mov    0x50(%r14),%rax
+    0.00 :	    c140:       48 85 c0                test   %rax,%rax
+    0.00 :	    c143:       74 63                   je     c1a8 <_dl_relocate_object+0x1138>
+    0.00 :	    c145:       48 8b 70 08             mov    0x8(%rax),%rsi
+    0.00 :	    c149:       bf 20 00 00 00          mov    $0x20,%edi
+    0.00 :	    c14e:       e8 7d 49 ff ff          callq  ad0 <calloc@plt>
+    0.00 :	    c153:       48 85 c0                test   %rax,%rax
+    0.00 :	    c156:       49 89 86 28 03 00 00    mov    %rax,0x328(%r14)
+    0.00 :	    c15d:       48 8d 35 8c fa 00 00    lea    0xfa8c(%rip),%rsi        # 1bbf0 <__PRETTY_FUNCTION__.3644+0x187f>
+    0.00 :	    c164:       0f 85 4e f1 ff ff       jne    b2b8 <_dl_relocate_object+0x248>
+    0.00 :	    c16a:       48 8b 05 97 2a 21 00    mov    0x212a97(%rip),%rax        # 21ec08 <_dl_argv>
+    0.00 :	    c171:       49 8b 4e 08             mov    0x8(%r14),%rcx
+    0.00 :	    c175:       48 8d 15 2e d4 00 00    lea    0xd42e(%rip),%rdx        # 195aa <intel_02_known+0x2ca>
+    0.00 :	    c17c:       bf 02 00 00 00          mov    $0x2,%edi
+    0.00 :	    c181:       48 8b 00                mov    (%rax),%rax
+    0.00 :	    c184:       48 85 c0                test   %rax,%rax
+    0.00 :	    c187:       48 0f 45 d0             cmovne %rax,%rdx
+    0.00 :	    c18b:       31 c0                   xor    %eax,%eax
+    0.00 :	    c18d:       e8 6e 30 00 00          callq  f200 <_dl_dprintf>
+    0.00 :	    c192:       bf 7f 00 00 00          mov    $0x7f,%edi
+    0.00 :	    c197:       e8 24 a1 00 00          callq  162c0 <_Exit>
+    0.00 :	    c19c:       48 8d 0d 85 fa 00 00    lea    0xfa85(%rip),%rcx        # 1bc28 <__PRETTY_FUNCTION__.3644+0x18b7>
+    0.00 :	    c1a3:       e9 4c ff ff ff          jmpq   c0f4 <_dl_relocate_object+0x1084>
+    0.00 :	    c1a8:       48 8d 35 19 fa 00 00    lea    0xfa19(%rip),%rsi        # 1bbc8 <__PRETTY_FUNCTION__.3644+0x1857>
+    0.00 :	    c1af:       eb b9                   jmp    c16a <_dl_relocate_object+0x10fa>
+
+Sorted summary for file /home/Computational/mark/andres/bin/postgres
+----------------------------------------------
+
+  100.00 /home/Computational/mark/src/postgres-andres/src/backend/access/nbtree/nbtsearch.c:206
+ Percent |	Source code & Disassembly of /home/Computational/mark/andres/bin/postgres
+------------------------------------------------
+         :
+         :
+         :
+         :	Disassembly of section .text:
+         :
+         :	00000000004acf70 <_bt_moveright>:
+         :	                          ScanKey scankey,
+         :	                          bool nextkey,
+         :	                          bool forupdate,
+         :	                          BTStack stack,
+         :	                          int access)
+         :	{
+    0.00 :	  4acf70:       55                      push   %rbp
+         :	         * needed.
+         :	         *
+         :	         * We also have to move right if we followed a link that brought us to a
+         :	         * dead page.
+         :	         */
+         :	        cmpval = nextkey ? 0 : 1;
+    0.00 :	  4acf71:       31 c0                   xor    %eax,%eax
+         :	                          ScanKey scankey,
+         :	                          bool nextkey,
+         :	                          bool forupdate,
+         :	                          BTStack stack,
+         :	                          int access)
+         :	{
+    0.00 :	  4acf73:       48 89 e5                mov    %rsp,%rbp
+    0.00 :	  4acf76:       41 57                   push   %r15
+    0.00 :	  4acf78:       45 89 cf                mov    %r9d,%r15d
+    0.00 :	  4acf7b:       41 56                   push   %r14
+    0.00 :	  4acf7d:       41 55                   push   %r13
+    0.00 :	  4acf7f:       49 89 fd                mov    %rdi,%r13
+    0.00 :	  4acf82:       41 54                   push   %r12
+    0.00 :	  4acf84:       41 89 f4                mov    %esi,%r12d
+    0.00 :	  4acf87:       53                      push   %rbx
+    0.00 :	  4acf88:       48 83 ec 18             sub    $0x18,%rsp
+         :	         * needed.
+         :	         *
+         :	         * We also have to move right if we followed a link that brought us to a
+         :	         * dead page.
+         :	         */
+         :	        cmpval = nextkey ? 0 : 1;
+    0.00 :	  4acf8c:       45 84 c0                test   %r8b,%r8b
+         :	                          ScanKey scankey,
+         :	                          bool nextkey,
+         :	                          bool forupdate,
+         :	                          BTStack stack,
+         :	                          int access)
+         :	{
+    0.00 :	  4acf8f:       44 8b 75 18             mov    0x18(%rbp),%r14d
+         :	         * needed.
+         :	         *
+         :	         * We also have to move right if we followed a link that brought us to a
+         :	         * dead page.
+         :	         */
+         :	        cmpval = nextkey ? 0 : 1;
+    0.00 :	  4acf93:       0f 94 c0                sete   %al
+         :	                          ScanKey scankey,
+         :	                          bool nextkey,
+         :	                          bool forupdate,
+         :	                          BTStack stack,
+         :	                          int access)
+         :	{
+    0.00 :	  4acf96:       89 55 cc                mov    %edx,-0x34(%rbp)
+    0.00 :	  4acf99:       48 89 4d c0             mov    %rcx,-0x40(%rbp)
+         :	         * needed.
+         :	         *
+         :	         * We also have to move right if we followed a link that brought us to a
+         :	         * dead page.
+         :	         */
+         :	        cmpval = nextkey ? 0 : 1;
+    0.00 :	  4acf9d:       89 45 d0                mov    %eax,-0x30(%rbp)
+         :
+         :	        for (;;)
+         :	        {
+         :	                page = BufferGetPage(buf);
+    0.00 :	  4acfa0:       45 85 e4                test   %r12d,%r12d
+    0.00 :	  4acfa3:       78 70                   js     4ad015 <_bt_moveright+0xa5>
+    0.00 :	  4acfa5:       41 8d 44 24 ff          lea    -0x1(%r12),%eax
+    0.00 :	  4acfaa:       48 63 c8                movslq %eax,%rcx
+    0.00 :	  4acfad:       48 c1 e1 0d             shl    $0xd,%rcx
+    0.00 :	  4acfb1:       48 03 0d 40 2b 71 00    add    0x712b40(%rip),%rcx        # bbfaf8 <BufferBlocks>
+         :	                opaque = (BTPageOpaque) PageGetSpecialPointer(page);
+    0.00 :	  4acfb8:       0f b7 41 10             movzwl 0x10(%rcx),%eax
+    0.00 :	  4acfbc:       48 8d 1c 01             lea    (%rcx,%rax,1),%rbx
+         :
+         :	                if (P_RIGHTMOST(opaque))
+    0.00 :	  4acfc0:       8b 53 04                mov    0x4(%rbx),%edx
+ /home/Computational/mark/src/postgres-andres/src/backend/access/nbtree/nbtsearch.c:206
+  100.00 :	  4acfc3:       85 d2                   test   %edx,%edx
+    0.00 :	  4acfc5:       74 6f                   je     4ad036 <_bt_moveright+0xc6>
+         :	                        break;
+         :
+         :	                /*
+         :	                 * Finish any incomplete splits we encounter along the way.
+         :	                 */
+         :	                if (forupdate && P_INCOMPLETE_SPLIT(opaque))
+    0.00 :	  4acfc7:       45 84 ff                test   %r15b,%r15b
+    0.00 :	  4acfca:       0f 84 88 00 00 00       je     4ad058 <_bt_moveright+0xe8>
+    0.00 :	  4acfd0:       0f b7 43 0c             movzwl 0xc(%rbx),%eax
+    0.00 :	  4acfd4:       84 c0                   test   %al,%al
+    0.00 :	  4acfd6:       0f 88 8c 00 00 00       js     4ad068 <_bt_moveright+0xf8>
+         :	                        /* re-acquire the lock in the right mode, and re-check */
+         :	                        buf = _bt_getbuf(rel, blkno, access);
+         :	                        continue;
+         :	                }
+         :
+         :	                if (P_IGNORE(opaque) || _bt_compare(rel, keysz, scankey, page, P_HIKEY) >= cmpval)
+    0.00 :	  4acfdc:       a8 14                   test   $0x14,%al
+    0.00 :	  4acfde:       66 90                   xchg   %ax,%ax
+    0.00 :	  4acfe0:       75 1d                   jne    4acfff <_bt_moveright+0x8f>
+    0.00 :	  4acfe2:       48 8b 55 c0             mov    -0x40(%rbp),%rdx
+    0.00 :	  4acfe6:       8b 75 cc                mov    -0x34(%rbp),%esi
+    0.00 :	  4acfe9:       41 b8 01 00 00 00       mov    $0x1,%r8d
+    0.00 :	  4acfef:       4c 89 ef                mov    %r13,%rdi
+    0.00 :	  4acff2:       e8 59 fc ff ff          callq  4acc50 <_bt_compare>
+    0.00 :	  4acff7:       39 45 d0                cmp    %eax,-0x30(%rbp)
+    0.00 :	  4acffa:       7f 3a                   jg     4ad036 <_bt_moveright+0xc6>
+    0.00 :	  4acffc:       8b 53 04                mov    0x4(%rbx),%edx
+         :	                {
+         :	                        /* step right one page */
+         :	                        buf = _bt_relandgetbuf(rel, buf, opaque->btpo_next, access);
+    0.00 :	  4acfff:       44 89 e6                mov    %r12d,%esi
+    0.00 :	  4ad002:       44 89 f1                mov    %r14d,%ecx
+    0.00 :	  4ad005:       4c 89 ef                mov    %r13,%rdi
+    0.00 :	  4ad008:       e8 d3 bf ff ff          callq  4a8fe0 <_bt_relandgetbuf>
+    0.00 :	  4ad00d:       41 89 c4                mov    %eax,%r12d
+         :	         */
+         :	        cmpval = nextkey ? 0 : 1;
+         :
+         :	        for (;;)
+         :	        {
+         :	                page = BufferGetPage(buf);
+    0.00 :	  4ad010:       45 85 e4                test   %r12d,%r12d
+    0.00 :	  4ad013:       79 90                   jns    4acfa5 <_bt_moveright+0x35>
+    0.00 :	  4ad015:       48 8b 15 fc 00 6d 00    mov    0x6d00fc(%rip),%rdx        # b7d118 <LocalBufferBlockPointers>
+    0.00 :	  4ad01c:       44 89 e0                mov    %r12d,%eax
+    0.00 :	  4ad01f:       f7 d0                   not    %eax
+    0.00 :	  4ad021:       48 98                   cltq   
+    0.00 :	  4ad023:       48 8b 0c c2             mov    (%rdx,%rax,8),%rcx
+         :	                opaque = (BTPageOpaque) PageGetSpecialPointer(page);
+    0.00 :	  4ad027:       0f b7 41 10             movzwl 0x10(%rcx),%eax
+    0.00 :	  4ad02b:       48 8d 1c 01             lea    (%rcx,%rax,1),%rbx
+         :
+         :	                if (P_RIGHTMOST(opaque))
+    0.00 :	  4ad02f:       8b 53 04                mov    0x4(%rbx),%edx
+    0.00 :	  4ad032:       85 d2                   test   %edx,%edx
+    0.00 :	  4ad034:       75 91                   jne    4acfc7 <_bt_moveright+0x57>
+         :	                }
+         :	                else
+         :	                        break;
+         :	        }
+         :
+         :	        if (P_IGNORE(opaque))
+    0.00 :	  4ad036:       0f b7 43 0c             movzwl 0xc(%rbx),%eax
+    0.00 :	  4ad03a:       a8 14                   test   $0x14,%al
+    0.00 :	  4ad03c:       0f 85 8f 00 00 00       jne    4ad0d1 <_bt_moveright+0x161>
+         :	                elog(ERROR, "fell off the end of index \"%s\"",
+         :	                         RelationGetRelationName(rel));
+         :
+         :	        return buf;
+         :	}
+    0.00 :	  4ad042:       48 83 c4 18             add    $0x18,%rsp
+    0.00 :	  4ad046:       44 89 e0                mov    %r12d,%eax
+    0.00 :	  4ad049:       5b                      pop    %rbx
+    0.00 :	  4ad04a:       41 5c                   pop    %r12
+    0.00 :	  4ad04c:       41 5d                   pop    %r13
+    0.00 :	  4ad04e:       41 5e                   pop    %r14
+    0.00 :	  4ad050:       41 5f                   pop    %r15
+    0.00 :	  4ad052:       c9                      leaveq 
+    0.00 :	  4ad053:       c3                      retq   
+    0.00 :	  4ad054:       0f 1f 40 00             nopl   0x0(%rax)
+         :	                        else
+         :	                                _bt_relbuf(rel, buf);
+         :
+         :	                        /* re-acquire the lock in the right mode, and re-check */
+         :	                        buf = _bt_getbuf(rel, blkno, access);
+         :	                        continue;
+    0.00 :	  4ad058:       0f b7 43 0c             movzwl 0xc(%rbx),%eax
+    0.00 :	  4ad05c:       e9 7b ff ff ff          jmpq   4acfdc <_bt_moveright+0x6c>
+    0.00 :	  4ad061:       0f 1f 80 00 00 00 00    nopl   0x0(%rax)
+         :	                /*
+         :	                 * Finish any incomplete splits we encounter along the way.
+         :	                 */
+         :	                if (forupdate && P_INCOMPLETE_SPLIT(opaque))
+         :	                {
+         :	                        BlockNumber blkno = BufferGetBlockNumber(buf);
+    0.00 :	  4ad068:       44 89 e7                mov    %r12d,%edi
+    0.00 :	  4ad06b:       e8 c0 6f 1c 00          callq  674030 <BufferGetBlockNumber>
+         :
+         :	                        /* upgrade our lock if necessary */
+         :	                        if (access == BT_READ)
+    0.00 :	  4ad070:       41 83 fe 01             cmp    $0x1,%r14d
+         :	                /*
+         :	                 * Finish any incomplete splits we encounter along the way.
+         :	                 */
+         :	                if (forupdate && P_INCOMPLETE_SPLIT(opaque))
+         :	                {
+         :	                        BlockNumber blkno = BufferGetBlockNumber(buf);
+    0.00 :	  4ad074:       89 45 d4                mov    %eax,-0x2c(%rbp)
+         :
+         :	                        /* upgrade our lock if necessary */
+         :	                        if (access == BT_READ)
+    0.00 :	  4ad077:       74 3f                   je     4ad0b8 <_bt_moveright+0x148>
+         :	                        {
+         :	                                LockBuffer(buf, BUFFER_LOCK_UNLOCK);
+         :	                                LockBuffer(buf, BT_WRITE);
+         :	                        }
+         :
+         :	                        if (P_INCOMPLETE_SPLIT(opaque))
+    0.00 :	  4ad079:       80 7b 0c 00             cmpb   $0x0,0xc(%rbx)
+    0.00 :	  4ad07d:       79 29                   jns    4ad0a8 <_bt_moveright+0x138>
+         :	                                _bt_finish_split(rel, buf, stack);
+    0.00 :	  4ad07f:       48 8b 55 10             mov    0x10(%rbp),%rdx
+    0.00 :	  4ad083:       44 89 e6                mov    %r12d,%esi
+    0.00 :	  4ad086:       4c 89 ef                mov    %r13,%rdi
+    0.00 :	  4ad089:       e8 52 aa ff ff          callq  4a7ae0 <_bt_finish_split>
+         :	                        else
+         :	                                _bt_relbuf(rel, buf);
+         :
+         :	                        /* re-acquire the lock in the right mode, and re-check */
+         :	                        buf = _bt_getbuf(rel, blkno, access);
+    0.00 :	  4ad08e:       8b 75 d4                mov    -0x2c(%rbp),%esi
+    0.00 :	  4ad091:       44 89 f2                mov    %r14d,%edx
+    0.00 :	  4ad094:       4c 89 ef                mov    %r13,%rdi
+    0.00 :	  4ad097:       e8 b4 bf ff ff          callq  4a9050 <_bt_getbuf>
+    0.00 :	  4ad09c:       41 89 c4                mov    %eax,%r12d
+         :	                        continue;
+    0.00 :	  4ad09f:       e9 fc fe ff ff          jmpq   4acfa0 <_bt_moveright+0x30>
+    0.00 :	  4ad0a4:       0f 1f 40 00             nopl   0x0(%rax)
+         :	                        }
+         :
+         :	                        if (P_INCOMPLETE_SPLIT(opaque))
+         :	                                _bt_finish_split(rel, buf, stack);
+         :	                        else
+         :	                                _bt_relbuf(rel, buf);
+    0.00 :	  4ad0a8:       44 89 e6                mov    %r12d,%esi
+    0.00 :	  4ad0ab:       4c 89 ef                mov    %r13,%rdi
+    0.00 :	  4ad0ae:       e8 1d bf ff ff          callq  4a8fd0 <_bt_relbuf>
+    0.00 :	  4ad0b3:       eb d9                   jmp    4ad08e <_bt_moveright+0x11e>
+    0.00 :	  4ad0b5:       0f 1f 00                nopl   (%rax)
+         :	                        BlockNumber blkno = BufferGetBlockNumber(buf);
+         :
+         :	                        /* upgrade our lock if necessary */
+         :	                        if (access == BT_READ)
+         :	                        {
+         :	                                LockBuffer(buf, BUFFER_LOCK_UNLOCK);
+    0.00 :	  4ad0b8:       31 f6                   xor    %esi,%esi
+    0.00 :	  4ad0ba:       44 89 e7                mov    %r12d,%edi
+    0.00 :	  4ad0bd:       e8 4e 76 1c 00          callq  674710 <LockBuffer>
+         :	                                LockBuffer(buf, BT_WRITE);
+    0.00 :	  4ad0c2:       be 02 00 00 00          mov    $0x2,%esi
+    0.00 :	  4ad0c7:       44 89 e7                mov    %r12d,%edi
+    0.00 :	  4ad0ca:       e8 41 76 1c 00          callq  674710 <LockBuffer>
+    0.00 :	  4ad0cf:       eb a8                   jmp    4ad079 <_bt_moveright+0x109>
+         :	                else
+         :	                        break;
+         :	        }
+         :
+         :	        if (P_IGNORE(opaque))
+         :	                elog(ERROR, "fell off the end of index \"%s\"",
+    0.00 :	  4ad0d1:       ba f6 48 7b 00          mov    $0x7b48f6,%edx
+    0.00 :	  4ad0d6:       be f5 00 00 00          mov    $0xf5,%esi
+    0.00 :	  4ad0db:       bf 70 47 7b 00          mov    $0x7b4770,%edi
+    0.00 :	  4ad0e0:       e8 3b e3 2c 00          callq  77b420 <elog_start>
+    0.00 :	  4ad0e5:       49 8b 55 30             mov    0x30(%r13),%rdx
+    0.00 :	  4ad0e9:       be 60 41 7b 00          mov    $0x7b4160,%esi
+    0.00 :	  4ad0ee:       bf 14 00 00 00          mov    $0x14,%edi
+    0.00 :	  4ad0f3:       31 c0                   xor    %eax,%eax
+    0.00 :	  4ad0f5:       e8 36 e1 2c 00          callq  77b230 <elog_finish>
+    0.00 :	  4ad0fa:       e8 d1 c3 fb ff          callq  4694d0 <abort@plt>
+
+Sorted summary for file /home/Computational/mark/andres/bin/postgres
+----------------------------------------------
+
+  100.00 /home/Computational/mark/src/postgres-andres/src/backend/executor/execScan.c:131
+ Percent |	Source code & Disassembly of /home/Computational/mark/andres/bin/postgres
+------------------------------------------------
+         :
+         :
+         :
+         :	Disassembly of section .text:
+         :
+         :	00000000005b3750 <ExecScan>:
+         :	 */
+         :	TupleTableSlot *
+         :	ExecScan(ScanState *node,
+         :	                 ExecScanAccessMtd accessMtd,   /* function returning a tuple */
+         :	                 ExecScanRecheckMtd recheckMtd)
+         :	{
+    0.00 :	  5b3750:       55                      push   %rbp
+    0.00 :	  5b3751:       48 89 e5                mov    %rsp,%rbp
+    0.00 :	  5b3754:       41 57                   push   %r15
+    0.00 :	  5b3756:       41 56                   push   %r14
+    0.00 :	  5b3758:       41 55                   push   %r13
+    0.00 :	  5b375a:       41 54                   push   %r12
+    0.00 :	  5b375c:       49 89 fc                mov    %rdi,%r12
+    0.00 :	  5b375f:       53                      push   %rbx
+    0.00 :	  5b3760:       48 83 ec 28             sub    $0x28,%rsp
+    0.00 :	  5b3764:       48 89 75 b8             mov    %rsi,-0x48(%rbp)
+    0.00 :	  5b3768:       48 89 55 b0             mov    %rdx,-0x50(%rbp)
+         :	        TupleTableSlot *resultSlot;
+         :
+         :	        /*
+         :	         * Fetch data from node
+         :	         */
+         :	        qual = node->ps.qual;
+    0.00 :	  5b376c:       48 8b 47 28             mov    0x28(%rdi),%rax
+         :
+         :	        /*
+         :	         * If we have neither a qual to check nor a projection to do, just skip
+         :	         * all the overhead and return the raw scan tuple.
+         :	         */
+         :	        if (!qual && !projInfo)
+    0.00 :	  5b3770:       48 85 c0                test   %rax,%rax
+         :	        TupleTableSlot *resultSlot;
+         :
+         :	        /*
+         :	         * Fetch data from node
+         :	         */
+         :	        qual = node->ps.qual;
+    0.00 :	  5b3773:       48 89 45 c0             mov    %rax,-0x40(%rbp)
+         :	        projInfo = node->ps.ps_ProjInfo;
+    0.00 :	  5b3777:       4c 8b 77 68             mov    0x68(%rdi),%r14
+         :	        econtext = node->ps.ps_ExprContext;
+    0.00 :	  5b377b:       4c 8b 6f 60             mov    0x60(%rdi),%r13
+         :
+         :	        /*
+         :	         * If we have neither a qual to check nor a projection to do, just skip
+         :	         * all the overhead and return the raw scan tuple.
+         :	         */
+         :	        if (!qual && !projInfo)
+    0.00 :	  5b377f:       41 0f 94 c7             sete   %r15b
+    0.00 :	  5b3783:       75 09                   jne    5b378e <ExecScan+0x3e>
+    0.00 :	  5b3785:       4d 85 f6                test   %r14,%r14
+    0.00 :	  5b3788:       0f 84 d6 01 00 00       je     5b3964 <ExecScan+0x214>
+         :	        /*
+         :	         * Check to see if we're still projecting out tuples from a previous scan
+         :	         * tuple (because there is a function-returning-set in the projection
+         :	         * expressions).  If so, try to project another one.
+         :	         */
+         :	        if (node->ps.ps_TupFromTlist)
+    0.00 :	  5b378e:       41 80 7c 24 70 00       cmpb   $0x0,0x70(%r12)
+    0.00 :	  5b3794:       0f 85 a6 01 00 00       jne    5b3940 <ExecScan+0x1f0>
+    0.00 :	  5b379a:       66 0f 1f 44 00 00       nopw   0x0(%rax,%rax,1)
+         :	        /*
+         :	         * Reset per-tuple memory context to free any expression evaluation
+         :	         * storage allocated in the previous tuple cycle.  Note this can't happen
+         :	         * until we're done projecting out tuples from a scan tuple.
+         :	         */
+         :	        ResetExprContext(econtext);
+    0.00 :	  5b37a0:       49 8b 7d 28             mov    0x28(%r13),%rdi
+    0.00 :	  5b37a4:       e8 07 52 1e 00          callq  7989b0 <MemoryContextReset>
+         :	         */
+         :	        for (;;)
+         :	        {
+         :	                TupleTableSlot *slot;
+         :
+         :	                CHECK_FOR_INTERRUPTS();
+    0.00 :	  5b37a9:       0f b6 05 e0 68 60 00    movzbl 0x6068e0(%rip),%eax        # bba090 <InterruptPending>
+    0.00 :	  5b37b0:       84 c0                   test   %al,%al
+    0.00 :	  5b37b2:       0f 85 50 01 00 00       jne    5b3908 <ExecScan+0x1b8>
+         :	static inline TupleTableSlot *
+         :	ExecScanFetch(ScanState *node,
+         :	                          ExecScanAccessMtd accessMtd,
+         :	                          ExecScanRecheckMtd recheckMtd)
+         :	{
+         :	        EState     *estate = node->ps.state;
+    0.00 :	  5b37b8:       49 8b 54 24 10          mov    0x10(%r12),%rdx
+         :
+         :	        if (estate->es_epqTuple != NULL)
+    0.00 :	  5b37bd:       48 83 ba d0 00 00 00    cmpq   $0x0,0xd0(%rdx)
+    0.00 :	  5b37c4:       00 
+    0.00 :	  5b37c5:       0f 84 0d 01 00 00       je     5b38d8 <ExecScan+0x188>
+         :	                 * conditions.
+         :	                 */
+         :	                Index           scanrelid = ((Scan *) node->ps.plan)->scanrelid;
+         :
+         :	                Assert(scanrelid > 0);
+         :	                if (estate->es_epqTupleSet[scanrelid - 1])
+    0.00 :	  5b37cb:       49 8b 44 24 08          mov    0x8(%r12),%rax
+    0.00 :	  5b37d0:       8b 40 60                mov    0x60(%rax),%eax
+    0.00 :	  5b37d3:       8d 48 ff                lea    -0x1(%rax),%ecx
+    0.00 :	  5b37d6:       48 8b 82 d8 00 00 00    mov    0xd8(%rdx),%rax
+    0.00 :	  5b37dd:       80 3c 08 00             cmpb   $0x0,(%rax,%rcx,1)
+    0.00 :	  5b37e1:       0f 84 f1 00 00 00       je     5b38d8 <ExecScan+0x188>
+         :	                {
+         :	                        TupleTableSlot *slot = node->ss_ScanTupleSlot;
+         :
+         :	                        /* Return empty slot if we already returned a tuple */
+         :	                        if (estate->es_epqScanDone[scanrelid - 1])
+    0.00 :	  5b37e7:       48 89 c8                mov    %rcx,%rax
+    0.00 :	  5b37ea:       48 03 82 e0 00 00 00    add    0xe0(%rdx),%rax
+         :	                Index           scanrelid = ((Scan *) node->ps.plan)->scanrelid;
+         :
+         :	                Assert(scanrelid > 0);
+         :	                if (estate->es_epqTupleSet[scanrelid - 1])
+         :	                {
+         :	                        TupleTableSlot *slot = node->ss_ScanTupleSlot;
+    0.00 :	  5b37f1:       49 8b 9c 24 88 00 00    mov    0x88(%r12),%rbx
+    0.00 :	  5b37f8:       00 
+         :
+         :	                        /* Return empty slot if we already returned a tuple */
+         :	                        if (estate->es_epqScanDone[scanrelid - 1])
+    0.00 :	  5b37f9:       80 38 00                cmpb   $0x0,(%rax)
+    0.00 :	  5b37fc:       0f 85 16 01 00 00       jne    5b3918 <ExecScan+0x1c8>
+         :	                                return ExecClearTuple(slot);
+         :	                        /* Else mark to remember that we shouldn't return more */
+         :	                        estate->es_epqScanDone[scanrelid - 1] = true;
+    0.00 :	  5b3802:       c6 00 01                movb   $0x1,(%rax)
+         :
+         :	                        /* Return empty slot if we haven't got a test tuple */
+         :	                        if (estate->es_epqTuple[scanrelid - 1] == NULL)
+    0.00 :	  5b3805:       48 8b 82 d0 00 00 00    mov    0xd0(%rdx),%rax
+    0.00 :	  5b380c:       48 8b 3c c8             mov    (%rax,%rcx,8),%rdi
+    0.00 :	  5b3810:       48 85 ff                test   %rdi,%rdi
+    0.00 :	  5b3813:       0f 84 ff 00 00 00       je     5b3918 <ExecScan+0x1c8>
+         :	                                return ExecClearTuple(slot);
+         :
+         :	                        /* Store test tuple in the plan node's scan slot */
+         :	                        ExecStoreTuple(estate->es_epqTuple[scanrelid - 1],
+    0.00 :	  5b3819:       31 c9                   xor    %ecx,%ecx
+    0.00 :	  5b381b:       31 d2                   xor    %edx,%edx
+    0.00 :	  5b381d:       48 89 de                mov    %rbx,%rsi
+    0.00 :	  5b3820:       e8 5b 0c 00 00          callq  5b4480 <ExecStoreTuple>
+         :	                                                   slot, InvalidBuffer, false);
+         :
+         :	                        /* Check if it meets the access-method conditions */
+         :	                        if (!(*recheckMtd) (node, slot))
+    0.00 :	  5b3825:       48 89 de                mov    %rbx,%rsi
+    0.00 :	  5b3828:       4c 89 e7                mov    %r12,%rdi
+    0.00 :	  5b382b:       ff 55 b0                callq  *-0x50(%rbp)
+    0.00 :	  5b382e:       84 c0                   test   %al,%al
+    0.00 :	  5b3830:       0f 84 fa 00 00 00       je     5b3930 <ExecScan+0x1e0>
+         :	                 * if the slot returned by the accessMtd contains NULL, then it means
+         :	                 * there is nothing more to scan so we just return an empty slot,
+         :	                 * being careful to use the projection result slot so it has correct
+         :	                 * tupleDesc.
+         :	                 */
+         :	                if (TupIsNull(slot))
+    0.00 :	  5b3836:       48 85 db                test   %rbx,%rbx
+    0.00 :	  5b3839:       0f 84 ab 00 00 00       je     5b38ea <ExecScan+0x19a>
+    0.00 :	  5b383f:       80 7b 04 00             cmpb   $0x0,0x4(%rbx)
+    0.00 :	  5b3843:       0f 85 a1 00 00 00       jne    5b38ea <ExecScan+0x19a>
+         :	                 *
+         :	                 * check for non-nil qual here to avoid a function call to ExecQual()
+         :	                 * when the qual is nil ... saves only a few cycles, but they add up
+         :	                 * ...
+         :	                 */
+         :	                if (!qual || ExecQual(qual, econtext, false))
+    0.00 :	  5b3849:       45 84 ff                test   %r15b,%r15b
+         :	                }
+         :
+         :	                /*
+         :	                 * place the current tuple into the expr context
+         :	                 */
+         :	                econtext->ecxt_scantuple = slot;
+    0.00 :	  5b384c:       49 89 5d 08             mov    %rbx,0x8(%r13)
+         :	                 *
+         :	                 * check for non-nil qual here to avoid a function call to ExecQual()
+         :	                 * when the qual is nil ... saves only a few cycles, but they add up
+         :	                 * ...
+         :	                 */
+         :	                if (!qual || ExecQual(qual, econtext, false))
+    0.00 :	  5b3850:       75 3e                   jne    5b3890 <ExecScan+0x140>
+    0.00 :	  5b3852:       48 8b 7d c0             mov    -0x40(%rbp),%rdi
+    0.00 :	  5b3856:       31 d2                   xor    %edx,%edx
+    0.00 :	  5b3858:       4c 89 ee                mov    %r13,%rsi
+    0.00 :	  5b385b:       e8 b0 96 ff ff          callq  5acf10 <ExecQual>
+    0.00 :	  5b3860:       84 c0                   test   %al,%al
+    0.00 :	  5b3862:       75 2c                   jne    5b3890 <ExecScan+0x140>
+         :	                                 */
+         :	                                return slot;
+         :	                        }
+         :	                }
+         :	                else
+         :	                        InstrCountFiltered1(node, 1);
+    0.00 :	  5b3864:       49 8b 44 24 18          mov    0x18(%r12),%rax
+    0.00 :	  5b3869:       48 85 c0                test   %rax,%rax
+    0.00 :	  5b386c:       0f 84 2e ff ff ff       je     5b37a0 <ExecScan+0x50>
+    0.00 :	  5b3872:       f2 0f 10 05 de b8 1f    movsd  0x1fb8de(%rip),%xmm0        # 7af158 <__func__.15777+0x10>
+    0.00 :	  5b3879:       00 
+    0.00 :	  5b387a:       f2 0f 58 80 c8 00 00    addsd  0xc8(%rax),%xmm0
+    0.00 :	  5b3881:       00 
+    0.00 :	  5b3882:       f2 0f 11 80 c8 00 00    movsd  %xmm0,0xc8(%rax)
+    0.00 :	  5b3889:       00 
+    0.00 :	  5b388a:       e9 11 ff ff ff          jmpq   5b37a0 <ExecScan+0x50>
+    0.00 :	  5b388f:       90                      nop
+         :	                if (!qual || ExecQual(qual, econtext, false))
+         :	                {
+         :	                        /*
+         :	                         * Found a satisfactory scan tuple.
+         :	                         */
+         :	                        if (projInfo)
+    0.00 :	  5b3890:       4d 85 f6                test   %r14,%r14
+    0.00 :	  5b3893:       74 2b                   je     5b38c0 <ExecScan+0x170>
+         :	                                /*
+         :	                                 * Form a projection tuple, store it in the result tuple slot
+         :	                                 * and return it --- unless we find we can project no tuples
+         :	                                 * from this scan tuple, in which case continue scan.
+         :	                                 */
+         :	                                resultSlot = ExecProject(projInfo, &isDone);
+    0.00 :	  5b3895:       48 8d 75 d4             lea    -0x2c(%rbp),%rsi
+    0.00 :	  5b3899:       4c 89 f7                mov    %r14,%rdi
+    0.00 :	  5b389c:       e8 5f 97 ff ff          callq  5ad000 <ExecProject>
+    0.00 :	  5b38a1:       48 89 c3                mov    %rax,%rbx
+         :	                                if (isDone != ExprEndResult)
+    0.00 :	  5b38a4:       8b 45 d4                mov    -0x2c(%rbp),%eax
+    0.00 :	  5b38a7:       83 f8 02                cmp    $0x2,%eax
+    0.00 :	  5b38aa:       0f 84 f0 fe ff ff       je     5b37a0 <ExecScan+0x50>
+         :	                                {
+         :	                                        node->ps.ps_TupFromTlist = (isDone == ExprMultipleResult);
+    0.00 :	  5b38b0:       83 e8 01                sub    $0x1,%eax
+    0.00 :	  5b38b3:       41 0f 94 44 24 70       sete   0x70(%r12)
+    0.00 :	  5b38b9:       0f 1f 80 00 00 00 00    nopl   0x0(%rax)
+         :	                /*
+         :	                 * Tuple fails qual, so free per-tuple memory and try again.
+         :	                 */
+         :	                ResetExprContext(econtext);
+         :	        }
+         :	}
+    0.00 :	  5b38c0:       48 83 c4 28             add    $0x28,%rsp
+    0.00 :	  5b38c4:       48 89 d8                mov    %rbx,%rax
+    0.00 :	  5b38c7:       5b                      pop    %rbx
+    0.00 :	  5b38c8:       41 5c                   pop    %r12
+    0.00 :	  5b38ca:       41 5d                   pop    %r13
+    0.00 :	  5b38cc:       41 5e                   pop    %r14
+    0.00 :	  5b38ce:       41 5f                   pop    %r15
+    0.00 :	  5b38d0:       c9                      leaveq 
+    0.00 :	  5b38d1:       c3                      retq   
+    0.00 :	  5b38d2:       66 0f 1f 44 00 00       nopw   0x0(%rax,%rax,1)
+         :	        }
+         :
+         :	        /*
+         :	         * Run the node-type-specific access method function to get the next tuple
+         :	         */
+         :	        return (*accessMtd) (node);
+    0.00 :	  5b38d8:       4c 89 e7                mov    %r12,%rdi
+    0.00 :	  5b38db:       ff 55 b8                callq  *-0x48(%rbp)
+    0.00 :	  5b38de:       48 89 c3                mov    %rax,%rbx
+         :	                 * if the slot returned by the accessMtd contains NULL, then it means
+         :	                 * there is nothing more to scan so we just return an empty slot,
+         :	                 * being careful to use the projection result slot so it has correct
+         :	                 * tupleDesc.
+         :	                 */
+         :	                if (TupIsNull(slot))
+    0.00 :	  5b38e1:       48 85 db                test   %rbx,%rbx
+    0.00 :	  5b38e4:       0f 85 55 ff ff ff       jne    5b383f <ExecScan+0xef>
+         :	                {
+         :	                        if (projInfo)
+    0.00 :	  5b38ea:       4d 85 f6                test   %r14,%r14
+    0.00 :	  5b38ed:       0f 1f 00                nopl   (%rax)
+    0.00 :	  5b38f0:       74 ce                   je     5b38c0 <ExecScan+0x170>
+         :	                                return ExecClearTuple(projInfo->pi_slot);
+    0.00 :	  5b38f2:       49 8b 7e 18             mov    0x18(%r14),%rdi
+    0.00 :	  5b38f6:       e8 15 08 00 00          callq  5b4110 <ExecClearTuple>
+    0.00 :	  5b38fb:       48 89 c3                mov    %rax,%rbx
+    0.00 :	  5b38fe:       66 90                   xchg   %ax,%ax
+         :	                /*
+         :	                 * Tuple fails qual, so free per-tuple memory and try again.
+         :	                 */
+         :	                ResetExprContext(econtext);
+         :	        }
+         :	}
+    0.00 :	  5b3900:       eb be                   jmp    5b38c0 <ExecScan+0x170>
+    0.00 :	  5b3902:       66 0f 1f 44 00 00       nopw   0x0(%rax,%rax,1)
+         :	         */
+         :	        for (;;)
+         :	        {
+         :	                TupleTableSlot *slot;
+         :
+         :	                CHECK_FOR_INTERRUPTS();
+    0.00 :	  5b3908:       e8 93 89 0e 00          callq  69c2a0 <ProcessInterrupts>
+    0.00 :	  5b390d:       0f 1f 00                nopl   (%rax)
+    0.00 :	  5b3910:       e9 a3 fe ff ff          jmpq   5b37b8 <ExecScan+0x68>
+    0.00 :	  5b3915:       0f 1f 00                nopl   (%rax)
+         :	                        /* Else mark to remember that we shouldn't return more */
+         :	                        estate->es_epqScanDone[scanrelid - 1] = true;
+         :
+         :	                        /* Return empty slot if we haven't got a test tuple */
+         :	                        if (estate->es_epqTuple[scanrelid - 1] == NULL)
+         :	                                return ExecClearTuple(slot);
+    0.00 :	  5b3918:       48 89 df                mov    %rbx,%rdi
+    0.00 :	  5b391b:       0f 1f 44 00 00          nopl   0x0(%rax,%rax,1)
+    0.00 :	  5b3920:       e8 eb 07 00 00          callq  5b4110 <ExecClearTuple>
+    0.00 :	  5b3925:       48 89 c3                mov    %rax,%rbx
+    0.00 :	  5b3928:       e9 09 ff ff ff          jmpq   5b3836 <ExecScan+0xe6>
+    0.00 :	  5b392d:       0f 1f 00                nopl   (%rax)
+         :	                        ExecStoreTuple(estate->es_epqTuple[scanrelid - 1],
+         :	                                                   slot, InvalidBuffer, false);
+         :
+         :	                        /* Check if it meets the access-method conditions */
+         :	                        if (!(*recheckMtd) (node, slot))
+         :	                                ExecClearTuple(slot);   /* would not be returned by scan */
+    0.00 :	  5b3930:       48 89 df                mov    %rbx,%rdi
+    0.00 :	  5b3933:       e8 d8 07 00 00          callq  5b4110 <ExecClearTuple>
+    0.00 :	  5b3938:       e9 f9 fe ff ff          jmpq   5b3836 <ExecScan+0xe6>
+    0.00 :	  5b393d:       0f 1f 00                nopl   (%rax)
+         :	         * expressions).  If so, try to project another one.
+         :	         */
+         :	        if (node->ps.ps_TupFromTlist)
+         :	        {
+         :	                Assert(projInfo);               /* can't get here if not projecting */
+         :	                resultSlot = ExecProject(projInfo, &isDone);
+    0.00 :	  5b3940:       48 8d 75 d4             lea    -0x2c(%rbp),%rsi
+    0.00 :	  5b3944:       4c 89 f7                mov    %r14,%rdi
+    0.00 :	  5b3947:       e8 b4 96 ff ff          callq  5ad000 <ExecProject>
+         :	                if (isDone == ExprMultipleResult)
+    0.00 :	  5b394c:       83 7d d4 01             cmpl   $0x1,-0x2c(%rbp)
+         :	         * expressions).  If so, try to project another one.
+         :	         */
+         :	        if (node->ps.ps_TupFromTlist)
+         :	        {
+         :	                Assert(projInfo);               /* can't get here if not projecting */
+         :	                resultSlot = ExecProject(projInfo, &isDone);
+    0.00 :	  5b3950:       48 89 c3                mov    %rax,%rbx
+         :	                if (isDone == ExprMultipleResult)
+    0.00 :	  5b3953:       0f 84 67 ff ff ff       je     5b38c0 <ExecScan+0x170>
+         :	                        return resultSlot;
+         :	                /* Done with that source tuple... */
+         :	                node->ps.ps_TupFromTlist = false;
+    0.00 :	  5b3959:       41 c6 44 24 70 00       movb   $0x0,0x70(%r12)
+    0.00 :	  5b395f:       e9 3c fe ff ff          jmpq   5b37a0 <ExecScan+0x50>
+         :	         * If we have neither a qual to check nor a projection to do, just skip
+         :	         * all the overhead and return the raw scan tuple.
+         :	         */
+         :	        if (!qual && !projInfo)
+         :	        {
+         :	                ResetExprContext(econtext);
+    0.00 :	  5b3964:       49 8b 7d 28             mov    0x28(%r13),%rdi
+ /home/Computational/mark/src/postgres-andres/src/backend/executor/execScan.c:131
+  100.00 :	  5b3968:       e8 43 50 1e 00          callq  7989b0 <MemoryContextReset>
+         :	static inline TupleTableSlot *
+         :	ExecScanFetch(ScanState *node,
+         :	                          ExecScanAccessMtd accessMtd,
+         :	                          ExecScanRecheckMtd recheckMtd)
+         :	{
+         :	        EState     *estate = node->ps.state;
+    0.00 :	  5b396d:       49 8b 54 24 10          mov    0x10(%r12),%rdx
+         :
+         :	        if (estate->es_epqTuple != NULL)
+    0.00 :	  5b3972:       48 83 ba d0 00 00 00    cmpq   $0x0,0xd0(%rdx)
+    0.00 :	  5b3979:       00 
+    0.00 :	  5b397a:       74 74                   je     5b39f0 <ExecScan+0x2a0>
+         :	                 * conditions.
+         :	                 */
+         :	                Index           scanrelid = ((Scan *) node->ps.plan)->scanrelid;
+         :
+         :	                Assert(scanrelid > 0);
+         :	                if (estate->es_epqTupleSet[scanrelid - 1])
+    0.00 :	  5b397c:       49 8b 44 24 08          mov    0x8(%r12),%rax
+    0.00 :	  5b3981:       8b 40 60                mov    0x60(%rax),%eax
+    0.00 :	  5b3984:       8d 48 ff                lea    -0x1(%rax),%ecx
+    0.00 :	  5b3987:       48 8b 82 d8 00 00 00    mov    0xd8(%rdx),%rax
+    0.00 :	  5b398e:       80 3c 08 00             cmpb   $0x0,(%rax,%rcx,1)
+    0.00 :	  5b3992:       74 5c                   je     5b39f0 <ExecScan+0x2a0>
+         :	                {
+         :	                        TupleTableSlot *slot = node->ss_ScanTupleSlot;
+         :
+         :	                        /* Return empty slot if we already returned a tuple */
+         :	                        if (estate->es_epqScanDone[scanrelid - 1])
+    0.00 :	  5b3994:       48 89 c8                mov    %rcx,%rax
+    0.00 :	  5b3997:       48 03 82 e0 00 00 00    add    0xe0(%rdx),%rax
+         :	                Index           scanrelid = ((Scan *) node->ps.plan)->scanrelid;
+         :
+         :	                Assert(scanrelid > 0);
+         :	                if (estate->es_epqTupleSet[scanrelid - 1])
+         :	                {
+         :	                        TupleTableSlot *slot = node->ss_ScanTupleSlot;
+    0.00 :	  5b399e:       49 8b 9c 24 88 00 00    mov    0x88(%r12),%rbx
+    0.00 :	  5b39a5:       00 
+         :
+         :	                        /* Return empty slot if we already returned a tuple */
+         :	                        if (estate->es_epqScanDone[scanrelid - 1])
+    0.00 :	  5b39a6:       80 38 00                cmpb   $0x0,(%rax)
+    0.00 :	  5b39a9:       75 5a                   jne    5b3a05 <ExecScan+0x2b5>
+         :	                                return ExecClearTuple(slot);
+         :	                        /* Else mark to remember that we shouldn't return more */
+         :	                        estate->es_epqScanDone[scanrelid - 1] = true;
+    0.00 :	  5b39ab:       c6 00 01                movb   $0x1,(%rax)
+         :
+         :	                        /* Return empty slot if we haven't got a test tuple */
+         :	                        if (estate->es_epqTuple[scanrelid - 1] == NULL)
+    0.00 :	  5b39ae:       48 8b 82 d0 00 00 00    mov    0xd0(%rdx),%rax
+    0.00 :	  5b39b5:       48 8b 3c c8             mov    (%rax,%rcx,8),%rdi
+    0.00 :	  5b39b9:       48 85 ff                test   %rdi,%rdi
+    0.00 :	  5b39bc:       74 47                   je     5b3a05 <ExecScan+0x2b5>
+         :	                                return ExecClearTuple(slot);
+         :
+         :	                        /* Store test tuple in the plan node's scan slot */
+         :	                        ExecStoreTuple(estate->es_epqTuple[scanrelid - 1],
+    0.00 :	  5b39be:       31 c9                   xor    %ecx,%ecx
+    0.00 :	  5b39c0:       31 d2                   xor    %edx,%edx
+    0.00 :	  5b39c2:       48 89 de                mov    %rbx,%rsi
+    0.00 :	  5b39c5:       e8 b6 0a 00 00          callq  5b4480 <ExecStoreTuple>
+         :	                                                   slot, InvalidBuffer, false);
+         :
+         :	                        /* Check if it meets the access-method conditions */
+         :	                        if (!(*recheckMtd) (node, slot))
+    0.00 :	  5b39ca:       48 89 de                mov    %rbx,%rsi
+    0.00 :	  5b39cd:       4c 89 e7                mov    %r12,%rdi
+    0.00 :	  5b39d0:       ff 55 b0                callq  *-0x50(%rbp)
+    0.00 :	  5b39d3:       84 c0                   test   %al,%al
+    0.00 :	  5b39d5:       0f 85 e5 fe ff ff       jne    5b38c0 <ExecScan+0x170>
+         :	                                ExecClearTuple(slot);   /* would not be returned by scan */
+    0.00 :	  5b39db:       48 89 df                mov    %rbx,%rdi
+    0.00 :	  5b39de:       e8 2d 07 00 00          callq  5b4110 <ExecClearTuple>
+    0.00 :	  5b39e3:       e9 d8 fe ff ff          jmpq   5b38c0 <ExecScan+0x170>
+    0.00 :	  5b39e8:       0f 1f 84 00 00 00 00    nopl   0x0(%rax,%rax,1)
+    0.00 :	  5b39ef:       00 
+         :	        }
+         :
+         :	        /*
+         :	         * Run the node-type-specific access method function to get the next tuple
+         :	         */
+         :	        return (*accessMtd) (node);
+    0.00 :	  5b39f0:       4c 89 e7                mov    %r12,%rdi
+    0.00 :	  5b39f3:       ff 55 b8                callq  *-0x48(%rbp)
+    0.00 :	  5b39f6:       48 89 c3                mov    %rax,%rbx
+    0.00 :	  5b39f9:       0f 1f 80 00 00 00 00    nopl   0x0(%rax)
+    0.00 :	  5b3a00:       e9 bb fe ff ff          jmpq   5b38c0 <ExecScan+0x170>
+         :	                        /* Else mark to remember that we shouldn't return more */
+         :	                        estate->es_epqScanDone[scanrelid - 1] = true;
+         :
+         :	                        /* Return empty slot if we haven't got a test tuple */
+         :	                        if (estate->es_epqTuple[scanrelid - 1] == NULL)
+         :	                                return ExecClearTuple(slot);
+    0.00 :	  5b3a05:       48 89 df                mov    %rbx,%rdi
+    0.00 :	  5b3a08:       e8 03 07 00 00          callq  5b4110 <ExecClearTuple>
+    0.00 :	  5b3a0d:       48 89 c3                mov    %rax,%rbx
+    0.00 :	  5b3a10:       e9 ab fe ff ff          jmpq   5b38c0 <ExecScan+0x170>
+
+Sorted summary for file /home/Computational/mark/andres/bin/postgres
+----------------------------------------------
+
+  100.00 /home/Computational/mark/src/postgres-andres/src/backend/executor/execTuples.c:334
+ Percent |	Source code & Disassembly of /home/Computational/mark/andres/bin/postgres
+------------------------------------------------
+         :
+         :
+         :
+         :	Disassembly of section .text:
+         :
+         :	00000000005b4480 <ExecStoreTuple>:
+         :	TupleTableSlot *
+         :	ExecStoreTuple(HeapTuple tuple,
+         :	                           TupleTableSlot *slot,
+         :	                           Buffer buffer,
+         :	                           bool shouldFree)
+         :	{
+    0.00 :	  5b4480:       55                      push   %rbp
+ /home/Computational/mark/src/postgres-andres/src/backend/executor/execTuples.c:334
+  100.00 :	  5b4481:       48 89 e5                mov    %rsp,%rbp
+    0.00 :	  5b4484:       48 89 5d e0             mov    %rbx,-0x20(%rbp)
+    0.00 :	  5b4488:       4c 89 65 e8             mov    %r12,-0x18(%rbp)
+    0.00 :	  5b448c:       48 89 f3                mov    %rsi,%rbx
+    0.00 :	  5b448f:       4c 89 6d f0             mov    %r13,-0x10(%rbp)
+    0.00 :	  5b4493:       4c 89 75 f8             mov    %r14,-0x8(%rbp)
+    0.00 :	  5b4497:       48 83 ec 20             sub    $0x20,%rsp
+         :	        Assert(BufferIsValid(buffer) ? (!shouldFree) : true);
+         :
+         :	        /*
+         :	         * Free any old physical tuple belonging to the slot.
+         :	         */
+         :	        if (slot->tts_shouldFree)
+    0.00 :	  5b449b:       80 7e 05 00             cmpb   $0x0,0x5(%rsi)
+         :	TupleTableSlot *
+         :	ExecStoreTuple(HeapTuple tuple,
+         :	                           TupleTableSlot *slot,
+         :	                           Buffer buffer,
+         :	                           bool shouldFree)
+         :	{
+    0.00 :	  5b449f:       49 89 fe                mov    %rdi,%r14
+    0.00 :	  5b44a2:       41 89 d4                mov    %edx,%r12d
+    0.00 :	  5b44a5:       41 89 cd                mov    %ecx,%r13d
+         :	        Assert(BufferIsValid(buffer) ? (!shouldFree) : true);
+         :
+         :	        /*
+         :	         * Free any old physical tuple belonging to the slot.
+         :	         */
+         :	        if (slot->tts_shouldFree)
+    0.00 :	  5b44a8:       0f 85 92 00 00 00       jne    5b4540 <ExecStoreTuple+0xc0>
+         :	                heap_freetuple(slot->tts_tuple);
+         :	        if (slot->tts_shouldFreeMin)
+    0.00 :	  5b44ae:       80 7b 06 00             cmpb   $0x0,0x6(%rbx)
+    0.00 :	  5b44b2:       75 74                   jne    5b4528 <ExecStoreTuple+0xa8>
+         :	         * This is coded to optimize the case where the slot previously held a
+         :	         * tuple on the same disk page: in that case releasing and re-acquiring
+         :	         * the pin is a waste of cycles.  This is a common situation during
+         :	         * seqscans, so it's worth troubling over.
+         :	         */
+         :	        if (slot->tts_buffer != buffer)
+    0.00 :	  5b44b4:       8b 7b 20                mov    0x20(%rbx),%edi
+         :	                heap_free_minimal_tuple(slot->tts_mintuple);
+         :
+         :	        /*
+         :	         * Store the new tuple into the specified slot.
+         :	         */
+         :	        slot->tts_isempty = false;
+    0.00 :	  5b44b7:       c6 43 04 00             movb   $0x0,0x4(%rbx)
+         :	        slot->tts_shouldFree = shouldFree;
+    0.00 :	  5b44bb:       44 88 6b 05             mov    %r13b,0x5(%rbx)
+         :	        slot->tts_shouldFreeMin = false;
+    0.00 :	  5b44bf:       c6 43 06 00             movb   $0x0,0x6(%rbx)
+         :	        slot->tts_tuple = tuple;
+    0.00 :	  5b44c3:       4c 89 73 08             mov    %r14,0x8(%rbx)
+         :	        slot->tts_mintuple = NULL;
+    0.00 :	  5b44c7:       48 c7 43 38 00 00 00    movq   $0x0,0x38(%rbx)
+    0.00 :	  5b44ce:       00 
+         :	         * This is coded to optimize the case where the slot previously held a
+         :	         * tuple on the same disk page: in that case releasing and re-acquiring
+         :	         * the pin is a waste of cycles.  This is a common situation during
+         :	         * seqscans, so it's worth troubling over.
+         :	         */
+         :	        if (slot->tts_buffer != buffer)
+    0.00 :	  5b44cf:       44 39 e7                cmp    %r12d,%edi
+         :	        slot->tts_shouldFreeMin = false;
+         :	        slot->tts_tuple = tuple;
+         :	        slot->tts_mintuple = NULL;
+         :
+         :	        /* Mark extracted state invalid */
+         :	        slot->tts_nvalid = 0;
+    0.00 :	  5b44d2:       c7 43 24 00 00 00 00    movl   $0x0,0x24(%rbx)
+         :	         * This is coded to optimize the case where the slot previously held a
+         :	         * tuple on the same disk page: in that case releasing and re-acquiring
+         :	         * the pin is a waste of cycles.  This is a common situation during
+         :	         * seqscans, so it's worth troubling over.
+         :	         */
+         :	        if (slot->tts_buffer != buffer)
+    0.00 :	  5b44d9:       74 0d                   je     5b44e8 <ExecStoreTuple+0x68>
+         :	        {
+         :	                if (BufferIsValid(slot->tts_buffer))
+    0.00 :	  5b44db:       85 ff                   test   %edi,%edi
+    0.00 :	  5b44dd:       75 31                   jne    5b4510 <ExecStoreTuple+0x90>
+         :	                        ReleaseBuffer(slot->tts_buffer);
+         :	                slot->tts_buffer = buffer;
+         :	                if (BufferIsValid(buffer))
+    0.00 :	  5b44df:       45 85 e4                test   %r12d,%r12d
+         :	         */
+         :	        if (slot->tts_buffer != buffer)
+         :	        {
+         :	                if (BufferIsValid(slot->tts_buffer))
+         :	                        ReleaseBuffer(slot->tts_buffer);
+         :	                slot->tts_buffer = buffer;
+    0.00 :	  5b44e2:       44 89 63 20             mov    %r12d,0x20(%rbx)
+         :	                if (BufferIsValid(buffer))
+    0.00 :	  5b44e6:       75 18                   jne    5b4500 <ExecStoreTuple+0x80>
+         :	                        IncrBufferRefCount(buffer);
+         :	        }
+         :
+         :	        return slot;
+         :	}
+    0.00 :	  5b44e8:       48 89 d8                mov    %rbx,%rax
+    0.00 :	  5b44eb:       4c 8b 64 24 08          mov    0x8(%rsp),%r12
+    0.00 :	  5b44f0:       48 8b 1c 24             mov    (%rsp),%rbx
+    0.00 :	  5b44f4:       4c 8b 6c 24 10          mov    0x10(%rsp),%r13
+    0.00 :	  5b44f9:       4c 8b 74 24 18          mov    0x18(%rsp),%r14
+    0.00 :	  5b44fe:       c9                      leaveq 
+    0.00 :	  5b44ff:       c3                      retq   
+         :	        {
+         :	                if (BufferIsValid(slot->tts_buffer))
+         :	                        ReleaseBuffer(slot->tts_buffer);
+         :	                slot->tts_buffer = buffer;
+         :	                if (BufferIsValid(buffer))
+         :	                        IncrBufferRefCount(buffer);
+    0.00 :	  5b4500:       44 89 e7                mov    %r12d,%edi
+    0.00 :	  5b4503:       e8 58 06 0c 00          callq  674b60 <IncrBufferRefCount>
+    0.00 :	  5b4508:       eb de                   jmp    5b44e8 <ExecStoreTuple+0x68>
+    0.00 :	  5b450a:       66 0f 1f 44 00 00       nopw   0x0(%rax,%rax,1)
+         :	         * seqscans, so it's worth troubling over.
+         :	         */
+         :	        if (slot->tts_buffer != buffer)
+         :	        {
+         :	                if (BufferIsValid(slot->tts_buffer))
+         :	                        ReleaseBuffer(slot->tts_buffer);
+    0.00 :	  5b4510:       e8 4b 09 0c 00          callq  674e60 <ReleaseBuffer>
+         :	                slot->tts_buffer = buffer;
+         :	                if (BufferIsValid(buffer))
+    0.00 :	  5b4515:       45 85 e4                test   %r12d,%r12d
+         :	         */
+         :	        if (slot->tts_buffer != buffer)
+         :	        {
+         :	                if (BufferIsValid(slot->tts_buffer))
+         :	                        ReleaseBuffer(slot->tts_buffer);
+         :	                slot->tts_buffer = buffer;
+    0.00 :	  5b4518:       44 89 63 20             mov    %r12d,0x20(%rbx)
+    0.00 :	  5b451c:       0f 1f 40 00             nopl   0x0(%rax)
+         :	                if (BufferIsValid(buffer))
+    0.00 :	  5b4520:       74 c6                   je     5b44e8 <ExecStoreTuple+0x68>
+    0.00 :	  5b4522:       eb dc                   jmp    5b4500 <ExecStoreTuple+0x80>
+    0.00 :	  5b4524:       0f 1f 40 00             nopl   0x0(%rax)
+         :	         * Free any old physical tuple belonging to the slot.
+         :	         */
+         :	        if (slot->tts_shouldFree)
+         :	                heap_freetuple(slot->tts_tuple);
+         :	        if (slot->tts_shouldFreeMin)
+         :	                heap_free_minimal_tuple(slot->tts_mintuple);
+    0.00 :	  5b4528:       48 8b 7b 38             mov    0x38(%rbx),%rdi
+    0.00 :	  5b452c:       0f 1f 40 00             nopl   0x0(%rax)
+    0.00 :	  5b4530:       e8 7b a7 eb ff          callq  46ecb0 <heap_free_minimal_tuple>
+    0.00 :	  5b4535:       e9 7a ff ff ff          jmpq   5b44b4 <ExecStoreTuple+0x34>
+    0.00 :	  5b453a:       66 0f 1f 44 00 00       nopw   0x0(%rax,%rax,1)
+         :
+         :	        /*
+         :	         * Free any old physical tuple belonging to the slot.
+         :	         */
+         :	        if (slot->tts_shouldFree)
+         :	                heap_freetuple(slot->tts_tuple);
+    0.00 :	  5b4540:       48 8b 7e 08             mov    0x8(%rsi),%rdi
+    0.00 :	  5b4544:       e8 77 a7 eb ff          callq  46ecc0 <heap_freetuple>
+    0.00 :	  5b4549:       e9 60 ff ff ff          jmpq   5b44ae <ExecStoreTuple+0x2e>
+
+Sorted summary for file /home/Computational/mark/andres/bin/postgres
+----------------------------------------------
+
+  100.00 /home/Computational/mark/src/postgres-andres/src/backend/storage/buffer/bufmgr.c:521
+ Percent |	Source code & Disassembly of /home/Computational/mark/andres/bin/postgres
+------------------------------------------------
+         :
+         :
+         :
+         :	Disassembly of section .text:
+         :
+         :	0000000000676570 <ReadBufferExtended>:
+         :	 * See buffer/README for details.
+         :	 */
+         :	Buffer
+         :	ReadBufferExtended(Relation reln, ForkNumber forkNum, BlockNumber blockNum,
+         :	                                   ReadBufferMode mode, BufferAccessStrategy strategy)
+         :	{
+    0.00 :	  676570:       55                      push   %rbp
+    0.00 :	  676571:       48 89 e5                mov    %rsp,%rbp
+    0.00 :	  676574:       48 89 5d d8             mov    %rbx,-0x28(%rbp)
+    0.00 :	  676578:       4c 89 65 e0             mov    %r12,-0x20(%rbp)
+    0.00 :	  67657c:       48 89 fb                mov    %rdi,%rbx
+    0.00 :	  67657f:       4c 89 6d e8             mov    %r13,-0x18(%rbp)
+    0.00 :	  676583:       4c 89 75 f0             mov    %r14,-0x10(%rbp)
+    0.00 :	  676587:       41 89 cd                mov    %ecx,%r13d
+    0.00 :	  67658a:       4c 89 7d f8             mov    %r15,-0x8(%rbp)
+    0.00 :	  67658e:       48 83 ec 40             sub    $0x40,%rsp
+         :	        bool            hit;
+         :	        Buffer          buf;
+         :
+         :	        /* Open it at the smgr level if not already done */
+         :	        RelationOpenSmgr(reln);
+    0.00 :	  676592:       48 83 7f 10 00          cmpq   $0x0,0x10(%rdi)
+         :	 * See buffer/README for details.
+         :	 */
+         :	Buffer
+         :	ReadBufferExtended(Relation reln, ForkNumber forkNum, BlockNumber blockNum,
+         :	                                   ReadBufferMode mode, BufferAccessStrategy strategy)
+         :	{
+    0.00 :	  676597:       41 89 f7                mov    %esi,%r15d
+    0.00 :	  67659a:       41 89 d6                mov    %edx,%r14d
+    0.00 :	  67659d:       4d 89 c4                mov    %r8,%r12
+         :	        bool            hit;
+         :	        Buffer          buf;
+         :
+         :	        /* Open it at the smgr level if not already done */
+         :	        RelationOpenSmgr(reln);
+    0.00 :	  6765a0:       0f 84 aa 00 00 00       je     676650 <ReadBufferExtended+0xe0>
+         :	        /*
+         :	         * Reject attempts to read non-local temporary relations; we would be
+         :	         * likely to get wrong data since we have no visibility into the owning
+         :	         * session's local buffers.
+         :	         */
+         :	        if (RELATION_IS_OTHER_TEMP(reln))
+    0.00 :	  6765a6:       48 8b 43 30             mov    0x30(%rbx),%rax
+    0.00 :	  6765aa:       0f b6 50 6e             movzbl 0x6e(%rax),%edx
+  100.00 :	  6765ae:       80 fa 74                cmp    $0x74,%dl
+    0.00 :	  6765b1:       74 6d                   je     676620 <ReadBufferExtended+0xb0>
+         :
+         :	        /*
+         :	         * Read the buffer, and update pgstat counters to reflect a cache hit or
+         :	         * miss.
+         :	         */
+         :	        pgstat_count_buffer_read(reln);
+    0.00 :	  6765b3:       48 8b 83 38 01 00 00    mov    0x138(%rbx),%rax
+    0.00 :	  6765ba:       48 85 c0                test   %rax,%rax
+    0.00 :	  6765bd:       74 0d                   je     6765cc <ReadBufferExtended+0x5c>
+    0.00 :	  6765bf:       48 83 40 60 01          addq   $0x1,0x60(%rax)
+    0.00 :	  6765c4:       48 8b 43 30             mov    0x30(%rbx),%rax
+    0.00 :	  6765c8:       0f b6 50 6e             movzbl 0x6e(%rax),%edx
+         :	        buf = ReadBuffer_common(reln->rd_smgr, reln->rd_rel->relpersistence,
+    0.00 :	  6765cc:       48 8b 7b 10             mov    0x10(%rbx),%rdi
+    0.00 :	  6765d0:       48 8d 45 d7             lea    -0x29(%rbp),%rax
+    0.00 :	  6765d4:       0f be f2                movsbl %dl,%esi
+    0.00 :	  6765d7:       4d 89 e1                mov    %r12,%r9
+    0.00 :	  6765da:       45 89 e8                mov    %r13d,%r8d
+    0.00 :	  6765dd:       44 89 f1                mov    %r14d,%ecx
+    0.00 :	  6765e0:       44 89 fa                mov    %r15d,%edx
+    0.00 :	  6765e3:       48 89 04 24             mov    %rax,(%rsp)
+    0.00 :	  6765e7:       e8 b4 f6 ff ff          callq  675ca0 <ReadBuffer_common>
+         :	                                                        forkNum, blockNum, mode, strategy, &hit);
+         :	        if (hit)
+    0.00 :	  6765ec:       80 7d d7 00             cmpb   $0x0,-0x29(%rbp)
+    0.00 :	  6765f0:       74 11                   je     676603 <ReadBufferExtended+0x93>
+         :	                pgstat_count_buffer_hit(reln);
+    0.00 :	  6765f2:       48 8b 93 38 01 00 00    mov    0x138(%rbx),%rdx
+    0.00 :	  6765f9:       48 85 d2                test   %rdx,%rdx
+    0.00 :	  6765fc:       74 05                   je     676603 <ReadBufferExtended+0x93>
+    0.00 :	  6765fe:       48 83 42 68 01          addq   $0x1,0x68(%rdx)
+         :	        return buf;
+         :	}
+    0.00 :	  676603:       48 8b 5d d8             mov    -0x28(%rbp),%rbx
+    0.00 :	  676607:       4c 8b 65 e0             mov    -0x20(%rbp),%r12
+    0.00 :	  67660b:       4c 8b 6d e8             mov    -0x18(%rbp),%r13
+    0.00 :	  67660f:       4c 8b 75 f0             mov    -0x10(%rbp),%r14
+    0.00 :	  676613:       4c 8b 7d f8             mov    -0x8(%rbp),%r15
+    0.00 :	  676617:       c9                      leaveq 
+    0.00 :	  676618:       c3                      retq   
+    0.00 :	  676619:       0f 1f 80 00 00 00 00    nopl   0x0(%rax)
+         :	        /*
+         :	         * Reject attempts to read non-local temporary relations; we would be
+         :	         * likely to get wrong data since we have no visibility into the owning
+         :	         * session's local buffers.
+         :	         */
+         :	        if (RELATION_IS_OTHER_TEMP(reln))
+    0.00 :	  676620:       80 7b 20 00             cmpb   $0x0,0x20(%rbx)
+    0.00 :	  676624:       75 8d                   jne    6765b3 <ReadBufferExtended+0x43>
+         :	                ereport(ERROR,
+    0.00 :	  676626:       45 31 c0                xor    %r8d,%r8d
+    0.00 :	  676629:       b9 c0 a0 8a 00          mov    $0x8aa0c0,%ecx
+    0.00 :	  67662e:       ba 0c 02 00 00          mov    $0x20c,%edx
+    0.00 :	  676633:       be 53 9d 8a 00          mov    $0x8a9d53,%esi
+    0.00 :	  676638:       bf 14 00 00 00          mov    $0x14,%edi
+    0.00 :	  67663d:       e8 7e 44 10 00          callq  77aac0 <errstart>
+    0.00 :	  676642:       84 c0                   test   %al,%al
+    0.00 :	  676644:       75 29                   jne    67666f <ReadBufferExtended+0xff>
+    0.00 :	  676646:       e8 85 2e df ff          callq  4694d0 <abort@plt>
+    0.00 :	  67664b:       0f 1f 44 00 00          nopl   0x0(%rax,%rax,1)
+         :	{
+         :	        bool            hit;
+         :	        Buffer          buf;
+         :
+         :	        /* Open it at the smgr level if not already done */
+         :	        RelationOpenSmgr(reln);
+    0.00 :	  676650:       8b 57 1c                mov    0x1c(%rdi),%edx
+    0.00 :	  676653:       8b 73 08                mov    0x8(%rbx),%esi
+    0.00 :	  676656:       48 8b 3f                mov    (%rdi),%rdi
+    0.00 :	  676659:       e8 d2 33 02 00          callq  699a30 <smgropen>
+    0.00 :	  67665e:       48 8d 7b 10             lea    0x10(%rbx),%rdi
+    0.00 :	  676662:       48 89 c6                mov    %rax,%rsi
+    0.00 :	  676665:       e8 96 2c 02 00          callq  699300 <smgrsetowner>
+    0.00 :	  67666a:       e9 37 ff ff ff          jmpq   6765a6 <ReadBufferExtended+0x36>
+         :	         * Reject attempts to read non-local temporary relations; we would be
+         :	         * likely to get wrong data since we have no visibility into the owning
+         :	         * session's local buffers.
+         :	         */
+         :	        if (RELATION_IS_OTHER_TEMP(reln))
+         :	                ereport(ERROR,
+    0.00 :	  67666f:       bf 08 9f 8a 00          mov    $0x8a9f08,%edi
+    0.00 :	  676674:       31 c0                   xor    %eax,%eax
+    0.00 :	  676676:       e8 25 62 10 00          callq  77c8a0 <errmsg>
+    0.00 :	  67667b:       bf 40 04 00 00          mov    $0x440,%edi
+    0.00 :	  676680:       89 c3                   mov    %eax,%ebx
+    0.00 :	  676682:       e8 c9 66 10 00          callq  77cd50 <errcode>
+    0.00 :	  676687:       89 de                   mov    %ebx,%esi
+    0.00 :	  676689:       89 c7                   mov    %eax,%edi
+    0.00 :	  67668b:       31 c0                   xor    %eax,%eax
+    0.00 :	  67668d:       e8 4e 3f 10 00          callq  77a5e0 <errfinish>
+    0.00 :	  676692:       eb b2                   jmp    676646 <ReadBufferExtended+0xd6>
+
+Sorted summary for file /home/Computational/mark/andres/bin/postgres
+----------------------------------------------
+
+  100.00 /home/Computational/mark/src/postgres-andres/src/backend/utils/hash/chash.c:856
+ Percent |	Source code & Disassembly of /home/Computational/mark/andres/bin/postgres
+------------------------------------------------
+         :
+         :
+         :
+         :	Disassembly of section .text:
+         :
+         :	0000000000782f20 <CHashInsert>:
+         :	 * degrading performance; or CHashAllocate may enter a tight loop until such
+         :	 * time as an element is deleted).
+         :	 */
+         :	bool
+         :	CHashInsert(CHashTable table, void *entry)
+         :	{
+    0.00 :	  782f20:       55                      push   %rbp
+    0.00 :	  782f21:       48 89 e5                mov    %rsp,%rbp
+    0.00 :	  782f24:       41 57                   push   %r15
+    0.00 :	  782f26:       41 56                   push   %r14
+    0.00 :	  782f28:       41 55                   push   %r13
+    0.00 :	  782f2a:       41 54                   push   %r12
+    0.00 :	  782f2c:       49 89 fc                mov    %rdi,%r12
+    0.00 :	  782f2f:       53                      push   %rbx
+    0.00 :	  782f30:       48 83 ec 38             sub    $0x38,%rsp
+    0.00 :	  782f34:       48 89 75 a0             mov    %rsi,-0x60(%rbp)
+         :	        uint32  hashcode = hash_any(entry, table->desc.key_size);
+    0.00 :	  782f38:       0f b7 77 0e             movzwl 0xe(%rdi),%esi
+    0.00 :	  782f3c:       48 8b 7d a0             mov    -0x60(%rbp),%rdi
+    0.00 :	  782f40:       e8 0b d4 d0 ff          callq  490350 <hash_any>
+    0.00 :	  782f45:       89 45 a8                mov    %eax,-0x58(%rbp)
+         :	        uint32  bucket = hashcode & table->bucket_mask;
+    0.00 :	  782f48:       41 23 44 24 10          and    0x10(%r12),%eax
+         :	{
+         :	        uint32          f_current;
+         :	        CHashPtr        new;
+         :
+         :	        /* Pick a starting freelist base on our backend ID. */
+         :	        f_current = ((uint32) MyBackendId) % CHashTableNFreeLists(table);
+    0.00 :	  782f4d:       8b 35 b5 5b 3e 00       mov    0x3e5bb5(%rip),%esi        # b68b08 <MyBackendId>
+    0.00 :	  782f53:       41 0f b7 7c 24 16       movzwl 0x16(%r12),%edi
+         :	 */
+         :	bool
+         :	CHashInsert(CHashTable table, void *entry)
+         :	{
+         :	        uint32  hashcode = hash_any(entry, table->desc.key_size);
+         :	        uint32  bucket = hashcode & table->bucket_mask;
+    0.00 :	  782f59:       89 45 ac                mov    %eax,-0x54(%rbp)
+         :	        CHashPtr           *b = &table->bucket[bucket];
+    0.00 :	  782f5c:       89 c0                   mov    %eax,%eax
+    0.00 :	  782f5e:       4c 8d 3c 85 00 00 00    lea    0x0(,%rax,4),%r15
+    0.00 :	  782f65:       00 
+         :
+         :	        /* Pick a starting freelist base on our backend ID. */
+         :	        f_current = ((uint32) MyBackendId) % CHashTableNFreeLists(table);
+         :
+         :	        /* If this process hasn't initialized gc_next yet, do that now. */
+         :	        if (table->gc_pid != MyProcPid)
+    0.00 :	  782f66:       8b 05 78 cd 43 00       mov    0x43cd78(%rip),%eax        # bbfce4 <MyProcPid>
+         :	bool
+         :	CHashInsert(CHashTable table, void *entry)
+         :	{
+         :	        uint32  hashcode = hash_any(entry, table->desc.key_size);
+         :	        uint32  bucket = hashcode & table->bucket_mask;
+         :	        CHashPtr           *b = &table->bucket[bucket];
+    0.00 :	  782f6c:       4d 03 7c 24 20          add    0x20(%r12),%r15
+         :
+         :	        /* Pick a starting freelist base on our backend ID. */
+         :	        f_current = ((uint32) MyBackendId) % CHashTableNFreeLists(table);
+         :
+         :	        /* If this process hasn't initialized gc_next yet, do that now. */
+         :	        if (table->gc_pid != MyProcPid)
+    0.00 :	  782f71:       41 39 44 24 38          cmp    %eax,0x38(%r12)
+    0.00 :	  782f76:       74 26                   je     782f9e <CHashInsert+0x7e>
+         :	        {
+         :	                table->gc_pid = MyProcPid;
+         :	                table->gc_next = ((uint32) MyProcPid) % CHashTableNGarbage(table);
+    0.00 :	  782f78:       41 0f b6 4c 24 14       movzbl 0x14(%r12),%ecx
+    0.00 :	  782f7e:       41 8b 54 24 10          mov    0x10(%r12),%edx
+         :	        f_current = ((uint32) MyBackendId) % CHashTableNFreeLists(table);
+         :
+         :	        /* If this process hasn't initialized gc_next yet, do that now. */
+         :	        if (table->gc_pid != MyProcPid)
+         :	        {
+         :	                table->gc_pid = MyProcPid;
+    0.00 :	  782f83:       41 89 44 24 38          mov    %eax,0x38(%r12)
+         :	                table->gc_next = ((uint32) MyProcPid) % CHashTableNGarbage(table);
+    0.00 :	  782f88:       8b 05 56 cd 43 00       mov    0x43cd56(%rip),%eax        # bbfce4 <MyProcPid>
+    0.00 :	  782f8e:       83 c2 01                add    $0x1,%edx
+    0.00 :	  782f91:       d3 ea                   shr    %cl,%edx
+    0.00 :	  782f93:       89 d1                   mov    %edx,%ecx
+    0.00 :	  782f95:       31 d2                   xor    %edx,%edx
+    0.00 :	  782f97:       f7 f1                   div    %ecx
+    0.00 :	  782f99:       41 89 54 24 3c          mov    %edx,0x3c(%r12)
+         :	{
+         :	        uint32          f_current;
+         :	        CHashPtr        new;
+         :
+         :	        /* Pick a starting freelist base on our backend ID. */
+         :	        f_current = ((uint32) MyBackendId) % CHashTableNFreeLists(table);
+    0.00 :	  782f9e:       0f b7 cf                movzwl %di,%ecx
+    0.00 :	  782fa1:       89 f0                   mov    %esi,%eax
+    0.00 :	  782fa3:       31 d2                   xor    %edx,%edx
+    0.00 :	  782fa5:       f7 f1                   div    %ecx
+ /home/Computational/mark/src/postgres-andres/src/backend/utils/hash/chash.c:856
+  100.00 :	  782fa7:       41 0f b6 4c 24 15       movzbl 0x15(%r12),%ecx
+    0.00 :	  782fad:       49 8b 74 24 28          mov    0x28(%r12),%rsi
+         :	        /* If list is empty, fail. */
+         :	        if (CHashPtrIsInvalid(garbage))
+         :	                return InvalidCHashPtr;
+         :
+         :	        /* If we're unable to empty the list via compare-and-swap, fail. */
+         :	        if (!__sync_bool_compare_and_swap(b, garbage, InvalidCHashPtr))
+    0.00 :	  782fb2:       41 bb fe ff ff ff       mov    $0xfffffffe,%r11d
+         :	                 * If we attempt to pop the free-list and fail, we retry immediately
+         :	                 * with the same free-list.  This reduces the frequency with which
+         :	                 * we're obliged to update our hazard pointers, which is a material
+         :	                 * savings due to the associated memory barrier.
+         :	                 */
+         :	                b = CHashTableGetFreeList(table, f_current);
+    0.00 :	  782fb8:       44 8d 42 01             lea    0x1(%rdx),%r8d
+    0.00 :	  782fbc:       44 89 c0                mov    %r8d,%eax
+    0.00 :	  782fbf:       d3 e0                   shl    %cl,%eax
+    0.00 :	  782fc1:       01 d0                   add    %edx,%eax
+    0.00 :	  782fc3:       48 8d 0c 86             lea    (%rsi,%rax,4),%rcx
+         :	                MyProc->hazard[0] = b;
+    0.00 :	  782fc7:       48 8b 05 7a a9 3f 00    mov    0x3fa97a(%rip),%rax        # b7d948 <MyProc>
+    0.00 :	  782fce:       48 89 88 e8 02 00 00    mov    %rcx,0x2e8(%rax)
+         :	                pg_memory_barrier();
+    0.00 :	  782fd5:       f0 83 04 24 00          lock addl $0x0,(%rsp)
+         :	                new = *b;
+    0.00 :	  782fda:       8b 19                   mov    (%rcx),%ebx
+         :	                while (!CHashPtrIsInvalid(new))
+    0.00 :	  782fdc:       83 fb fd                cmp    $0xfffffffd,%ebx
+    0.00 :	  782fdf:       76 23                   jbe    783004 <CHashInsert+0xe4>
+    0.00 :	  782fe1:       e9 52 01 00 00          jmpq   783138 <CHashInsert+0x218>
+    0.00 :	  782fe6:       66 2e 0f 1f 84 00 00    nopw   %cs:0x0(%rax,%rax,1)
+    0.00 :	  782fed:       00 00 00 
+         :	                         * barrier here.
+         :	                         */
+         :	                        pg_read_barrier_depends();
+         :	                        if (__sync_bool_compare_and_swap(b, new, n->un.gcnext))
+         :	                                return new;
+         :	                        CHashTableIncrementStatistic(table, CHS_Allocate_Fail);
+    0.00 :	  782ff0:       49 83 84 24 a0 00 00    addq   $0x1,0xa0(%r12)
+    0.00 :	  782ff7:       00 01 
+         :	                        new = *b;
+    0.00 :	  782ff9:       8b 19                   mov    (%rcx),%ebx
+         :	                 */
+         :	                b = CHashTableGetFreeList(table, f_current);
+         :	                MyProc->hazard[0] = b;
+         :	                pg_memory_barrier();
+         :	                new = *b;
+         :	                while (!CHashPtrIsInvalid(new))
+    0.00 :	  782ffb:       83 fb fd                cmp    $0xfffffffd,%ebx
+    0.00 :	  782ffe:       0f 87 34 01 00 00       ja     783138 <CHashInsert+0x218>
+         :	                {
+         :	                        CHashNode  *n = CHashTableGetNode(table, new);
+    0.00 :	  783004:       89 de                   mov    %ebx,%esi
+         :	                         * n is computed from table->freelist[f_current], which could
+         :	                         * be modified by concurrent activity, so we need a dependency
+         :	                         * barrier here.
+         :	                         */
+         :	                        pg_read_barrier_depends();
+         :	                        if (__sync_bool_compare_and_swap(b, new, n->un.gcnext))
+    0.00 :	  783006:       49 8b 44 24 30          mov    0x30(%r12),%rax
+         :	                MyProc->hazard[0] = b;
+         :	                pg_memory_barrier();
+         :	                new = *b;
+         :	                while (!CHashPtrIsInvalid(new))
+         :	                {
+         :	                        CHashNode  *n = CHashTableGetNode(table, new);
+    0.00 :	  78300b:       d1 ee                   shr    %esi
+         :	                         * n is computed from table->freelist[f_current], which could
+         :	                         * be modified by concurrent activity, so we need a dependency
+         :	                         * barrier here.
+         :	                         */
+         :	                        pg_read_barrier_depends();
+         :	                        if (__sync_bool_compare_and_swap(b, new, n->un.gcnext))
+    0.00 :	  78300d:       89 f2                   mov    %esi,%edx
+    0.00 :	  78300f:       41 0f af 54 24 1c       imul   0x1c(%r12),%edx
+    0.00 :	  783015:       8b 54 10 04             mov    0x4(%rax,%rdx,1),%edx
+    0.00 :	  783019:       89 d8                   mov    %ebx,%eax
+    0.00 :	  78301b:       f0 0f b1 11             lock cmpxchg %edx,(%rcx)
+    0.00 :	  78301f:       75 cf                   jne    782ff0 <CHashInsert+0xd0>
+         :	         * Allocate and initialize a new entry, on the assumption that the insert
+         :	         * will succeed.  If it ends up failing, we must be sure to put this back
+         :	         * on some free list, lest it be permanently leaked.
+         :	         */
+         :	        new = CHashAllocate(table);
+         :	        nnew = CHashTableGetNode(table, new);
+    0.00 :	  783021:       41 89 f5                mov    %esi,%r13d
+         :	        nnew->un.hashcode = hashcode;
+    0.00 :	  783024:       8b 4d a8                mov    -0x58(%rbp),%ecx
+         :	         * Allocate and initialize a new entry, on the assumption that the insert
+         :	         * will succeed.  If it ends up failing, we must be sure to put this back
+         :	         * on some free list, lest it be permanently leaked.
+         :	         */
+         :	        new = CHashAllocate(table);
+         :	        nnew = CHashTableGetNode(table, new);
+    0.00 :	  783027:       45 0f af 6c 24 1c       imul   0x1c(%r12),%r13d
+    0.00 :	  78302d:       4d 03 6c 24 30          add    0x30(%r12),%r13
+         :	        nnew->un.hashcode = hashcode;
+    0.00 :	  783032:       41 89 4d 04             mov    %ecx,0x4(%r13)
+         :	        memcpy(CHashNodeGetItem(nnew), entry, table->desc.element_size);
+    0.00 :	  783036:       41 0f b7 54 24 0c       movzwl 0xc(%r12),%edx
+    0.00 :	  78303c:       49 8d 7d 08             lea    0x8(%r13),%rdi
+    0.00 :	  783040:       48 8b 75 a0             mov    -0x60(%rbp),%rsi
+    0.00 :	  783044:       e8 a7 6b ce ff          callq  469bf0 <memcpy@plt>
+         :
+         :	        /* Prevent garbage collection for this bucket. */
+         :	        MyProc->hazard[0] = CHashTableGetGarbageByBucket(table, bucket);
+    0.00 :	  783049:       41 0f b6 4c 24 14       movzbl 0x14(%r12),%ecx
+    0.00 :	  78304f:       8b 55 ac                mov    -0x54(%rbp),%edx
+    0.00 :	  783052:       d3 ea                   shr    %cl,%edx
+    0.00 :	  783054:       41 0f b6 4c 24 15       movzbl 0x15(%r12),%ecx
+    0.00 :	  78305a:       89 d0                   mov    %edx,%eax
+    0.00 :	  78305c:       d3 e8                   shr    %cl,%eax
+    0.00 :	  78305e:       01 d0                   add    %edx,%eax
+    0.00 :	  783060:       48 8b 15 e1 a8 3f 00    mov    0x3fa8e1(%rip),%rdx        # b7d948 <MyProc>
+    0.00 :	  783067:       48 c1 e0 02             shl    $0x2,%rax
+    0.00 :	  78306b:       49 03 44 24 28          add    0x28(%r12),%rax
+    0.00 :	  783070:       48 89 82 e8 02 00 00    mov    %rax,0x2e8(%rdx)
+         :	        pg_memory_barrier();
+    0.00 :	  783077:       f0 83 04 24 00          lock addl $0x0,(%rsp)
+    0.00 :	  78307c:       4c 8d 75 b0             lea    -0x50(%rbp),%r14
+    0.00 :	  783080:       eb 20                   jmp    7830a2 <CHashInsert+0x182>
+    0.00 :	  783082:       66 0f 1f 44 00 00       nopw   0x0(%rax,%rax,1)
+         :	                 * where N is the number of buckets and M is the number of elements
+         :	                 * in the table.  Even for a quite modestly size table this is likely
+         :	                 * to exceed the number of CPU cores.
+         :	                 */
+         :	                Assert(!CHashPtrIsMarked(scan.target));
+         :	                nnew->next = scan.target;
+    0.00 :	  783088:       8b 45 b0                mov    -0x50(%rbp),%eax
+    0.00 :	  78308b:       41 89 45 00             mov    %eax,0x0(%r13)
+         :	                if (!__sync_bool_compare_and_swap(scan.pointer_to_target,
+    0.00 :	  78308f:       48 8b 55 b8             mov    -0x48(%rbp),%rdx
+    0.00 :	  783093:       8b 45 b0                mov    -0x50(%rbp),%eax
+    0.00 :	  783096:       f0 0f b1 1a             lock cmpxchg %ebx,(%rdx)
+    0.00 :	  78309a:       74 49                   je     7830e5 <CHashInsert+0x1c5>
+         :	                                                                                  scan.target, new))
+         :	                {
+         :	                        CHashTableIncrementStatistic(table, CHS_Insert_Retry);
+    0.00 :	  78309c:       49 83 44 24 60 01       addq   $0x1,0x60(%r12)
+         :	         * Scan the bucket.  If we don't find a match, use compare-and-swap to
+         :	         * insert the new node at the insert position.  If we do find a match,
+         :	         * return the data to the caller.
+         :	         */
+         :	retry:
+         :	        CHashBucketScan(table, b, hashcode, entry, &scan);
+    0.00 :	  7830a2:       48 8b 4d a0             mov    -0x60(%rbp),%rcx
+    0.00 :	  7830a6:       8b 55 a8                mov    -0x58(%rbp),%edx
+    0.00 :	  7830a9:       4d 89 f0                mov    %r14,%r8
+    0.00 :	  7830ac:       4c 89 fe                mov    %r15,%rsi
+    0.00 :	  7830af:       4c 89 e7                mov    %r12,%rdi
+    0.00 :	  7830b2:       e8 e9 fb ff ff          callq  782ca0 <CHashBucketScan>
+         :	        if (scan.found)
+    0.00 :	  7830b7:       80 7d c8 00             cmpb   $0x0,-0x38(%rbp)
+    0.00 :	  7830bb:       74 cb                   je     783088 <CHashInsert+0x168>
+         :	                memcpy(((char *) entry) + table->desc.key_size,
+    0.00 :	  7830bd:       41 0f b7 44 24 0e       movzwl 0xe(%r12),%eax
+    0.00 :	  7830c3:       48 8b 7d a0             mov    -0x60(%rbp),%rdi
+    0.00 :	  7830c7:       41 0f b7 54 24 0c       movzwl 0xc(%r12),%edx
+    0.00 :	  7830cd:       0f b7 f0                movzwl %ax,%esi
+    0.00 :	  7830d0:       48 01 f7                add    %rsi,%rdi
+    0.00 :	  7830d3:       48 83 c6 08             add    $0x8,%rsi
+    0.00 :	  7830d7:       48 03 75 c0             add    -0x40(%rbp),%rsi
+    0.00 :	  7830db:       29 c2                   sub    %eax,%edx
+    0.00 :	  7830dd:       48 63 d2                movslq %edx,%rdx
+    0.00 :	  7830e0:       e8 0b 6b ce ff          callq  469bf0 <memcpy@plt>
+         :	                }
+         :	        }
+         :
+         :	        /* Allow garbage collection for this bucket. */
+         :	        Assert(MyProc->hazard[0] != NULL);
+         :	        pg_memory_barrier();
+    0.00 :	  7830e5:       f0 83 04 24 00          lock addl $0x0,(%rsp)
+         :	        MyProc->hazard[0] = NULL;
+    0.00 :	  7830ea:       48 8b 05 57 a8 3f 00    mov    0x3fa857(%rip),%rax        # b7d948 <MyProc>
+    0.00 :	  7830f1:       48 c7 80 e8 02 00 00    movq   $0x0,0x2e8(%rax)
+    0.00 :	  7830f8:       00 00 00 00 
+         :	         * guarantees that any allocation still in progress at the time this
+         :	         * element makes it back to the freelist is trying to allocate some
+         :	         * other node.
+         :	         */
+         :	        CHashTableIncrementStatistic(table, CHS_Insert);
+         :	        if (scan.found)
+    0.00 :	  7830fc:       31 c0                   xor    %eax,%eax
+         :	         * progress at the time we popped the freelist has completed.  This
+         :	         * guarantees that any allocation still in progress at the time this
+         :	         * element makes it back to the freelist is trying to allocate some
+         :	         * other node.
+         :	         */
+         :	        CHashTableIncrementStatistic(table, CHS_Insert);
+    0.00 :	  7830fe:       49 83 44 24 50 01       addq   $0x1,0x50(%r12)
+         :	        if (scan.found)
+    0.00 :	  783104:       80 7d c8 00             cmpb   $0x0,-0x38(%rbp)
+    0.00 :	  783108:       74 17                   je     783121 <CHashInsert+0x201>
+         :	        {
+         :	                CHashTableIncrementStatistic(table, CHS_Insert_Failed);
+    0.00 :	  78310a:       49 83 44 24 58 01       addq   $0x1,0x58(%r12)
+         :	                CHashAddToGarbage(table, bucket, new);
+    0.00 :	  783110:       8b 75 ac                mov    -0x54(%rbp),%esi
+    0.00 :	  783113:       89 da                   mov    %ebx,%edx
+    0.00 :	  783115:       4c 89 e7                mov    %r12,%rdi
+    0.00 :	  783118:       e8 33 fb ff ff          callq  782c50 <CHashAddToGarbage>
+    0.00 :	  78311d:       0f b6 45 c8             movzbl -0x38(%rbp),%eax
+    0.00 :	  783121:       84 c0                   test   %al,%al
+    0.00 :	  783123:       0f 94 c0                sete   %al
+         :	        }
+         :
+         :	        /* The insert succeeded if and only if no duplicate was found. */
+         :	        return !scan.found;
+         :	}
+    0.00 :	  783126:       48 83 c4 38             add    $0x38,%rsp
+    0.00 :	  78312a:       5b                      pop    %rbx
+    0.00 :	  78312b:       41 5c                   pop    %r12
+    0.00 :	  78312d:       41 5d                   pop    %r13
+    0.00 :	  78312f:       41 5e                   pop    %r14
+    0.00 :	  783131:       41 5f                   pop    %r15
+    0.00 :	  783133:       c9                      leaveq 
+    0.00 :	  783134:       c3                      retq   
+    0.00 :	  783135:       0f 1f 00                nopl   (%rax)
+         :	        CHashPtr        new;
+         :	        CHashNode  *n;
+         :	        uint32          i;
+         :
+         :	        /* Pick a target freelist based on our backend ID. */
+         :	        f_home = ((uint32) MyBackendId) % CHashTableNFreeLists(table);
+    0.00 :	  783138:       41 0f b7 7c 24 16       movzwl 0x16(%r12),%edi
+    0.00 :	  78313e:       8b 05 c4 59 3e 00       mov    0x3e59c4(%rip),%eax        # b68b08 <MyBackendId>
+    0.00 :	  783144:       31 d2                   xor    %edx,%edx
+         :	        fh = CHashTableGetFreeList(table, f_home);
+    0.00 :	  783146:       41 0f b6 4c 24 15       movzbl 0x15(%r12),%ecx
+    0.00 :	  78314c:       4d 8b 4c 24 28          mov    0x28(%r12),%r9
+         :	        CHashPtr        new;
+         :	        CHashNode  *n;
+         :	        uint32          i;
+         :
+         :	        /* Pick a target freelist based on our backend ID. */
+         :	        f_home = ((uint32) MyBackendId) % CHashTableNFreeLists(table);
+    0.00 :	  783151:       f7 f7                   div    %edi
+         :	        fh = CHashTableGetFreeList(table, f_home);
+    0.00 :	  783153:       8d 42 01                lea    0x1(%rdx),%eax
+    0.00 :	  783156:       d3 e0                   shl    %cl,%eax
+         :
+         :	        /* Select target garbage list. */
+         :	        table->gc_next = (table->gc_next + 1) % CHashTableNGarbage(table);
+    0.00 :	  783158:       41 0f b6 4c 24 14       movzbl 0x14(%r12),%ecx
+         :	        CHashNode  *n;
+         :	        uint32          i;
+         :
+         :	        /* Pick a target freelist based on our backend ID. */
+         :	        f_home = ((uint32) MyBackendId) % CHashTableNFreeLists(table);
+         :	        fh = CHashTableGetFreeList(table, f_home);
+    0.00 :	  78315e:       01 d0                   add    %edx,%eax
+    0.00 :	  783160:       4c 8d 14 85 00 00 00    lea    0x0(,%rax,4),%r10
+    0.00 :	  783167:       00 
+         :
+         :	        /* Select target garbage list. */
+         :	        table->gc_next = (table->gc_next + 1) % CHashTableNGarbage(table);
+    0.00 :	  783168:       41 8b 44 24 3c          mov    0x3c(%r12),%eax
+    0.00 :	  78316d:       8d 50 01                lea    0x1(%rax),%edx
+    0.00 :	  783170:       41 8b 44 24 10          mov    0x10(%r12),%eax
+    0.00 :	  783175:       8d 70 01                lea    0x1(%rax),%esi
+    0.00 :	  783178:       89 d0                   mov    %edx,%eax
+    0.00 :	  78317a:       31 d2                   xor    %edx,%edx
+    0.00 :	  78317c:       d3 ee                   shr    %cl,%esi
+         :	        b = CHashTableGetGarbageList(table, table->gc_next);
+    0.00 :	  78317e:       41 0f b6 4c 24 15       movzbl 0x15(%r12),%ecx
+         :	        /* Pick a target freelist based on our backend ID. */
+         :	        f_home = ((uint32) MyBackendId) % CHashTableNFreeLists(table);
+         :	        fh = CHashTableGetFreeList(table, f_home);
+         :
+         :	        /* Select target garbage list. */
+         :	        table->gc_next = (table->gc_next + 1) % CHashTableNGarbage(table);
+    0.00 :	  783184:       f7 f6                   div    %esi
+         :	        b = CHashTableGetGarbageList(table, table->gc_next);
+    0.00 :	  783186:       4c 89 ce                mov    %r9,%rsi
+    0.00 :	  783189:       89 d0                   mov    %edx,%eax
+         :	        /* Pick a target freelist based on our backend ID. */
+         :	        f_home = ((uint32) MyBackendId) % CHashTableNFreeLists(table);
+         :	        fh = CHashTableGetFreeList(table, f_home);
+         :
+         :	        /* Select target garbage list. */
+         :	        table->gc_next = (table->gc_next + 1) % CHashTableNGarbage(table);
+    0.00 :	  78318b:       41 89 54 24 3c          mov    %edx,0x3c(%r12)
+         :	        b = CHashTableGetGarbageList(table, table->gc_next);
+    0.00 :	  783190:       d3 e8                   shr    %cl,%eax
+    0.00 :	  783192:       01 d0                   add    %edx,%eax
+    0.00 :	  783194:       49 8d 14 81             lea    (%r9,%rax,4),%rdx
+         :	        garbage = *b;
+    0.00 :	  783198:       8b 1a                   mov    (%rdx),%ebx
+         :
+         :	        /* If list is empty, fail. */
+         :	        if (CHashPtrIsInvalid(garbage))
+    0.00 :	  78319a:       83 fb fd                cmp    $0xfffffffd,%ebx
+    0.00 :	  78319d:       76 11                   jbe    7831b0 <CHashInsert+0x290>
+         :	                new = CHashAllocateViaGC(table);
+         :	                if (!CHashPtrIsInvalid(new))
+         :	                        return new;
+         :
+         :	                /* Advance to next freelist. */
+         :	                f_current = (f_current + 1) % CHashTableNFreeLists(table);
+    0.00 :	  78319f:       44 89 c0                mov    %r8d,%eax
+    0.00 :	  7831a2:       31 d2                   xor    %edx,%edx
+    0.00 :	  7831a4:       f7 f7                   div    %edi
+    0.00 :	  7831a6:       e9 0d fe ff ff          jmpq   782fb8 <CHashInsert+0x98>
+    0.00 :	  7831ab:       0f 1f 44 00 00          nopl   0x0(%rax,%rax,1)
+         :	        /* If list is empty, fail. */
+         :	        if (CHashPtrIsInvalid(garbage))
+         :	                return InvalidCHashPtr;
+         :
+         :	        /* If we're unable to empty the list via compare-and-swap, fail. */
+         :	        if (!__sync_bool_compare_and_swap(b, garbage, InvalidCHashPtr))
+    0.00 :	  7831b0:       89 d8                   mov    %ebx,%eax
+    0.00 :	  7831b2:       f0 44 0f b1 1a          lock cmpxchg %r11d,(%rdx)
+    0.00 :	  7831b7:       74 1c                   je     7831d5 <CHashInsert+0x2b5>
+         :	        {
+         :	                CHashTableIncrementStatistic(table, CHS_Garbage_Dequeue_Fail);
+    0.00 :	  7831b9:       49 83 84 24 b0 00 00    addq   $0x1,0xb0(%r12)
+    0.00 :	  7831c0:       00 01 
+    0.00 :	  7831c2:       49 8b 74 24 28          mov    0x28(%r12),%rsi
+    0.00 :	  7831c7:       41 0f b6 4c 24 15       movzbl 0x15(%r12),%ecx
+    0.00 :	  7831cd:       41 0f b7 7c 24 16       movzwl 0x16(%r12),%edi
+    0.00 :	  7831d3:       eb ca                   jmp    78319f <CHashInsert+0x27f>
+         :	         * requeues the garbage if it's not immediately recycleable, but
+         :	         * it's not clear that we need such a thing.  On the flip side we
+         :	         * might want to eventually enter a longer sleep here, or PANIC,
+         :	         * but it's not clear exactly how to calibrate that.
+         :	         */
+         :	        CHashTableIncrementStatistic(table, CHS_GC);
+    0.00 :	  7831d5:       49 83 84 24 b8 00 00    addq   $0x1,0xb8(%r12)
+    0.00 :	  7831dc:       00 01 
+         :	        CHashNode  *n;
+         :	        uint32          i;
+         :
+         :	        /* Pick a target freelist based on our backend ID. */
+         :	        f_home = ((uint32) MyBackendId) % CHashTableNFreeLists(table);
+         :	        fh = CHashTableGetFreeList(table, f_home);
+    0.00 :	  7831de:       4f 8d 04 11             lea    (%r9,%r10,1),%r8
+         :	         * it's not clear that we need such a thing.  On the flip side we
+         :	         * might want to eventually enter a longer sleep here, or PANIC,
+         :	         * but it's not clear exactly how to calibrate that.
+         :	         */
+         :	        CHashTableIncrementStatistic(table, CHS_GC);
+         :	        MyProc->hazard[0] = NULL;
+    0.00 :	  7831e2:       48 8b 05 5f a7 3f 00    mov    0x3fa75f(%rip),%rax        # b7d948 <MyProc>
+    0.00 :	  7831e9:       48 c7 80 e8 02 00 00    movq   $0x0,0x2e8(%rax)
+    0.00 :	  7831f0:       00 00 00 00 
+         :	        for (i = 0; i < ProcGlobal->allProcCount; i++)
+    0.00 :	  7831f4:       48 8b 35 5d a7 3f 00    mov    0x3fa75d(%rip),%rsi        # b7d958 <ProcGlobal>
+    0.00 :	  7831fb:       8b 46 10                mov    0x10(%rsi),%eax
+    0.00 :	  7831fe:       85 c0                   test   %eax,%eax
+    0.00 :	  783200:       74 5f                   je     783261 <CHashInsert+0x341>
+    0.00 :	  783202:       31 ff                   xor    %edi,%edi
+    0.00 :	  783204:       eb 1a                   jmp    783220 <CHashInsert+0x300>
+    0.00 :	  783206:       66 2e 0f 1f 84 00 00    nopw   %cs:0x0(%rax,%rax,1)
+    0.00 :	  78320d:       00 00 00 
+         :	        {
+         :	                volatile PGPROC *proc = &ProcGlobal->allProcs[i];
+         :	                void       *hazard;
+         :
+         :	                hazard = proc->hazard[0];
+         :	                if (hazard == b || hazard == fh)
+    0.00 :	  783210:       49 39 c8                cmp    %rcx,%r8
+    0.00 :	  783213:       74 23                   je     783238 <CHashInsert+0x318>
+         :	         * might want to eventually enter a longer sleep here, or PANIC,
+         :	         * but it's not clear exactly how to calibrate that.
+         :	         */
+         :	        CHashTableIncrementStatistic(table, CHS_GC);
+         :	        MyProc->hazard[0] = NULL;
+         :	        for (i = 0; i < ProcGlobal->allProcCount; i++)
+    0.00 :	  783215:       83 c7 01                add    $0x1,%edi
+    0.00 :	  783218:       3b 7e 10                cmp    0x10(%rsi),%edi
+    0.00 :	  78321b:       73 44                   jae    783261 <CHashInsert+0x341>
+    0.00 :	  78321d:       0f 1f 00                nopl   (%rax)
+         :	        {
+         :	                volatile PGPROC *proc = &ProcGlobal->allProcs[i];
+    0.00 :	  783220:       89 f8                   mov    %edi,%eax
+    0.00 :	  783222:       48 69 c0 f0 02 00 00    imul   $0x2f0,%rax,%rax
+    0.00 :	  783229:       48 03 06                add    (%rsi),%rax
+         :	                void       *hazard;
+         :
+         :	                hazard = proc->hazard[0];
+    0.00 :	  78322c:       48 8b 88 e8 02 00 00    mov    0x2e8(%rax),%rcx
+         :	                if (hazard == b || hazard == fh)
+    0.00 :	  783233:       48 39 ca                cmp    %rcx,%rdx
+    0.00 :	  783236:       75 d8                   jne    783210 <CHashInsert+0x2f0>
+         :	                {
+         :	                        CHashTableIncrementStatistic(table, CHS_GC_Spin);
+    0.00 :	  783238:       49 83 84 24 c0 00 00    addq   $0x1,0xc0(%r12)
+    0.00 :	  78323f:       00 01 
+         :	                        do
+         :	                        {
+         :	                                hazard = proc->hazard[0];
+    0.00 :	  783241:       48 8b 88 e8 02 00 00    mov    0x2e8(%rax),%rcx
+         :	                        } while (hazard == b || hazard == fh);
+    0.00 :	  783248:       48 39 ca                cmp    %rcx,%rdx
+    0.00 :	  78324b:       74 f4                   je     783241 <CHashInsert+0x321>
+    0.00 :	  78324d:       49 39 c8                cmp    %rcx,%r8
+    0.00 :	  783250:       74 ef                   je     783241 <CHashInsert+0x321>
+    0.00 :	  783252:       48 8b 35 ff a6 3f 00    mov    0x3fa6ff(%rip),%rsi        # b7d958 <ProcGlobal>
+         :	         * might want to eventually enter a longer sleep here, or PANIC,
+         :	         * but it's not clear exactly how to calibrate that.
+         :	         */
+         :	        CHashTableIncrementStatistic(table, CHS_GC);
+         :	        MyProc->hazard[0] = NULL;
+         :	        for (i = 0; i < ProcGlobal->allProcCount; i++)
+    0.00 :	  783259:       83 c7 01                add    $0x1,%edi
+    0.00 :	  78325c:       3b 7e 10                cmp    0x10(%rsi),%edi
+    0.00 :	  78325f:       72 bf                   jb     783220 <CHashInsert+0x300>
+         :	                }
+         :	        }
+         :
+         :	        /* Remove one item from list to satisfy current allocation. */
+         :	        new = garbage;
+         :	        n = CHashTableGetNode(table, new);
+    0.00 :	  783261:       89 de                   mov    %ebx,%esi
+         :	        pg_read_barrier_depends();
+         :	        fhead = n->un.gcnext;
+    0.00 :	  783263:       49 8b 44 24 30          mov    0x30(%r12),%rax
+         :	                }
+         :	        }
+         :
+         :	        /* Remove one item from list to satisfy current allocation. */
+         :	        new = garbage;
+         :	        n = CHashTableGetNode(table, new);
+    0.00 :	  783268:       d1 ee                   shr    %esi
+         :	        pg_read_barrier_depends();
+         :	        fhead = n->un.gcnext;
+    0.00 :	  78326a:       89 f2                   mov    %esi,%edx
+    0.00 :	  78326c:       41 0f af 54 24 1c       imul   0x1c(%r12),%edx
+    0.00 :	  783272:       8b 54 10 04             mov    0x4(%rax,%rdx,1),%edx
+         :
+         :	        if (CHashPtrIsInvalid(fhead))
+    0.00 :	  783276:       83 fa fd                cmp    $0xfffffffd,%edx
+    0.00 :	  783279:       76 13                   jbe    78328e <CHashInsert+0x36e>
+         :	                 * before we overwrite n->un.gcnext with a new hashcode.
+         :	                 * (This is only needed when we reclaim exactly one node,
+         :	                 * because in any other case we'll do a compare-and-swap
+         :	                 * before returning, which implies a full barrier.)
+         :	                 */
+         :	                pg_memory_barrier();
+    0.00 :	  78327b:       f0 83 04 24 00          lock addl $0x0,(%rsp)
+         :	                CHashTableIncrementStatistic(table, CHS_GC_Reclaim_Skipped);
+    0.00 :	  783280:       49 83 84 24 c8 00 00    addq   $0x1,0xc8(%r12)
+    0.00 :	  783287:       00 01 
+    0.00 :	  783289:       e9 93 fd ff ff          jmpq   783021 <CHashInsert+0x101>
+         :	        }
+         :	        else if (__sync_bool_compare_and_swap(fh, InvalidCHashPtr, fhead))
+    0.00 :	  78328e:       b8 fe ff ff ff          mov    $0xfffffffe,%eax
+    0.00 :	  783293:       f0 41 0f b1 10          lock cmpxchg %edx,(%r8)
+    0.00 :	  783298:       74 41                   je     7832db <CHashInsert+0x3bb>
+         :	        {
+         :	                /*
+         :	                 * Our free list is empty, and we've succesfully pushed the
+         :	                 * reclaimed nodes onto it.  So we're done.
+         :	                 */
+         :	                CHashTableIncrementStatistic(table, CHS_GC_Reclaim_Fast);
+    0.00 :	  78329a:       4d 8b 4c 24 30          mov    0x30(%r12),%r9
+    0.00 :	  78329f:       41 8b 7c 24 1c          mov    0x1c(%r12),%edi
+    0.00 :	  7832a4:       89 d0                   mov    %edx,%eax
+         :
+         :	                /* Walk list of reclaimed elements to end. */
+         :	                fcurrent = fhead;
+         :	                for (;;)
+         :	                {
+         :	                        n = CHashTableGetNode(table, fcurrent);
+    0.00 :	  7832a6:       d1 e8                   shr    %eax
+    0.00 :	  7832a8:       0f af c7                imul   %edi,%eax
+    0.00 :	  7832ab:       49 8d 0c 01             lea    (%r9,%rax,1),%rcx
+         :	                        fnext = n->un.gcnext;
+    0.00 :	  7832af:       8b 41 04                mov    0x4(%rcx),%eax
+         :	                        if (CHashPtrIsInvalid(fnext))
+    0.00 :	  7832b2:       83 f8 fd                cmp    $0xfffffffd,%eax
+    0.00 :	  7832b5:       76 ef                   jbe    7832a6 <CHashInsert+0x386>
+    0.00 :	  7832b7:       eb 10                   jmp    7832c9 <CHashInsert+0x3a9>
+    0.00 :	  7832b9:       0f 1f 80 00 00 00 00    nopl   0x0(%rax)
+         :	                {
+         :	                        oldhead = *fh;
+         :	                        n->un.gcnext = oldhead;
+         :	                        if (__sync_bool_compare_and_swap(fh, oldhead, fhead))
+         :	                                break;
+         :	                        CHashTableIncrementStatistic(table, CHS_GC_Reclaim_Retry);
+    0.00 :	  7832c0:       49 83 84 24 d8 00 00    addq   $0x1,0xd8(%r12)
+    0.00 :	  7832c7:       00 01 
+         :	                }
+         :
+         :	                /* Push reclaimed elements onto home free list. */
+         :	                for (;;)
+         :	                {
+         :	                        oldhead = *fh;
+    0.00 :	  7832c9:       41 8b 00                mov    (%r8),%eax
+         :	                        n->un.gcnext = oldhead;
+    0.00 :	  7832cc:       89 41 04                mov    %eax,0x4(%rcx)
+         :	                        if (__sync_bool_compare_and_swap(fh, oldhead, fhead))
+    0.00 :	  7832cf:       f0 41 0f b1 10          lock cmpxchg %edx,(%r8)
+    0.00 :	  7832d4:       75 ea                   jne    7832c0 <CHashInsert+0x3a0>
+    0.00 :	  7832d6:       e9 46 fd ff ff          jmpq   783021 <CHashInsert+0x101>
+         :	        {
+         :	                /*
+         :	                 * Our free list is empty, and we've succesfully pushed the
+         :	                 * reclaimed nodes onto it.  So we're done.
+         :	                 */
+         :	                CHashTableIncrementStatistic(table, CHS_GC_Reclaim_Fast);
+    0.00 :	  7832db:       49 83 84 24 d0 00 00    addq   $0x1,0xd0(%r12)
+    0.00 :	  7832e2:       00 01 
+    0.00 :	  7832e4:       e9 38 fd ff ff          jmpq   783021 <CHashInsert+0x101>
+
+Sorted summary for file 
+----------------------------------------------
+
+ Nothing higher than 0.5%
+ Percent |	Source code & Disassembly of 
+------------------------------------------------
+
+Sorted summary for file 
+----------------------------------------------
+
+ Nothing higher than 0.5%
+ Percent |	Source code & Disassembly of 
+------------------------------------------------
+
+Sorted summary for file 
+----------------------------------------------
+
+ Nothing higher than 0.5%
+ Percent |	Source code & Disassembly of 
+------------------------------------------------
+
+Sorted summary for file 
+----------------------------------------------
+
+ Nothing higher than 0.5%
+ Percent |	Source code & Disassembly of 
+------------------------------------------------
+
+Sorted summary for file 
+----------------------------------------------
+
+ Nothing higher than 0.5%
+ Percent |	Source code & Disassembly of 
+------------------------------------------------
+
+Sorted summary for file 
+----------------------------------------------
+
+ Nothing higher than 0.5%
+ Percent |	Source code & Disassembly of 
+------------------------------------------------

@@ -1,0 +1,449 @@
+# Events: 39  cycles
+#
+# Overhead  Samples     Command      Shared Object                          Symbol
+# ........ ..........  ........  .................  ..............................
+#
+    22.27%          3     mmfsd  [unknown]          [.] 0x68a623        
+               |
+               --- 0x5af150
+                   0xffffc900341c3998
+
+               |
+               --- 0x68a623
+
+               |
+               --- 0x6896a4
+                   0x900000001
+
+    13.11%          1  postgres  [kernel.kallsyms]  [k] 0xffffffff8111de7a
+            |
+            --- zap_pte_range
+                unmap_page_range
+                unmap_vmas
+                exit_mmap
+                mmput
+                exit_mm
+                do_exit
+                do_group_exit
+                sys_exit_group
+                system_call_fastpath
+                0x7fb873d90a38
+
+     9.45%          5  postgres  [kernel.kallsyms]  [k] zap_pte_range
+            |
+            --- zap_pte_range
+                unmap_page_range
+                unmap_vmas
+                exit_mmap
+                mmput
+                exit_mm
+                do_exit
+                do_group_exit
+                sys_exit_group
+                system_call_fastpath
+                0x7fb873d90a38
+
+     7.13%          3  postgres  [kernel.kallsyms]  [k] mem_cgroup_update_page_stat
+            |
+            --- mem_cgroup_update_page_stat
+                zap_pte_range
+                unmap_page_range
+                unmap_vmas
+                exit_mmap
+                mmput
+                exit_mm
+                do_exit
+                do_group_exit
+                sys_exit_group
+                system_call_fastpath
+                0x7fb873d90a38
+
+     4.23%          2  postgres  [mmfs26]           [k] 0x5f3e8         
+            |
+            --- 0xffffffffa056f3e8
+                0xffffffffa04c61ab
+                vfs_read
+                sys_read
+                system_call_fastpath
+                0x7fb873db55d0
+                __GI___read
+
+            |
+            --- 0xffffffffa056f472
+                0xffffffffa04c61ab
+                vfs_read
+                sys_read
+                system_call_fastpath
+                0x7fb873db55d0
+                __GI___read
+
+     4.04%          1      psql  ld-2.11.3.so       [.] _dl_relocate_object
+                |
+                --- _dl_relocate_object
+                    dl_main
+                    _dl_sysdep_start
+                    0x40
+
+     3.84%          2  postgres  [mmfslinux]        [k] 0x20066         
+            |
+            --- 0xffffffffa04c0066
+                0xffffffffa0553f90
+                0xffffffffa05715f4
+                0xffffffffa04c61ab
+                vfs_read
+                sys_read
+                system_call_fastpath
+                0x7fb873db55d0
+                __GI___read
+
+     3.64%          2  postgres  [kernel.kallsyms]  [k] page_remove_rmap
+            |
+            --- page_remove_rmap
+                zap_pte_range
+                unmap_page_range
+                unmap_vmas
+                exit_mmap
+                mmput
+                exit_mm
+                do_exit
+                do_group_exit
+                sys_exit_group
+                system_call_fastpath
+                0x7fb873d90a38
+
+     3.58%          2  postgres  [kernel.kallsyms]  [k] lookup_page_cgroup
+            |
+            --- lookup_page_cgroup
+                mem_cgroup_update_page_stat
+                zap_pte_range
+                unmap_page_range
+                unmap_vmas
+                exit_mmap
+                mmput
+                exit_mm
+                do_exit
+                do_group_exit
+                sys_exit_group
+                system_call_fastpath
+                0x7fb873d90a38
+
+     3.55%          2  postgres  [kernel.kallsyms]  [k] copy_user_generic_string
+            |
+            --- copy_user_generic_string
+                0xffffffffa04bfedc
+                0xffffffffa04c021c
+                0xffffffffa0553f90
+                0xffffffffa05715f4
+                0xffffffffa04c61ab
+                vfs_read
+                sys_read
+                system_call_fastpath
+                0x7fb873db55d0
+                __GI___read
+
+     2.80%          1   swapper  [kernel.kallsyms]  [k] schedule
+             |
+             --- schedule
+                 cpu_idle
+
+     2.50%          1   swapper  [kernel.kallsyms]  [k] call_function_single_interrupt
+             |
+             --- call_function_single_interrupt
+                 intel_idle
+                 cpuidle_idle_call
+                 cpu_idle
+
+     2.12%          1  postgres  postgres           [.] _bt_moveright
+            |
+            --- _bt_moveright
+                _bt_search
+                _bt_first
+                btgettuple
+                FunctionCall2Coll
+                index_getnext_tid
+                index_getnext
+                IndexNext
+                ExecScan
+                ExecProcNode
+                ExecNestLoop
+                ExecProcNode
+                ExecAgg
+                ExecProcNode
+                standard_ExecutorRun
+                ExplainOnePlan
+                ExplainOneQuery
+                ExplainQuery
+                standard_ProcessUtility
+                PortalRunUtility
+                FillPortalStore
+                PortalRun
+                exec_simple_query
+                PostgresMain
+                ServerLoop
+                PostmasterMain
+                main
+                __libc_start_main
+
+     1.86%          1  postgres  postgres           [.] ReadBufferExtended
+            |
+            --- ReadBufferExtended
+                index_fetch_heap
+                index_getnext
+                IndexNext
+                ExecScan
+                ExecProcNode
+                ExecNestLoop
+                ExecProcNode
+                ExecAgg
+                ExecProcNode
+                standard_ExecutorRun
+                ExplainOnePlan
+                ExplainOneQuery
+                ExplainQuery
+                standard_ProcessUtility
+                PortalRunUtility
+                FillPortalStore
+                PortalRun
+                exec_simple_query
+                PostgresMain
+                ServerLoop
+                PostmasterMain
+                main
+                __libc_start_main
+
+     1.79%          1  postgres  [kernel.kallsyms]  [k] find_lock_page
+            |
+            --- find_lock_page
+                shmem_getpage_gfp
+                shmem_fault
+                __do_fault
+                handle_pte_fault
+                do_page_fault
+                page_fault
+                0x782d0f
+                CHashBucketScan
+                CHashDelete
+                BufTableDelete
+                ReadBuffer_common
+                ReadBufferExtended
+                BitmapHeapNext
+                ExecScan
+                ExecProcNode
+                ExecNestLoop
+                ExecProcNode
+                ExecAgg
+                ExecProcNode
+                standard_ExecutorRun
+                ExplainOnePlan
+                ExplainOneQuery
+                ExplainQuery
+                standard_ProcessUtility
+                PortalRunUtility
+                FillPortalStore
+                PortalRun
+                exec_simple_query
+                PostgresMain
+                ServerLoop
+                PostmasterMain
+                main
+                __libc_start_main
+
+     1.78%          1  postgres  [kernel.kallsyms]  [k] radix_tree_lookup_slot
+            |
+            --- radix_tree_lookup_slot
+                find_get_page
+                find_lock_page
+                shmem_getpage_gfp
+                shmem_fault
+                __do_fault
+                handle_pte_fault
+                do_page_fault
+                page_fault
+                0x49f6c7
+                heap_page_prune_opt
+                index_fetch_heap
+                index_getnext
+                IndexNext
+                ExecScan
+                ExecProcNode
+                ExecNestLoop
+                ExecProcNode
+                ExecAgg
+                ExecProcNode
+                standard_ExecutorRun
+                ExplainOnePlan
+                ExplainOneQuery
+                ExplainQuery
+                standard_ProcessUtility
+                PortalRunUtility
+                FillPortalStore
+                PortalRun
+                exec_simple_query
+                PostgresMain
+                ServerLoop
+                PostmasterMain
+                main
+                __libc_start_main
+
+     1.77%          1  postgres  [kernel.kallsyms]  [k] unlock_page
+            |
+            --- unlock_page
+                0xffffffffa04b5514
+                read_pages
+                __do_page_cache_readahead
+                force_page_cache_readahead
+                sys_fadvise64_64
+                system_call_fastpath
+                0x7fb873db9e5d
+                posix_fadvise
+
+     1.76%          1  postgres  [kernel.kallsyms]  [k] handle_mm_fault
+            |
+            --- handle_mm_fault
+                do_page_fault
+                page_fault
+                copy_user_generic_string
+                0xffffffffa04bfedc
+                0xffffffffa04c021c
+                0xffffffffa0553f90
+                0xffffffffa05715f4
+                0xffffffffa04c61ab
+                vfs_read
+                sys_read
+                system_call_fastpath
+                0x7fb873db55d0
+                __GI___read
+
+     1.75%          1  postgres  postgres           [.] ExecScan
+            |
+            --- ExecScan
+                ExecProcNode
+                ExecNestLoop
+                ExecProcNode
+                ExecAgg
+                ExecProcNode
+                standard_ExecutorRun
+                ExplainOnePlan
+                ExplainOneQuery
+                ExplainQuery
+                standard_ProcessUtility
+                PortalRunUtility
+                FillPortalStore
+                PortalRun
+                exec_simple_query
+                PostgresMain
+                ServerLoop
+                PostmasterMain
+                main
+                __libc_start_main
+
+     1.75%          1  postgres  [kernel.kallsyms]  [k] __task_pid_nr_ns
+            |
+            --- __task_pid_nr_ns
+                0xffffffffa04bfec2
+                0xffffffffa04c021c
+                0xffffffffa0554e96
+                0xffffffffa056facb
+                0xffffffffa04c61ab
+                vfs_read
+                sys_read
+                system_call_fastpath
+                0x7fb873db55d0
+                __GI___read
+
+     1.75%          1  postgres  postgres           [.] CHashInsert
+            |
+            --- CHashInsert
+                BufTableInsert
+                ReadBuffer_common
+                ReadBufferExtended
+                BitmapHeapNext
+                ExecScan
+                ExecProcNode
+                ExecNestLoop
+                ExecProcNode
+                ExecAgg
+                ExecProcNode
+                standard_ExecutorRun
+                ExplainOnePlan
+                ExplainOneQuery
+                ExplainQuery
+                standard_ProcessUtility
+                PortalRunUtility
+                FillPortalStore
+                PortalRun
+                exec_simple_query
+                PostgresMain
+                ServerLoop
+                PostmasterMain
+                main
+                __libc_start_main
+
+     1.75%          1  postgres  postgres           [.] ExecStoreTuple
+            |
+            --- ExecStoreTuple
+                ExecScan
+                ExecProcNode
+                ExecNestLoop
+                ExecProcNode
+                ExecAgg
+                ExecProcNode
+                standard_ExecutorRun
+                ExplainOnePlan
+                ExplainOneQuery
+                ExplainQuery
+                standard_ProcessUtility
+                PortalRunUtility
+                FillPortalStore
+                PortalRun
+                exec_simple_query
+                PostgresMain
+                ServerLoop
+                PostmasterMain
+                main
+                __libc_start_main
+
+     0.77%          1     mmfsd  [kernel.kallsyms]  [k] __schedule
+               |
+               --- __schedule
+                   0xffffffffa04a8b7d
+                   0xffffffffa05bf0f1
+                   0xffffffffa05c0478
+                   0xffffffffa0605afe
+                   0xffffffffa04c3c65
+                   do_vfs_ioctl
+                   sys_ioctl
+                   system_call_fastpath
+                   0x7ffb7c11f3d7
+                   0x7ffb7c11f3d7
+                   0xffffc900341c3998
+
+     0.57%          1   swapper  [kernel.kallsyms]  [k] tick_nohz_stop_idle
+             |
+             --- tick_nohz_stop_idle
+                 0xffff881fc284e010
+
+     0.23%          1   swapper  [kernel.kallsyms]  [k] scheduler_tick
+             |
+             --- scheduler_tick
+                 update_process_times
+                 tick_sched_timer
+                 __run_hrtimer
+                 hrtimer_interrupt
+                 smp_apic_timer_interrupt
+                 apic_timer_interrupt
+                 intel_idle
+                 cpuidle_idle_call
+                 cpu_idle
+
+     0.20%          1   swapper  [kernel.kallsyms]  [k] intel_idle
+             |
+             --- intel_idle
+                 cpuidle_idle_call
+                 cpu_idle
+
+
+
+#
+# (For a higher level overview, try: perf report --sort comm,dso)
+#

@@ -1,0 +1,15 @@
+node: axle
+kernel: Linux 3.0.101-0.15-default
+distribution: fixme
+dbver: PostgreSQL 9.5devel
+sysstat: 8.1.5
+CPUS: 16
+MHz:  2600.000
+model:  Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+memory:        264524424 kB
+scale_factor: 10
+num_stream: 12
+load_parameters: -c shared_buffers=8GB -c work_mem=1GB -c maintenance_work_mem=4GB -c checkpoint_segments=300 -c checkpoint_timeout=60min -c effective_cache_size=200GB -c default_statistics_target=1000
+power_parameters: -c shared_buffers=8GB -c work_mem=1GB -c checkpoint_segments=300 -c checkpoint_timeout=60min -c effective_cache_size=200GB -c default_statistics_target=1000
+throughput_parameters: -c shared_buffers=8GB -c work_mem=1GB -c checkpoint_segments=300 -c checkpoint_timeout=60min -c effective_cache_size=200GB -c default_statistics_target=1000
+shmmax: 25769803776

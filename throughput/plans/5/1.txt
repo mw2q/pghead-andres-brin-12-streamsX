@@ -1,0 +1,37 @@
+BEGIN;
+BEGIN
+EXPLAIN
+select
+	l_returnflag,
+	l_linestatus,
+	sum(l_quantity) as sum_qty,
+	sum(l_extendedprice) as sum_base_price,
+	sum(l_extendedprice * (1 - l_discount)) as sum_disc_price,
+	sum(l_extendedprice * (1 - l_discount) * (1 + l_tax)) as sum_charge,
+	avg(l_quantity) as avg_qty,
+	avg(l_extendedprice) as avg_price,
+	avg(l_discount) as avg_disc,
+	count(*) as count_order
+from
+	lineitem
+where
+	l_shipdate <= date '1998-12-01' - interval '97 days'
+group by
+	l_returnflag,
+	l_linestatus
+order by
+	l_returnflag,
+	l_linestatus;
+                                        QUERY PLAN                                        
+------------------------------------------------------------------------------------------
+ Sort  (cost=4178997.19..4178997.21 rows=6 width=20)
+   Sort Key: l_returnflag, l_linestatus
+   ->  HashAggregate  (cost=4178997.01..4178997.11 rows=6 width=20)
+         Group Key: l_returnflag, l_linestatus
+         ->  Seq Scan on lineitem  (cost=0.00..1817043.65 rows=59048834 width=20)
+               Filter: (l_shipdate <= '1998-08-26 00:00:00'::timestamp without time zone)
+ Planning time: 1.181 ms
+(7 rows)
+
+COMMIT;
+COMMIT
